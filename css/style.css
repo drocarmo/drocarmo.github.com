@@ -1,17 +1,25 @@
 h1 {
 font-family:"Helvetica Neue";
+font-size:25px;
 font-weight:200;
 text-align: center;
 }
 p {
-font-family:"Helvetica Neue";
-font-size:20px;
+font-family: "Helvetica Neue";
+font-size:16px;
 font-weight:200;
 text-align: center
 }
 a {
-	color: black;
+    color: black;
 }
 a:hover {
-	color: blue;
+    color: #295ca2;
 }
+​hr {
+    background-color: black;
+    height: 1px;
+    width:20%;
+    align= center;​​
+    border: none;
+}​

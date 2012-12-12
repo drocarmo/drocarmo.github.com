@@ -21,7 +21,12 @@ a:hover {
     color: #295ca2;
 }
 #wrap {
-  height: 100px; 
-  margin: 0 auto; 
+  left: 0;
+    line-height: 150px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
 ​

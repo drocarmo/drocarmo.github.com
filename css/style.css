@@ -1,27 +1,31 @@
 h1 {
-font-family:"Helvetica Neue";
-font-size:30px;
-font-weight:200;
-text-align: center;
-line-height: 200%;
+    font-family:"Helvetica Neue";
+    font-size:30px;
+    font-weight:200;
+    text-align: center;
+    line-height: 200%;
 }
 p {
-font-family: "Helvetica Neue";
-font-size:18px;
-font-weight:200;
-text-align: center;
-line-height: 200%;
+    color: #303030;
+    font-family: "Helvetica Neue";
+    font-size:18px;
+    font-weight:200;
+    text-align: center;
+    line-height: 200%;
 }
 a {
-    color: black;
-    text-decoration: none;
-    padding-right: 8px;
+    color: #303030;
+    text-decoration: underline;
 }
 a:hover {
-    color: #295ca2;
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-size: 20px;
 }
 #wrap {
-  left: 0;
+    left: 0;
     line-height: 150px;
     margin: auto;
     margin-top: -100px;
@@ -29,4 +33,3 @@ a:hover {
     top: 50%;
     width: 100%;
 }
-​

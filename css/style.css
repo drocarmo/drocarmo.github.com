@@ -24,12 +24,3 @@ a:hover {
     text-shadow: white 0.1em 0.1em 0.2em;
     font-size: 20px;
 }
-#wrap {
-    left: 0;
-    line-height: 150px;
-    margin: auto;
-    margin-top: -200px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}​

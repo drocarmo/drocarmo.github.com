@@ -1,17 +1,17 @@
 h1 {
-    font-family:"Helvetica Neue";
-    font-size:30px;
+    font-family:"Century Gothic";
+    font-size:32px;
     font-weight:200;
     text-align: center;
-    line-height: 200%;
+    line-height: 250%;
 }
 p {
     color: #303030;
     font-family: "Helvetica Neue";
-    font-size:18px;
+    font-size:20px;
     font-weight:200;
     text-align: center;
-    line-height: 200%;
+    line-height: 250%;
 }
 a {
     color: #303030;
@@ -28,8 +28,8 @@ a:hover {
     left: 0;
     line-height: 150px;
     margin: auto;
-    margin-top: -100px;
+    margin-top: -200px;
     position: absolute;
     top: 50%;
     width: 100%;
-}
+}​

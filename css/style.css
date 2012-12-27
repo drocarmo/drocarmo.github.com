@@ -4,7 +4,7 @@ background-size: cover;
 }
 div.transbox {
   width:450px;
-  height:380px;
+  height:480px;
   margin:30px 50px;
   background-color:#ffffff;
   opacity:0.6;
@@ -23,7 +23,7 @@ div.transbox p
 h1 {
     text-rendering: optimizeLegibility;
     color: black;
-    font-size:32px;
+    font-size:40px;
     font-weight:200;
     text-align: center;
     line-height: 250%;
@@ -32,7 +32,7 @@ p {
     text-rendering: optimizeLegibility;
     color: black;
     font-family: "Helvetica Neue";
-    font-size:20px;
+    font-size:25px;
     font-weight:200;
     text-align: center;
     line-height: 250%;

@@ -1,12 +1,36 @@
+body {
+background-image:url('https://lh5.googleusercontent.com/-_ammYbfDEMU/UNy1zWAgdPI/AAAAAAAAAcg/ZNW-VPUy_dg/s812/300024-alexfas01%28blur%29.jpg');
+background-size: cover;
+}
+div.transbox {
+  width:450px;
+  height:780px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  opacity:0.5;
+  filter:alpha(opacity=80);
+}
+div.transbox p
+  {
+    text-rendering: optimizeLegibility;
+    color: black;
+    font-family: "Helvetica Neue";
+    font-size:20px;
+    font-weight:200;
+    text-align: center;
+    line-height: 250%;
+  }
 h1 {
-    font-family:"Century Gothic";
+    text-rendering: optimizeLegibility;
+    color: black;
     font-size:32px;
     font-weight:200;
     text-align: center;
     line-height: 250%;
 }
 p {
-    color: #303030;
+    text-rendering: optimizeLegibility;
+    color: black;
     font-family: "Helvetica Neue";
     font-size:20px;
     font-weight:200;
@@ -14,13 +38,12 @@ p {
     line-height: 250%;
 }
 a {
-    color: #303030;
+    color: black;
     text-decoration: underline;
 }
 a:hover {
-    color: black;
     text-transform: none;
     text-decoration: none;
-    text-shadow: white 0.1em 0.1em 0.2em;
     font-size: 22px;
 }
+​

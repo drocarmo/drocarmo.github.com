@@ -4,11 +4,11 @@ background-size: cover;
 }
 div.transbox {
   width:450px;
-  height:780px;
+  height:380px;
   margin:30px 50px;
   background-color:#ffffff;
-  opacity:0.5;
-  filter:alpha(opacity=80);
+  opacity:0.6;
+  filter:alpha(opacity=10);
 }
 div.transbox p
   {

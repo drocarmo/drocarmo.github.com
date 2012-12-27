@@ -1,11 +1,11 @@
 html {
     -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-delay: 1.5s;
     -webkit-animation-iteration-count: 1;
 }
 body {
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1.5s;
     -webkit-animation-iteration-count: 1;
     background-image:url('https://lh5.googleusercontent.com/-dj-co-i-RY0/UNzOQpCz6AI/AAAAAAAAAds/zoH9LRK5ovI/s812/300024-alexfas01.jpeg');
     background-size: cover;
@@ -18,7 +18,7 @@ div.transbox {
     opacity:0.6;
     filter:alpha(opacity=10);
     -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-delay: 1.5s;
     -webkit-animation-iteration-count: 1;
 }
 div.transbox p
@@ -30,8 +30,8 @@ div.transbox p
     font-weight:200;
     text-align: center;
     line-height: 250%;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1.5s;
     -webkit-animation-iteration-count: 1;
   }
 h1 {

@@ -4,7 +4,7 @@ body {
 }
 div.transbox {
     width:600px;
-    height:680px;
+    height:580px;
     margin:30px 50px;
     background-color:#ffffff;
     opacity:0.6;
@@ -42,12 +42,14 @@ a {
     text-decoration: none;
 }
 a.link {
-    color: black;
+    color:black;
+    font-size:25px;
     text-transform: none;
     text-decoration: none;
     border-bottom:solid 1px #000000;
 }
 a.link:hover {
+    font-size:25px;
     text-transform: none;
     text-decoration: none;
     border-bottom:solid 1px #0099FF;

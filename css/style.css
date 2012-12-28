@@ -3,15 +3,6 @@ body {
     background-size: cover;
 }
 div.transbox {
-    width:450px;
-    height:500px;
-    margin:30px 50px;
-    background-color:#ffffff;
-    opacity:0.6;body {
-    background-image:url('http://tonylazz.files.wordpress.com/2009/06/chicago-skyline-4a.jpg');
-    background-size: cover;
-}
-div.transbox {
     width:600px;
     height:680px;
     margin:30px 50px;

@@ -1,5 +1,5 @@
 body {
-    background-image:url('https://lh6.googleusercontent.com/-wooMXayfZe0/UOxq5VbSG8I/AAAAAAAAAfU/WYSspT-CXPY/s828/blurry_background_i-wallpaper-2560x1440.jpg');
+    background-color: white;
     background-size: cover;
 }
 div.transbox {
@@ -7,7 +7,7 @@ div.transbox {
     height:580px;
     margin:30px 50px;
     background-color:#ffffff;
-    opacity:0.6;
+    opacity:0.8;
     filter:alpha(opacity=10);
 }
 div.transbox p
@@ -53,7 +53,7 @@ a.link:hover {
     font-size:20px;
     text-transform: none;
     text-decoration: none;
-    border-bottom:solid 1px #0099FF;
+    border-bottom:solid 1px #99CCFF;
 }
 a:hover {
     text-transform: none;

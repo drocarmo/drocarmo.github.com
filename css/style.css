@@ -2,6 +2,12 @@ body {
     background-color: white;
     background-size: cover;
 }
+div.picture img{
+    width: 165px;
+    height: 165px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 80px;
+}
 div.transbox {
     width:600px;
     height:580px;
@@ -198,7 +204,6 @@ a {
 a:hover {
     text-transform: none;
     text-decoration: none;
-    font-size: 22px;
 }
 hr {
     clear: both;

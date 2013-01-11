@@ -48,18 +48,20 @@ a {
     text-transform: none;
     text-decoration: none;
 }
-a.link {
+a.links {
     color:black;
     font-size:20px;
     text-transform: none;
     text-decoration: none;
     border-bottom:solid 1px #000000;
 }
-a.link:hover {
+a.links:hover {
+    color: white;
     font-size:20px;
     text-transform: none;
     text-decoration: none;
-    border-bottom:solid 1px #99CCFF;
+    border: none;
+    background-color: black;
 }
 a:hover {
     text-transform: none;
@@ -111,147 +113,6 @@ hr {
     -o-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-
-
-@-webkit-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-    }
-    
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-@-moz-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-20px);
-    }
-    
-    100% {
-        opacity: 1;
-        -moz-transform: translateY(0);
-    }
-}
-
-@-ms-keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        -ms-transform: translateY(-20px);
-    }
-    
-    100% {
-        opacity: 1;
-        -ms-transform: translateY(0);
-    }
-}
-
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    -moz-animation-name: fadeInDown;
-    -ms-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-}
-    filter:alpha(opacity=10);
-}
-div.transbox p
-  {
-    text-rendering: optimizeLegibility;
-    color: black;
-    font-family: "Helvetica Neue";
-    font-size:20px;
-    font-weight:200;
-    text-align: center;
-    line-height: 250%;
-  }
-h1 {
-    text-rendering: optimizeLegibility;
-    color: black;
-    font-size:32px;
-    font-weight:200;
-    text-align: center;
-    line-height: 250%;
-}
-p {
-    text-rendering: optimizeLegibility;
-    color: black;
-    font-family: "Helvetica Neue";
-    font-size:25px;
-    font-weight:200;
-    text-align: center;
-    line-height: 250%;
-}
-a {
-    color: black;
-    text-decoration: underline;
-}
-a:hover {
-    text-transform: none;
-    text-decoration: none;
-}
-hr {
-    clear: both;
-    border: 1px solid transparent;
-    height: 1px;
-}
-
-/* Animation css */
-
-.animated {
-    -webkit-animation-duration: 1s;
-       -moz-animation-duration: 1s;
-        -ms-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-       -moz-animation-fill-mode: both;
-        -ms-animation-fill-mode: both;
-            animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}    
-    100% {opacity: 1;}
-}
-
-@-moz-keyframes fadeIn {
-    0% {opacity: 0;}    
-    100% {opacity: 1;}
-}
-
-@-ms-keyframes fadeIn {
-    0% {opacity: 0;}    
-    100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}    
-    100% {opacity: 1;}
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    -moz-animation-name: fadeIn;
-    -ms-animation-name: fadeIn;
-    -o-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
-
 
 @-webkit-keyframes fadeInDown {
     0% {

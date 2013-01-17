@@ -1,5 +1,5 @@
 drocarmo.github.com
 ===================
 
-landing on mars
-as of now
+*this is an about me page project
+(starterleague student)

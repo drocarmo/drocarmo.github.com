@@ -103,7 +103,7 @@ hr {
 @-webkit-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -webkit-transform: translateY(-20px);
+        -webkit-transform: translateY(-30px);
     }
     
     100% {
@@ -115,7 +115,7 @@ hr {
 @-moz-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -moz-transform: translateY(-20px);
+        -moz-transform: translateY(-30px);
     }
     
     100% {
@@ -127,7 +127,7 @@ hr {
 @-ms-keyframes fadeInDown {
     0% {
         opacity: 0;
-        -ms-transform: translateY(-20px);
+        -ms-transform: translateY(-30px);
     }
     
     100% {
@@ -140,7 +140,7 @@ hr {
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
     
     100% {

@@ -3,32 +3,17 @@ body {
     background-size: cover;
 }
 div.picture img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 165px;
     height: 165px;
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
 }
-div.transbox {
-    width:600px;
-    height:580px;
-    margin:30px 50px;
-    background-color:#ffffff;
-    opacity:0.8;
-    filter:alpha(opacity=10);
-}
-div.transbox p
-  {
-    text-rendering: optimizeLegibility;
-    color: black;
-    font-family: "proxima-nova",sans-serif;
-    font-size:20px;
-    font-weight:200;
-    text-align: center;
-    line-height: 250%;
-  }
 h1 {
     text-rendering: optimizeLegibility;
-    color: black;
+    color: #333333;
     font-family: "proxima-nova" ,sans-serif;
     font-size:35px;
     font-weight:200;
@@ -37,10 +22,11 @@ h1 {
 }
 p {
     text-rendering: optimizeLegibility;
-    color: black;
+    color: #333333;
     font-family: "proxima-nova",sans-serif;
     font-size:20px;
     font-weight:200;
+    margin: 25px 30px;
     text-align: center;
     line-height: 20%;
 }
@@ -49,11 +35,11 @@ a {
     text-decoration: none;
 }
 a.links {
-    color:black;
+    color:#333333;
     font-size:20px;
     text-transform: none;
     text-decoration: none;
-    border-bottom:solid 1px #000000;
+    border-bottom:solid 1px #333333;
 }
 a.links:hover {
     color: white;

@@ -26,9 +26,10 @@ p {
     font-family: "proxima-nova",sans-serif;
     font-size:20px;
     font-weight:200;
-    margin: 25px 30px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 130%;
     text-align: center;
-    line-height: 20%;
 }
 a {
     text-transform: none;
@@ -47,7 +48,7 @@ a.links:hover {
     text-transform: none;
     text-decoration: none;
     border: none;
-    background-color: black;
+    background-color: #333333;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;

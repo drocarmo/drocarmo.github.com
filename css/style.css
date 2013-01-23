@@ -56,13 +56,6 @@ a.links:hover {
     -ms-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-}
-a.links:visited {
-    color:#64AECD;
-    font-size:20px;
-    text-transform: none;
-    text-decoration: none;
-    border-bottom:solid 1px #333333;
 }    
 a.social:hover {
     text-transform: none;

@@ -75,10 +75,10 @@ hr {
 /* Animation, bro */
 
 .animated {
-    -webkit-animation-duration: 1s;
-       -moz-animation-duration: 1s;
-        -ms-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-fill-mode: both;
        -moz-animation-fill-mode: both;
         -ms-animation-fill-mode: both;

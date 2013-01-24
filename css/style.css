@@ -107,10 +107,10 @@ hr {
     -ms-animation-name: fadeIn;
     -o-animation-name: fadeIn;
     animation-name: fadeIn;
-    -webkit-animation-duration: 1.5s;
-       -moz-animation-duration: 1.5s;
-        -ms-animation-duration: 1.5s;
-            animation-duration: 1.5s;
+    -webkit-animation-duration: 5s;
+       -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+            animation-duration: 5s;
 }
 
 @-webkit-keyframes fadeInDown {

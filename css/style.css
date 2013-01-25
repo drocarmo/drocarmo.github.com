@@ -38,14 +38,14 @@ a {
     text-transform: none;
     text-decoration: none;
 }
-a.links {
+.links {
     color:#333333;
     font-size:20px;
     text-transform: none;
     text-decoration: none;
     border-bottom:solid 1px #64AECD;
 }
-a.links:hover {
+.links:hover {
     color: white;
     font-size:20px;
     text-transform: none;
@@ -58,7 +58,7 @@ a.links:hover {
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }    
-a.social:hover {
+.social:hover {
     text-transform: none;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-in;

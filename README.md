@@ -1,5 +1,5 @@
 drocarmo.github.com
 ===================
 
-*this is an about me page project
+*this is an aboutme/blog project using Jekyll
 (starterleague student)

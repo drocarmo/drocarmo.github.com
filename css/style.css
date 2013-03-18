@@ -16,6 +16,17 @@ h1 {
     margin-right:auto;
     width: 50%;
 }
+h2 {
+    text-rendering: optimizeLegibility;
+    color: #333333;
+    font-family: "proxima-nova",sans-serif;
+    font-size:20px;
+    line-height: 250%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+}
 p {
     text-rendering: optimizeLegibility;
     color: #333333;
@@ -35,6 +46,12 @@ p {
     margin-left:auto;
     margin-right:auto;
     width: 51%;
+}
+.posts {
+    display: block;
+    margin-left:200px;
+    margin-right:200px;
+    width: 50%;
 }
 a {
     text-transform: none;

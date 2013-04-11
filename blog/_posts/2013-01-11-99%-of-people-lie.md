@@ -1,3 +1,8 @@
+---
+layout: posts
+title: 99% of People Lie
+---
+
 First and foremost,
 
 It is 2:33 am. So forgive my grammatical errors.
@@ -20,9 +25,9 @@ After reading Jared's post, I decided to extend my snack period because it was t
 
 ###No Fear Of Perfection
 
-Conclusion: 99.9% of people lie about their creativity.
+Conclusion: 99% of people lie about their creativity.
 
-Now, hold on, before you pull out your linkedin profiles, with great resumes of what you've accomplished, just hear me out. The 0.1% are those whose pursuit is much similar to Salvador Dali's quote:
+Now, hold on, before you pull out your linkedin profiles, with great resumes of what you've accomplished, just hear me out. The 1% are those whose pursuit is much similar to Salvador Dali's quote:
 
 > "Have no fear of perfection, you'll never reach it."
 

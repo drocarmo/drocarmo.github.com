@@ -27,6 +27,12 @@ h2 {
     margin-right:auto;
     width: 50%;
 }
+h3 {
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+    font-style: italic;
+}
 p {
     text-rendering: optimizeLegibility;
     color: #333333;
@@ -34,6 +40,9 @@ p {
     font-size: 20px;
     font-weight: 200;
     line-height: 150%;
+}
+.special {
+    color: #64AECD;
 }
 .about {
     display: block;

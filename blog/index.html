@@ -1,0 +1,12 @@
+---
+layout: default
+title: Hi, I'm Pedro Carmo.
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%B %e, %Y" }}</span>: <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

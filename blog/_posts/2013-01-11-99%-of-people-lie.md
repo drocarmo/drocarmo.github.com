@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: defaults
 title: 99% of People Lie
 ---
 

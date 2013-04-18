@@ -332,7 +332,7 @@ a {
             animation-duration: 0.75s;
 }*/
 
-/*@-webkit-keyframes pulse {
+@-webkit-keyframes pulse {
     0% { -webkit-transform: scale(1); } 
     50% { -webkit-transform: scale(1.1); }
     100% { -webkit-transform: scale(1); }
@@ -362,6 +362,6 @@ a {
        -moz-animation-duration: 0.5s;
         -ms-animation-duration: 0.5s;
             animation-duration: 0.5s;
-}*/
+}
 
 /* Responsive, homie */

@@ -9,6 +9,12 @@ h1 {
   font-weight: 500;
   color: #00ad6e;
   line-height: 2px; }
+  h1 a {
+    color: #00ad6e;
+    border-bottom: none; }
+    h1 a:hover {
+      color: #00e08e;
+      border-bottom: none; }
 
 h2 {
   font-family: "rooney-sans", sans-serif;
@@ -31,13 +37,14 @@ p {
   font-weight: 200;
   color: #4d4d4d;
   line-height: 1.5; }
-  p a {
-    text-decoration: none;
-    text-transform: none;
-    color: #4d4d4d;
-    border-bottom: 1px solid #00ad6e; }
-    p a:hover {
-      border-bottom: 1px solid #00e08e; }
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: #4d4d4d;
+  border-bottom: 1px solid #00ad6e; }
+  a:hover {
+    border-bottom: 1px solid #00e08e; }
 
 blockquote {
   padding-left: 18px;
@@ -60,9 +67,11 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: white;
-  position: relative; }
+  position: relative;
+  border-bottom: none; }
   nav a:hover {
-    bottom: 4px; }
+    bottom: 4px;
+    border-bottom: none; }
 
 .head {
   text-align: center;
@@ -82,4 +91,11 @@ nav a {
   width: 600px; }
 
 .post {
-  padding-top: 100px; }
+  padding-top: 40px;
+  padding-bottom: 150px; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+  width: 600px; }

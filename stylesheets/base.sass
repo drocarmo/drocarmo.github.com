@@ -17,10 +17,16 @@ header
 	height: 80px
 	background-color: $darkblue
 	z-index: 1000
+	@media screen and (max-width: $mediumscreen)
+		height: 70px
+	@media screen and (max-width: $smallscreen)
+		height: 60px
+	@media screen and (max-width: $tinyscreen)
+		height: 50px
 nav a
-	padding: 30px
+	padding: 50px
 	padding-bottom: 20px
-	font-size: 12px
+	font-size: 13px
 	text-decoration: none
 	text-transform: uppercase
 	letter-spacing: 5px
@@ -30,13 +36,23 @@ nav a
 	&:hover
 		bottom: 4px
 		border-bottom: none
+	@media screen and (max-width: $mediumscreen)
+		padding: 40px
+		font-size: 12px	
 	@media screen and (max-width: $smallscreen)
 		padding: 20px
+		font-size: 10px
 	@media screen and (max-width: $tinyscreen)
 		padding: 10px
 .head
 	text-align: center
 	position: relative
+	@media screen and (max-width: $mediumscreen)
+		top: -5px
+	@media screen and (max-width: $smallscreen)
+		top: -10px
+	@media screen and (max-width: $tinyscreen)
+		top: -15px
 .profile
 	height: 50px
 	width: 50px
@@ -50,3 +66,9 @@ footer
 	width: 600px
 	h3
 		font-size: 14px
+	@media screen and (max-width: $mediumscreen)
+		width: 450px
+	@media screen and (max-width: $smallscreen)
+		width: 300px
+	@media screen and (max-width: $tinyscreen)
+		width: 250px

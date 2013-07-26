@@ -10,11 +10,20 @@ header {
   height: 80px;
   background-color: #2f3440;
   z-index: 1000; }
+  @media screen and (max-width: 700px) {
+    header {
+      height: 70px; } }
+  @media screen and (max-width: 500px) {
+    header {
+      height: 60px; } }
+  @media screen and (max-width: 300px) {
+    header {
+      height: 50px; } }
 
 nav a {
-  padding: 30px;
+  padding: 50px;
   padding-bottom: 20px;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -24,9 +33,14 @@ nav a {
   nav a:hover {
     bottom: 4px;
     border-bottom: none; }
+  @media screen and (max-width: 700px) {
+    nav a {
+      padding: 40px;
+      font-size: 12px; } }
   @media screen and (max-width: 500px) {
     nav a {
-      padding: 20px; } }
+      padding: 20px;
+      font-size: 10px; } }
   @media screen and (max-width: 300px) {
     nav a {
       padding: 10px; } }
@@ -34,6 +48,15 @@ nav a {
 .head {
   text-align: center;
   position: relative; }
+  @media screen and (max-width: 700px) {
+    .head {
+      top: -5px; } }
+  @media screen and (max-width: 500px) {
+    .head {
+      top: -10px; } }
+  @media screen and (max-width: 300px) {
+    .head {
+      top: -15px; } }
 
 .profile {
   height: 50px;
@@ -49,6 +72,15 @@ footer {
   width: 600px; }
   footer h3 {
     font-size: 14px; }
+  @media screen and (max-width: 700px) {
+    footer {
+      width: 450px; } }
+  @media screen and (max-width: 500px) {
+    footer {
+      width: 300px; } }
+  @media screen and (max-width: 300px) {
+    footer {
+      width: 250px; } }
 
 h2 {
   font-size: 26px;

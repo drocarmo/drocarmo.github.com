@@ -2,7 +2,14 @@ $twitter: #00aced
 $insta: #517fa4
 $rdio: #006ed2
 $github: #222
+$dribbble: #d33b74
 
+.social a
+	margin-right: 70px
+	@media screen and (max-width: $mediumscreen)
+		margin-right: 50px
+	@media screen and (max-width: $smallscreen)
+		margin-right: 20px
 a.twitter
 	border-bottom: none
 	&:hover
@@ -22,4 +29,14 @@ a.github
 	border-bottom: none
 	&:hover
 		color: $github
+		border-bottom: none
+a.dribbble
+	border-bottom: none
+	&:hover
+		color: $dribbble
+		border-bottom: none
+a.svpply
+	border-bottom: none
+	&:hover
+		color: $black
 		border-bottom: none

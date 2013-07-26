@@ -2,6 +2,9 @@ $white: #fff
 $black: #000
 $green: #00ad6e
 $darkblue: #2F3440
+$mediumscreen: 700px
+$smallscreen: 500px
+$tinyscreen: 300px
 
 body
 	font-family: "proxima-nova-soft",sans-serif
@@ -27,6 +30,10 @@ nav a
 	&:hover
 		bottom: 4px
 		border-bottom: none
+	@media screen and (max-width: $smallscreen)
+		padding: 20px
+	@media screen and (max-width: $tinyscreen)
+		padding: 10px
 .head
 	text-align: center
 	position: relative

@@ -24,6 +24,12 @@ nav a {
   nav a:hover {
     bottom: 4px;
     border-bottom: none; }
+  @media screen and (max-width: 500px) {
+    nav a {
+      padding: 20px; } }
+  @media screen and (max-width: 300px) {
+    nav a {
+      padding: 10px; } }
 
 .head {
   text-align: center;
@@ -44,26 +50,23 @@ footer {
   footer h3 {
     font-size: 14px; }
 
-h1 {
+h2 {
   font-size: 26px;
   font-weight: 500;
   color: #00ad6e;
   line-height: 2px; }
-  h1 a {
+  h2 a {
     color: #00ad6e;
     border-bottom: none; }
-    h1 a:hover {
+    h2 a:hover {
       color: #00c77e;
       border-bottom: none; }
 
-h2 {
-  font-family: "rooney-sans", sans-serif;
-  font-style: italic;
-  font-weight: 200;
-  font-size: 12px;
-  letter-spacing: 5px;
-  color: gray;
-  padding-bottom: 30px; }
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #2f3440;
+  line-height: 2px; }
 
 h3 {
   font-style: italic;
@@ -72,11 +75,29 @@ h3 {
   color: #4d4d4d;
   line-height: 2; }
 
+h4 {
+  font-family: "rooney-sans", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: gray;
+  padding-bottom: 30px; }
+
 p {
   font-size: 20px;
   font-weight: 200;
   color: #4d4d4d;
   line-height: 1.5; }
+
+.social a {
+  margin-right: 70px; }
+  @media screen and (max-width: 700px) {
+    .social a {
+      margin-right: 50px; } }
+  @media screen and (max-width: 500px) {
+    .social a {
+      margin-right: 20px; } }
 
 a.twitter {
   border-bottom: none; }
@@ -102,15 +123,55 @@ a.github {
     color: #222222;
     border-bottom: none; }
 
+a.dribbble {
+  border-bottom: none; }
+  a.dribbble:hover {
+    color: #d33b74;
+    border-bottom: none; }
+
+a.svpply {
+  border-bottom: none; }
+  a.svpply:hover {
+    color: black;
+    border-bottom: none; }
+
 .container {
   position: relative;
   text-align: left;
   margin: 100px auto;
   width: 600px; }
+  @media screen and (max-width: 700px) {
+    .container {
+      width: 450px; } }
+  @media screen and (max-width: 500px) {
+    .container {
+      width: 300px; } }
+  @media screen and (max-width: 300px) {
+    .container {
+      width: 250px; } }
 
 .post {
   padding-top: 40px;
   padding-bottom: 150px; }
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 150px; }
+
+.about img {
+  border-radius: 10px; }
+  @media screen and (max-width: 700px) {
+    .about img {
+      height: 300px;
+      width: 450px; } }
+  @media screen and (max-width: 500px) {
+    .about img {
+      height: 200px;
+      width: 300px; } }
+  @media screen and (max-width: 300px) {
+    .about img {
+      height: 160px;
+      width: 250px; } }
 
 a {
   text-decoration: none;

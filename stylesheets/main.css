@@ -185,10 +185,26 @@ a.svpply {
 .post {
   padding-top: 40px;
   padding-bottom: 150px; }
+  @media screen and (max-width: 500px) {
+    .post {
+      padding-top: 5px;
+      padding-bottom: 100px; } }
+  @media screen and (max-width: 300px) {
+    .post {
+      padding-top: 0px;
+      padding-bottom: 80px; } }
 
 .about {
   padding-top: 40px;
   padding-bottom: 150px; }
+  @media screen and (max-width: 500px) {
+    .about {
+      padding-top: 5px;
+      padding-bottom: 100px; } }
+  @media screen and (max-width: 300px) {
+    .about {
+      padding-top: 0px;
+      padding-bottom: 80px; } }
 
 .about img {
   border-radius: 10px; }
@@ -204,6 +220,9 @@ a.svpply {
     .about img {
       height: 160px;
       width: 250px; } }
+  .about img:hover {
+    filter: gray;
+    -webkit-filter: grayscale(100%); }
 
 a {
   text-decoration: none;

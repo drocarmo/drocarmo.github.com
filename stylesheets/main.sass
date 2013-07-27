@@ -16,9 +16,21 @@
 .post
 	padding-top: 40px
 	padding-bottom: 150px
+	@media screen and (max-width: $smallscreen)
+		padding-top: 5px
+		padding-bottom: 100px
+	@media screen and (max-width: $tinyscreen)
+		padding-top: 0px
+		padding-bottom: 80px
 .about
 	padding-top: 40px
 	padding-bottom: 150px
+	@media screen and (max-width: $smallscreen)
+		padding-top: 5px
+		padding-bottom: 100px
+	@media screen and (max-width: $tinyscreen)
+		padding-top: 0px
+		padding-bottom: 80px
 .about img
 	border-radius: 10px
 	@media screen and (max-width: $mediumscreen)
@@ -30,6 +42,9 @@
 	@media screen and (max-width: $tinyscreen)
 		height: 160px
 		width: 250px
+	&:hover
+		filter: gray
+		-webkit-filter: grayscale(100%)
 a
 	text-decoration: none
 	text-transform: none

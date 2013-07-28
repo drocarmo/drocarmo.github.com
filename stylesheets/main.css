@@ -18,7 +18,7 @@ header {
       height: 60px; } }
   @media screen and (max-width: 300px) {
     header {
-      height: 50px; } }
+      height: 45px; } }
 
 nav a {
   padding: 50px;
@@ -219,8 +219,7 @@ a.svpply {
       height: 160px;
       width: 250px; } }
   .about img:hover {
-    filter: gray;
-    -webkit-filter: grayscale(100%); }
+    opacity: 0.6; }
 
 a {
   text-decoration: none;

@@ -48,15 +48,6 @@ nav a {
 .head {
   text-align: center;
   position: relative; }
-  @media screen and (max-width: 700px) {
-    .head {
-      top: -5px; } }
-  @media screen and (max-width: 500px) {
-    .head {
-      top: -10px; } }
-  @media screen and (max-width: 300px) {
-    .head {
-      top: -15px; } }
 
 .profile {
   height: 50px;
@@ -64,6 +55,13 @@ nav a {
   border-radius: 80px;
   position: relative;
   top: 15px; }
+  @media screen and (max-width: 700px) {
+    .profile {
+      top: 10px; } }
+  @media screen and (max-width: 500px) {
+    .profile {
+      height: 40px;
+      width: 40px; } }
 
 footer {
   position: relative;

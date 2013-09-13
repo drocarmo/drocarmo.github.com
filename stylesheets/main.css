@@ -12,13 +12,13 @@ header {
   z-index: 1000; }
   @media screen and (max-width: 700px) {
     header {
-      height: 70px; } }
+      height: 90px; } }
   @media screen and (max-width: 500px) {
     header {
-      height: 60px; } }
+      height: 80px; } }
   @media screen and (max-width: 300px) {
     header {
-      height: 45px; } }
+      height: 70px; } }
 
 nav a {
   padding: 50px;
@@ -207,8 +207,8 @@ a.svpply {
   border-radius: 10px; }
   @media screen and (max-width: 700px) {
     .about img {
-      height: 641px;
-      width: 843px; } }
+      height: 300px;
+      width: 450px; } }
   @media screen and (max-width: 500px) {
     .about img {
       height: 200px;

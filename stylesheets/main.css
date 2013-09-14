@@ -106,7 +106,7 @@ h3 {
   line-height: 2; }
 
 h4 {
-  font-family: "rooney-sans", sans-serif;
+  font-family: "jaf-lapture", serif;
   font-style: italic;
   font-weight: 200;
   font-size: 12px;
@@ -118,9 +118,7 @@ p {
   font-size: 20px;
   font-weight: 200;
   color: #5f5f5f;
-  line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal; }
+  line-height: 1.5; }
 
 .social a {
   margin-right: 70px; }

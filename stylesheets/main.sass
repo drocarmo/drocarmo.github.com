@@ -31,21 +31,56 @@
 	@media screen and (max-width: $tinyscreen)
 		padding-top: 0px
 		padding-bottom: 80px
-.about img
-	border-radius: 10px
-	@media screen and (max-width: $mediumscreen)
-		height: 300px
-		width: 450px
+	img
+		border-radius: 10px
+		@media screen and (max-width: $mediumscreen)
+			height: 300px
+			width: 450px
+		@media screen and (max-width: $smallscreen)
+			height: 200px
+			width: 300px
+		@media screen and (max-width: $tinyscreen)
+			height: 160px
+			width: 250px
+		&:hover
+			opacity: 0.9
+.books
+	padding-top: 40px
+	padding-bottom: 150px
 	@media screen and (max-width: $smallscreen)
-		height: 200px
-		width: 300px
+		padding-top: 5px
+		padding-bottom: 100px
 	@media screen and (max-width: $tinyscreen)
-		height: 160px
-		width: 250px
-	&:hover
-		opacity: 0.6
-		// filter: gray
-		// -webkit-filter: grayscale(80%)
+		padding-top: 0px
+		padding-bottom: 80px
+	img
+		padding-right: 15px
+		padding-bottom: 15px
+		@media screen and (max-width: $mediumscreen)
+			height: 260px
+			width: 160px
+		@media screen and (max-width: $smallscreen)
+			height: 200px
+			width: 125px
+			padding-right: 10px
+		@media screen and (max-width: $tinyscreen)
+			height: 160px
+			width: 105px
+	a
+		border-bottom: none
+		&:hover
+			border-bottom: none
+			opacity: 0.9
+.resume
+	padding-top: 40px
+	padding-bottom: 150px
+	@media screen and (max-width: $smallscreen)
+		padding-top: 5px
+		padding-bottom: 100px
+	@media screen and (max-width: $tinyscreen)
+		padding-top: 0px
+		padding-bottom: 80px
+
 a
 	text-decoration: none
 	text-transform: none

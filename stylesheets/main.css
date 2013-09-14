@@ -40,10 +40,10 @@ nav a {
   @media screen and (max-width: 500px) {
     nav a {
       padding: 20px;
-      font-size: 10px; } }
+      font-size: 11px; } }
   @media screen and (max-width: 300px) {
     nav a {
-      padding: 10px; } }
+      padding: 18px; } }
 
 .head {
   text-align: center;

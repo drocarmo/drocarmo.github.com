@@ -97,7 +97,7 @@ h2 {
   @media screen and (max-width: 700px) {
     h2 {
       font-size: 24px;
-      line-height: 30px 3; } }
+      line-height: 30px; } }
 
 h1 {
   font-size: 28px;
@@ -202,6 +202,15 @@ a.svpply {
     .container {
       width: 250px; } }
 
+.posts {
+  padding-top: 40px; }
+  @media screen and (max-width: 500px) {
+    .posts {
+      padding-top: 5px; } }
+  @media screen and (max-width: 300px) {
+    .posts {
+      padding-top: 0px; } }
+
 .post {
   padding-top: 40px;
   padding-bottom: 150px; }
@@ -213,6 +222,22 @@ a.svpply {
     .post {
       padding-top: 0px;
       padding-bottom: 80px; } }
+  .post img {
+    border-radius: 10px; }
+    @media screen and (max-width: 700px) {
+      .post img {
+        height: 300px;
+        width: 450px; } }
+    @media screen and (max-width: 500px) {
+      .post img {
+        height: 200px;
+        width: 300px; } }
+    @media screen and (max-width: 300px) {
+      .post img {
+        height: 160px;
+        width: 250px; } }
+    .post img:hover {
+      opacity: 0.9; }
 
 .about {
   padding-top: 40px;

@@ -26,13 +26,14 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: black;
+  color: #0a0a0a;
   position: relative;
   top: 15px;
   border-bottom: none;
   font-family: "rooney-sans", sans-serif; }
-  nav a:hover {
-    border-bottom: none; }
+  nav a:hover, nav a:active {
+    border-bottom: none;
+    color: #00ad6e; }
   @media screen and (max-width: 700px) {
     nav a {
       padding: 40px;
@@ -101,7 +102,7 @@ h2 {
 h1 {
   font-size: 28px;
   font-weight: 500;
-  color: #333333;
+  color: #3d3d3d;
   line-height: 2px; }
   @media screen and (max-width: 700px) {
     h1 {
@@ -111,7 +112,7 @@ h3 {
   font-style: italic;
   font-size: 22px;
   font-weight: 500;
-  color: #4d4d4d;
+  color: #575757;
   line-height: 2; }
   @media screen and (max-width: 700px) {
     h3 {
@@ -183,7 +184,7 @@ a.dribbble {
 a.svpply {
   border-bottom: none; }
   a.svpply:hover {
-    color: black;
+    color: #0a0a0a;
     border-bottom: none; }
 
 .container {
@@ -277,6 +278,24 @@ a.svpply {
 .resume {
   padding-top: 40px;
   padding-bottom: 150px; }
+  .resume .title {
+    font-weight: 400; }
+  .resume img {
+    border-radius: 10px; }
+    @media screen and (max-width: 700px) {
+      .resume img {
+        height: 300px;
+        width: 400px; } }
+    @media screen and (max-width: 500px) {
+      .resume img {
+        height: 200px;
+        width: 267px; } }
+    @media screen and (max-width: 300px) {
+      .resume img {
+        height: 160px;
+        width: 212px; } }
+    .resume img:hover {
+      opacity: 0.9; }
   @media screen and (max-width: 500px) {
     .resume {
       padding-top: 5px;
@@ -289,11 +308,11 @@ a.svpply {
 a {
   text-decoration: none;
   text-transform: none;
-  color: #4d4d4d;
+  color: #575757;
   border-bottom: 1px solid #00ad6e; }
   a:hover {
     border-bottom: 1px solid #00e08e; }
 
 blockquote {
   padding-left: 18px;
-  border-left: 1px solid black; }
+  border-left: 1px solid #0a0a0a; }

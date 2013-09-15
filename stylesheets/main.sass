@@ -74,6 +74,21 @@
 .resume
 	padding-top: 40px
 	padding-bottom: 150px
+	.title
+		font-weight: 400
+	img
+		border-radius: 10px
+		@media screen and (max-width: $mediumscreen)
+			height: 300px
+			width: 400px
+		@media screen and (max-width: $smallscreen)
+			height: 200px
+			width: 267px
+		@media screen and (max-width: $tinyscreen)
+			height: 160px
+			width: 212px
+		&:hover
+			opacity: 0.9
 	@media screen and (max-width: $smallscreen)
 		padding-top: 5px
 		padding-bottom: 100px

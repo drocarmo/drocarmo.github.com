@@ -1,0 +1,18 @@
+auto: true
+
+name: Personal Site
+pygments: true
+
+include:
+- .htaccess
+- webfonts
+
+exlude:
+- assets
+- README.md
+- Rakefile
+
+keep_files:
+- .git
+
+permalink: /writing/:title

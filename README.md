@@ -1,5 +1,8 @@
 drocarmo.github.com
 ===================
 
-*this is an aboutme/blog website using Jekyll
-check it out live at drocarmo.com
+Personal site
+
+Built with Jekyll, HTML and CSS pre-compiled in Sass
+
+Check it out live at [drocarmo.com][drocarmo.com]

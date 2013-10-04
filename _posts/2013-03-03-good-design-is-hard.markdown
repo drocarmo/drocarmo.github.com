@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Design Is Hard"
+title: "Good Design Is Hard"
 date: 2013-03-03
 ---
 

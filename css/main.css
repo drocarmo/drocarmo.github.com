@@ -259,7 +259,7 @@ a.svpply {
       padding-top: 0px;
       padding-bottom: 80px; } }
   .about img {
-    border-radius: 10px; }
+    border-radius: 5px; }
     @media screen and (max-width: 700px) {
       .about img {
         height: 300px;

@@ -21,7 +21,7 @@ nav a {
   font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   color: #0a0a0a;
   position: relative;
   top: 15px;
@@ -68,8 +68,10 @@ footer {
   bottom: 0;
   margin: 0 auto;
   width: 600px; }
-  footer h3 {
-    font-size: 14px; }
+  footer h3, footer a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #c4c4c4; }
   @media screen and (max-width: 700px) {
     footer {
       width: 450px; } }

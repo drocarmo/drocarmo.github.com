@@ -5,7 +5,8 @@ header {
   width: 100%;
   height: 100px;
   background-color: white;
-  z-index: 1000; }
+  z-index: 1000;
+  opacity: 0.9; }
   @media screen and (max-width: 700px) {
     header {
       height: 90px; } }
@@ -52,7 +53,7 @@ nav a {
 .profile {
   height: 50px;
   width: 50px;
-  border-radius: 80px;
+  border-radius: 50%;
   position: relative;
   top: 15px; }
   @media screen and (max-width: 700px) {

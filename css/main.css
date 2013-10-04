@@ -26,7 +26,7 @@ nav a {
   position: relative;
   top: 15px;
   border-bottom: none;
-  font-family: "rooney-web", sans-serif;
+  font-family: "rooney-sans", sans-serif;
   font-weight: 300; }
   nav a:hover, nav a:active {
     border-bottom: none;
@@ -71,7 +71,10 @@ footer {
   footer h3, footer a {
     font-size: 14px;
     font-weight: 300;
-    color: #c4c4c4; }
+    color: #c4c4c4;
+    border-bottom: none; }
+  footer a:hover {
+    border-bottom: 1px solid #dedede; }
   @media screen and (max-width: 700px) {
     footer {
       width: 450px; } }
@@ -87,7 +90,7 @@ body {
   font-style: normal; }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   color: #00ad6e;
   line-height: 2px; }

@@ -1,5 +1,6 @@
 $white: #fff
 $black: #0a0a0a
+$lightgray: #c4c4c4
 $gray: #5f5f5f
 $green: #00ad6e
 $darkblue: #2F3440
@@ -31,7 +32,7 @@ nav a
 	position: relative
 	top: 15px
 	border-bottom: none
-	font-family: "rooney-web",sans-serif
+	font-family: "rooney-sans",sans-serif
 	font-weight: 300
 	&:hover, &:active
 		border-bottom: none
@@ -68,7 +69,10 @@ footer
 	h3,a
 		font-size: 14px
 		font-weight: 300
-		color: #c4c4c4
+		color: $lightgray
+		border-bottom: none
+	a:hover
+		border-bottom: 1px solid lighten($lightgray, 10%)
 	@media screen and (max-width: $mediumscreen)
 		width: 450px
 	@media screen and (max-width: $smallscreen)

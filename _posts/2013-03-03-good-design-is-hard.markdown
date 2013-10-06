@@ -5,14 +5,15 @@ date: 2013-03-03
 ---
 
 
->"You recognize great design when you see it, but creating it yourself is hard."
->[Jarrod Drysdale](https://twitter.com/studiofellow)
+>You recognize great design when you see it, but creating it yourself is hard.
+>
+>— [Jarrod Drysdale](https://twitter.com/studiofellow)
 
 Learning how to create good design is a lot like learning how to play an instrument really well. You can’t just hop into Photoshop, create a new document and expect great things to happen after 2 hours of compounding layers. No one picks up a guitar and knows exactly where to put their fingers to play F Major to stroke the guitar a perfect melody.
 
 ### It Takes Understanding
 
-Find out why some layouts are in a specific hierarchical pattern, why a designer would choose specific kerning and bold type, why a designer would make a background picture blurry, why a designer picked specific colors. There’s a melodic structure behind the art.
+Find out why some layouts are in a specific hierarchical pattern, why a designer would choose specific kerning and bold type, why a designer would make a background picture blurry, why a desigtner picked specific colors. There’s a melodic structure behind the art.
 
 ### It Takes Practice
 

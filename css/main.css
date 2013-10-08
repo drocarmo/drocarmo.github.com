@@ -274,8 +274,8 @@ p {
     font-weight: 400; }
   .resume img {
     border-radius: 10px;
-    height: 450px;
-    width: 600px; }
+    height: 450px !important;
+    width: 600px !important; }
     @media screen and (max-width: 700px) {
       .resume img {
         height: 300px;

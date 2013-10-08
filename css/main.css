@@ -154,51 +154,6 @@ p {
   .quote:hover {
     border-bottom: none; }
 
-.social a {
-  margin-right: 70px; }
-  @media screen and (max-width: 700px) {
-    .social a {
-      margin-right: 50px; } }
-  @media screen and (max-width: 500px) {
-    .social a {
-      margin-right: 25px; } }
-
-a.twitter {
-  border-bottom: none; }
-  a.twitter:hover {
-    color: #00aced;
-    border-bottom: none; }
-
-a.insta {
-  border-bottom: none; }
-  a.insta:hover {
-    color: #517fa4;
-    border-bottom: none; }
-
-a.rdio {
-  border-bottom: none; }
-  a.rdio:hover {
-    color: #006ed2;
-    border-bottom: none; }
-
-a.github {
-  border-bottom: none; }
-  a.github:hover {
-    color: #222222;
-    border-bottom: none; }
-
-a.dribbble {
-  border-bottom: none; }
-  a.dribbble:hover {
-    color: #d33b74;
-    border-bottom: none; }
-
-a.svpply {
-  border-bottom: none; }
-  a.svpply:hover {
-    color: #0a0a0a;
-    border-bottom: none; }
-
 .container {
   position: relative;
   text-align: left;
@@ -318,7 +273,9 @@ a.svpply {
   .resume .title {
     font-weight: 400; }
   .resume img {
-    border-radius: 10px; }
+    border-radius: 10px;
+    height: 450px;
+    width: 600px; }
     @media screen and (max-width: 700px) {
       .resume img {
         height: 300px;

@@ -32,11 +32,13 @@ Now, hold on, before you pull out your linkedin profiles, with great resumes of 
 
 What I am trying to say is, there’s enough spark in each one of us to create the most creative creation. That was a lot, and maybe unnecessary, but try to picture it like a ‘think outside the box’ situation:
 
-There’s a box made of steel held shut by nails has tons of gold inside. What would be you're initial approach?
+There’s a box made of steel held shut by nails has tons of gold inside. What would be your initial approach?
 
 >99%  -> Continuously tries to break the box open by throwing it on the ground and walls. 
 >
 >1% -> Spots a wrench up in the top shelf and uses the box as a lift to get it.
+
+***
 
 We are all liars, hindering our potential by doing simply what we’ve been programmed to do. The fear of no longer knowing if it will workout is one of the greatest fears I’ve grown to know. What could go wrong if there is no cement to land on and no ceiling to touch?
 

@@ -1,15 +1,19 @@
 @import base.sass
 @import typography.sass
+@import imagery.sass
+@import menu.sass
 
 .container
 	position: relative
 	text-align: left
-	margin: 100px auto
+	margin: 70px auto
 	width: 600px
 	@media screen and (max-width: $mediumscreen)
 		width: 450px
+		margin: 50px auto
 	@media screen and (max-width: $smallscreen)
 		width: 300px
+		margin: 40px auto
 	@media screen and (max-width: $tinyscreen)
 		width: 250px
 .posts
@@ -49,16 +53,21 @@
 	@media screen and (max-width: $tinyscreen)
 		padding-top: 0px
 		padding-bottom: 80px
-	img
+	.images
+		display: inline-block
 		border-radius: 5px
+		height: 399px
+		width: 600px
+		background-size: 100%
+		background-repeat: no-repeat
 		@media screen and (max-width: $mediumscreen)
-			height: 300px
+			height: 299px
 			width: 450px
 		@media screen and (max-width: $smallscreen)
-			height: 200px
+			height: 199px
 			width: 300px
 		@media screen and (max-width: $tinyscreen)
-			height: 160px
+			height: 159px
 			width: 250px
 		&:hover
 			opacity: 0.9
@@ -71,16 +80,21 @@
 	@media screen and (max-width: $tinyscreen)
 		padding-top: 0px
 		padding-bottom: 80px
-	img
-		padding-right: 15px
-		padding-bottom: 15px
+	.images
+		display: inline-block
+		margin-right: 15px
+		margin-bottom: 15px
+		height: 280px
+		width: 160px
+		background-size: 100%
+		background-repeat: no-repeat
 		@media screen and (max-width: $mediumscreen)
 			height: 260px
 			width: 160px
 		@media screen and (max-width: $smallscreen)
 			height: 200px
 			width: 125px
-			padding-right: 10px
+			margin-right: 10px
 		@media screen and (max-width: $tinyscreen)
 			height: 160px
 			width: 105px
@@ -89,15 +103,18 @@
 		&:hover
 			border-bottom: none
 			opacity: 0.9
-.resume
+.projects
 	padding-top: 40px
 	padding-bottom: 150px
 	.title
 		font-weight: 400
-	img
+	.projectimages
 		border-radius: 10px
-		height: 450px !important
-		width: 600px !important
+		display: block
+		height: 450px
+		width: 600px
+		background-size: 100%
+		background-repeat: no-repeat
 		@media screen and (max-width: $mediumscreen)
 			height: 300px
 			width: 400px
@@ -115,14 +132,3 @@
 	@media screen and (max-width: $tinyscreen)
 		padding-top: 0px
 		padding-bottom: 80px
-
-a
-	text-decoration: none
-	text-transform: none
-	color: lighten($black, 30%)
-	border-bottom: 1px solid #00AD6E
-	&:hover
-		border-bottom: 1px solid lighten($green, 10%)
-blockquote
-	padding-left: 18px
-	border-left: 1px solid lighten($lightgray, 10%)

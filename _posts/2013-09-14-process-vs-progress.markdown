@@ -31,6 +31,8 @@ In the book _Mere Christianity_, C.S Lewis does an excellent job of illustrating
 
 No professional athlete gives his worst effort in the 4th quarter of a game. We need to become sharper and sharper in the craft of our process as we progress towards the end result of the product we are building. If that means going back to your typesets and spending an extra day testing different typefaces for simply three navigation links then so be it. I'm not saying go unnecessarily crazy on details, even though any designer would say the contrary, I'm saying find a balance between improving your product and rushing your product.
 
+***
+
 [Ryan Singer](https://twitter.com/rjs) nails the coffin on [Quora](http://www.quora.com/Internet-Startups/Should-I-focus-on-a-good-user-experience-or-push-something-out-quickly/answer/Ryan-Singer?srid=2BA&share=1):
 
 >Every feature can be better. It doesn't have to be perfect the first time. But each element should be solid and well thought-out before you move on to the next.

@@ -117,12 +117,12 @@ a {
   text-decoration: none;
   text-transform: none;
   color: #333333;
-  border-bottom: 2px solid #333333; }
+  border-bottom: 1px solid #333333; }
   a:hover {
-    border-bottom: 2px solid #00c77e; }
+    border-bottom: 1px solid #00c77e; }
   @media screen and (max-width: 500px) {
     a {
-      border-bottom: 2px solid #333333; } }
+      border-bottom: 1px solid #333333; } }
 
 blockquote {
   padding-left: 18px;

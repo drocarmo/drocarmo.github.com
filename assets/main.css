@@ -124,11 +124,6 @@ a {
     a {
       border-bottom: 3px solid #333333; } }
 
-.quote {
-  border-bottom: none; }
-  .quote:hover {
-    border-bottom: none; }
-
 blockquote {
   padding-left: 18px;
   border-left: 1px solid #e8e8e8; }
@@ -220,9 +215,6 @@ hr:after {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  @media screen and (max-width: 500px) {
-    .bt-menu-trigger span {
-      height: 5%; } }
 
 .bt-menu-open .bt-menu-trigger span {
   background-color: #00ad6e; }
@@ -279,7 +271,7 @@ hr:after {
 .bt-menu ul li {
   display: inline-block;
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 50px;
   height: 50px;
   line-height: 90px;
   opacity: 0;
@@ -289,7 +281,7 @@ hr:after {
   transform: translate3d(0, 100%, 0); }
   @media screen and (max-width: 500px) {
     .bt-menu ul li {
-      padding-left: 10px;
+      padding-left: 20px;
       line-height: 30px; } }
 
 .bt-menu.bt-menu-open ul li {
@@ -313,7 +305,7 @@ hr:after {
   font-weight: 300; }
   .bt-menu ul li a:hover, .bt-menu ul li a:active {
     border-bottom: none;
-    color: #cecece; }
+    color: #00ad6e; }
   @media screen and (max-width: 700px) {
     .bt-menu ul li a {
       font-size: 12px;
@@ -331,11 +323,11 @@ hr:after {
   @media screen and (max-width: 700px) {
     .container {
       width: 450px;
-      margin: 50px auto; } }
+      margin: 40px auto; } }
   @media screen and (max-width: 500px) {
     .container {
       width: 300px;
-      margin: 40px auto; } }
+      margin: 20px auto; } }
   @media screen and (max-width: 300px) {
     .container {
       width: 250px; } }

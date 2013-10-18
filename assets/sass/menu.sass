@@ -44,8 +44,6 @@
 	-moz-user-select: none
 	-ms-user-select: none
 	user-select: none
-	@media screen and (max-width: $smallscreen)
-		height: 5%
 
 .bt-menu-open .bt-menu-trigger span
 	background-color: $green
@@ -102,7 +100,7 @@
 .bt-menu ul li
 	display: inline-block
 	margin: 0 auto
-	padding-left: 40px
+	padding-left: 50px
 	height: 50px
 	line-height: 90px
 	opacity: 0
@@ -111,7 +109,7 @@
 	-webkit-transform: translate3d(0,100%,0)
 	transform: translate3d(0,100%,0)
 	@media screen and (max-width: $smallscreen)
-		padding-left: 10px
+		padding-left: 20px
 		line-height: 30px
 
 .bt-menu.bt-menu-open ul li
@@ -135,7 +133,7 @@
 	font-weight: 300
 	&:hover, &:active
 		border-bottom: none
-		color: $lightgray
+		color: $green
 	@media screen and (max-width: $mediumscreen)
 		font-size: 12px	
 		letter-spacing: 4px

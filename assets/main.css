@@ -16,7 +16,7 @@ header {
   @media screen and (max-width: 700px) {
     header {
       height: 90px; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     header {
       height: 80px; } }
   @media screen and (max-width: 300px) {
@@ -38,7 +38,7 @@ footer {
   @media screen and (max-width: 700px) {
     footer {
       width: 450px; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     footer {
       width: 300px; } }
   @media screen and (max-width: 300px) {
@@ -120,7 +120,7 @@ a {
   border-bottom: 1px solid #333333; }
   a:hover {
     border-bottom: 1px solid #00c77e; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     a {
       border-bottom: 1px solid #333333; } }
 
@@ -279,7 +279,7 @@ hr:after {
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0); }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .bt-menu ul li {
       padding-left: 20px;
       line-height: 30px; } }
@@ -310,7 +310,7 @@ hr:after {
     .bt-menu ul li a {
       font-size: 12px;
       letter-spacing: 4px; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .bt-menu ul li a {
       font-size: 11px;
       letter-spacing: 3px; } }
@@ -324,7 +324,7 @@ hr:after {
     .container {
       width: 450px;
       margin: 40px auto; } }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .container {
       width: 300px;
       margin: 20px auto; } }
@@ -334,7 +334,7 @@ hr:after {
 
 .posts {
   padding-top: 40px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .posts {
       padding-top: 5px; } }
   @media screen and (max-width: 300px) {
@@ -344,7 +344,7 @@ hr:after {
 .post {
   padding-top: 40px;
   padding-bottom: 150px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .post {
       padding-top: 5px;
       padding-bottom: 100px; } }
@@ -353,18 +353,17 @@ hr:after {
       padding-top: 0px;
       padding-bottom: 80px; } }
   .post img {
-    border-radius: 10px; }
+    border-radius: 5px;
+    height: 100%;
+    width: 600px; }
     @media screen and (max-width: 700px) {
       .post img {
-        height: 300px;
         width: 450px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       .post img {
-        height: 200px;
         width: 300px; } }
     @media screen and (max-width: 300px) {
       .post img {
-        height: 160px;
         width: 250px; } }
     .post img:hover {
       opacity: 0.9; }
@@ -372,7 +371,7 @@ hr:after {
 .about {
   padding-top: 40px;
   padding-bottom: 150px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .about {
       padding-top: 5px;
       padding-bottom: 100px; } }
@@ -391,7 +390,7 @@ hr:after {
       .about .images {
         height: 299px;
         width: 450px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       .about .images {
         height: 199px;
         width: 300px; } }
@@ -405,7 +404,7 @@ hr:after {
 .books {
   padding-top: 40px;
   padding-bottom: 150px; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .books {
       padding-top: 5px;
       padding-bottom: 100px; } }
@@ -425,7 +424,7 @@ hr:after {
       .books .images {
         height: 260px;
         width: 160px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       .books .images {
         height: 200px;
         width: 125px;
@@ -456,7 +455,7 @@ hr:after {
       .projects .projectimages {
         height: 300px;
         width: 400px; } }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       .projects .projectimages {
         height: 200px;
         width: 267px; } }
@@ -466,7 +465,7 @@ hr:after {
         width: 212px; } }
     .projects .projectimages:hover {
       opacity: 0.9; }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     .projects {
       padding-top: 5px;
       padding-bottom: 100px; } }

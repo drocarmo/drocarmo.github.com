@@ -43,4 +43,4 @@ When asked what's next for Max, he replied "I'm going to continue to help people
 
 We can't wait to see his next endeavor. Max loves philosophy and games. Discuss how games have played a role in your world view [@MaxTemkin](https://twitter.com/MaxTemkin )‎ and keep an eye out for his next project on his website.
 
-[(Read it on the CreativeMornings Chicago chapter!)](http://creativemornings.com/blog-posts/828)
+([Read it on the CreativeMornings Chicago chapter!](http://creativemornings.com/blog-posts/828), also credit to Jeremy Mumenthaler for some content help.)

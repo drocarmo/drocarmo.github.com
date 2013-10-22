@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div class="post">
-	<h2>{{ page.title }}</h2>
+	<h2 clas>{{ page.title }}</h2>
 	<h4>{{ page.date | date_to_long_string }}</h4>	
 	{{ content }}
+    <center><a href="{{ base.url }}/writing"><p>↫</p></a></center>
 </div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">

@@ -1,11 +1,11 @@
-auto: true
+name: Pedro Carmo
+description: 'Digital Designer living in Chicago'
+author: Pedro Carmo - @drocarmo
 
-name: Personal Site
 pygments: true
 
 include:
 - .htaccess
-- webfonts
 
 exlude:
 - assets

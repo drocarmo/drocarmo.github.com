@@ -148,6 +148,9 @@ hr:after {
       padding-top: 5px;
       padding-bottom: 5px; } }
 
+.center {
+  text-align: center; }
+
 .info-main {
   background: url(images/info.jpeg); }
 

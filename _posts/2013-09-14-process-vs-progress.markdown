@@ -21,11 +21,11 @@ We have all heard that cheesy quote, "it's not about the desination, but it's ab
 
 In the book _Mere Christianity_, C.S Lewis does an excellent job of illustrating how progress is directly impacted by the process:
 
->We all want progress. But progress means getting nearer to the place where you want to be. And if you have taken a wrong turning, then to go forward does not get you any nearer. If you are on the wrong road, progress means doing an about-turn and walking back to the right road; and in that case the man who turns back sooniest is the most progressive man.
+>“We all want progress. But progress means getting nearer to the place where you want to be. And if you have taken a wrong turning, then to go forward does not get you any nearer. If you are on the wrong road, progress means doing an about-turn and walking back to the right road; and in that case the man who turns back sooniest is the most progressive man.”
 
 ### All Hype Shawty
 
-"We all want progress", C.S Lewis says. We all want to build the next Twitter, or the next Medium or whatever it looks like to you. In the time I've been in the tech industry, I've noticed companies and creatives get really hyped up in the initials stages of the process but as they progress they get sloppy and sort of rush towards the finish line. We've all bought into this "it ain't shit 'til it's shipped" mentality. So we rush natural parts of product development only to get an approval five-high from Dave at that tech conference this weekend.
+“We all want progress”, C.S Lewis says. We all want to build the next Twitter, or the next Medium or whatever it looks like to you. In the time I've been in the tech industry, I've noticed companies and creatives get really hyped up in the initials stages of the process but as they progress they get sloppy and sort of rush towards the finish line. We've all bought into this “it ain't shit 'til it's shipped” mentality. So we rush natural parts of product development only to get an approval five-high from Dave at that tech conference this weekend.
 
 ### 4th Quarter
 
@@ -35,6 +35,6 @@ No professional athlete gives his worst effort in the 4th quarter of a game. We 
 
 [Ryan Singer](https://twitter.com/rjs) nails the coffin on [Quora](http://www.quora.com/Internet-Startups/Should-I-focus-on-a-good-user-experience-or-push-something-out-quickly/answer/Ryan-Singer?srid=2BA&share=1):
 
->Every feature can be better. It doesn't have to be perfect the first time. But each element should be solid and well thought-out before you move on to the next.
+>“Every feature can be better. It doesn't have to be perfect the first time. But each element should be solid and well thought-out before you move on to the next.”
 
 Therefore, the process is not an enemy or opponent of progress. They go hand in hand. I believe a beautiful and successful product is always the consequence of the understanding and balance between the process and the progress.

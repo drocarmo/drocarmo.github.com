@@ -6,7 +6,7 @@ date: 2013-10-06
 
 It's a human desideratum to make mistakes, to experience failure. Without it, we risk never experiencing true iterative growth.
 
->If you're not making mistakes, then you're not doing anything. I'm positive that a doer makes mistakes.
+>“If you're not making mistakes, then you're not doing anything. I'm positive that a doer makes mistakes.”
 >
 >— John Wooden
 

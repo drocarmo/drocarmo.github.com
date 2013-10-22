@@ -5,7 +5,7 @@ date: 2013-03-03
 ---
 
 
->You recognize great design when you see it, but creating it yourself is hard.
+>“You recognize great design when you see it, but creating it yourself is hard.”
 >
 >— [Jarrod Drysdale](https://twitter.com/studiofellow)
 

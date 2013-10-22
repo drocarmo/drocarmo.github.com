@@ -28,7 +28,7 @@ Conclusion: 99.9% of people lie about their creativity.
 
 Now, hold on, before you pull out your linkedin profiles, with great resumes of what you’ve accomplished, just hear me out. The 0.1% are those whose pursuit is much similar to Salvador Dali’s quote:
 
-> "Have no fear of perfection, you’ll never reach it."
+>“Have no fear of perfection, you’ll never reach it.”
 
 What I am trying to say is, there’s enough spark in each one of us to create the most creative creation. That was a lot, and maybe unnecessary, but try to picture it like a ‘think outside the box’ situation:
 

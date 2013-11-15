@@ -1,3 +1,33 @@
+// Social Media Components
+
+a
+	&.twitter
+		color: $twitter
+		border-bottom: 1px solid $twitter
+		&:hover,&:active
+			color: $twitterhover
+			border-bottom: 1px solid $twitterhover
+	&.quora
+		color: $quora
+		border-bottom: 1px solid $quora
+		&:hover,&:active
+			color: $quorahover
+			border-bottom: 1px solid $quorahover
+	&.github
+		color: $github
+		border-bottom: 1px solid $github
+		&:hover,&:active
+			color: $githubhover
+			border-bottom: 1px solid $githubhover
+	&.dribbble
+		color: $dribbble
+		border-bottom: 1px solid $dribbble
+		&:hover,&:active
+			color: $dribbblehover
+			border-bottom: 1px solid $dribbblehover
+
+// Writing Components
+
 .posts
 	padding-top: 40px
 	@media screen and (max-width: $smallscreen)
@@ -52,6 +82,9 @@
 			width: 250px
 		&:hover
 			opacity: 0.9
+
+// Book Page Components
+
 .books
 	padding-top: 40px
 	padding-bottom: 150px
@@ -84,32 +117,35 @@
 		&:hover
 			border-bottom: none
 			opacity: 0.9
-.projects
-	padding-top: 40px
-	padding-bottom: 150px
-	.title
-		font-weight: 400
-	.projectimages
-		border-radius: 10px
-		display: block
-		height: 450px
-		width: 600px
-		background-size: 100%
-		background-repeat: no-repeat
-		@media screen and (max-width: $mediumscreen)
-			height: 300px
-			width: 400px
-		@media screen and (max-width: $smallscreen)
-			height: 200px
-			width: 267px
-		@media screen and (max-width: $tinyscreen)
-			height: 160px
-			width: 212px
-		&:hover
-			opacity: 0.9
-	@media screen and (max-width: $smallscreen)
-		padding-top: 5px
-		padding-bottom: 100px
-	@media screen and (max-width: $tinyscreen)
-		padding-top: 0px
-		padding-bottom: 80px
+
+// Project Page Components
+
+// .projects
+// 	padding-top: 40px
+// 	padding-bottom: 150px
+// 	.title
+// 		font-weight: 400
+// 	.projectimages
+// 		border-radius: 10px
+// 		display: block
+// 		height: 450px
+// 		width: 600px
+// 		background-size: 100%
+// 		background-repeat: no-repeat
+// 		@media screen and (max-width: $mediumscreen)
+// 			height: 300px
+// 			width: 400px
+// 		@media screen and (max-width: $smallscreen)
+// 			height: 200px
+// 			width: 267px
+// 		@media screen and (max-width: $tinyscreen)
+// 			height: 160px
+// 			width: 212px
+// 		&:hover
+// 			opacity: 0.9
+// 	@media screen and (max-width: $smallscreen)
+// 		padding-top: 5px
+// 		padding-bottom: 100px
+// 	@media screen and (max-width: $tinyscreen)
+// 		padding-top: 0px
+// 		padding-bottom: 80px

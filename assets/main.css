@@ -344,6 +344,17 @@ footer {
     footer {
       width: 250px; } }
 
+p {
+  text-decoration: none; }
+  p.btn {
+    padding: 10px;
+    border-radius: 5px;
+    color: white; }
+  p.darkblue {
+    background-color: #2f3440; }
+  p.green {
+    background-color: #00ad6e; }
+
 .container {
   position: relative;
   text-align: left;

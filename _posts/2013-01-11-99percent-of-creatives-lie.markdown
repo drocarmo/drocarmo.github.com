@@ -34,7 +34,7 @@ What I am trying to say is, there’s enough spark in each one of us to create t
 
 There’s a box made of steel held shut by nails has tons of gold inside. What would be your initial approach?
 
->99%  -> Continuously tries to break the box open by throwing it on the ground and walls. 
+>99%  -> Continuously tries to break the box open by throwing it on the ground and walls.
 >
 >1% -> Spots a wrench up in the top shelf and uses the box as a lift to get it.
 

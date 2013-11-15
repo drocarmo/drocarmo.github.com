@@ -4,9 +4,8 @@ layout: default
 
 <div class="post">
 	<h2 class="center">{{ page.title }}</h2>
-	<h4 class="center">{{ page.date | date_to_long_string }}</h4>	
+	<h4 class="center">{{ page.date | date_to_long_string }}</h4>
 	{{ content }}
-    <a class="center" href="{{ base.url }}/writing"><p>↫</p></a>
 </div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -22,3 +21,5 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<a class="center" href="{{ base.url }}/writing"><p class="btn green">Back to articles ↫</p></a>

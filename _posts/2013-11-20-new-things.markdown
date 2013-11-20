@@ -22,4 +22,4 @@ After a few meetings and design challenges, I was confident that DevMynd was the
 
 I believe a developer/designer’s role in the world is not only to learn how to better communicate with computers. More importantly, I believe our role is to better understand humanity as a whole and use technology as a medium to solve problems that exist in our lives.
 
-Be on the look out for what we build here at DevMynd. I promise it wil be good.
+Be on the look out for what we build here at DevMynd. I promise it will be good.

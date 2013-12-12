@@ -247,7 +247,8 @@ h4 {
   @media screen and (max-width: 700px) {
     h4 {
       font-size: 11px;
-      letter-spacing: 4px; } }
+      letter-spacing: 4px;
+      margin-top: -10px; } }
 
 p {
   font-size: 20px;
@@ -295,6 +296,11 @@ hr:after {
 
 .center {
   text-align: center; }
+
+code {
+  display: block;
+  padding: 10px;
+  font-family: "droid-sans-mono", sans-serif; }
 
 *,
 *:after,
@@ -625,7 +631,7 @@ a.dribbble {
   color: #333333;
   position: relative;
   border-bottom: none;
-  font-family: "rooney-sans", sans-serif;
+  font-family: "rooney-web", sans-serif;
   font-weight: 600; }
   .bt-menu ul li a:hover, .bt-menu ul li a:active {
     border-bottom: none;

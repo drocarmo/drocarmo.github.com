@@ -395,12 +395,12 @@ a.github {
   a.github:hover, a.github:active {
     color: #2d2d2d;
     border-bottom: 1px solid #2d2d2d; }
-a.dribbble {
-  color: #ea4c89;
-  border-bottom: 1px solid #ea4c89; }
-  a.dribbble:hover, a.dribbble:active {
-    color: #e7357a;
-    border-bottom: 1px solid #e7357a; }
+a.rdio {
+  color: #006ed2;
+  border-bottom: 1px solid #006ed2; }
+  a.rdio:hover, a.rdio:active {
+    color: #0061b9;
+    border-bottom: 1px solid #0061b9; }
 
 .posts {
   padding-top: 40px; }

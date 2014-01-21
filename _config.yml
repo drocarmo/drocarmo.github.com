@@ -1,5 +1,5 @@
 name: Pedro Carmo
-description: 'Digital Designer living in Chicago'
+description: 'Product Designer'
 author: Pedro Carmo - @drocarmo
 
 pygments: true
@@ -15,4 +15,4 @@ exlude:
 keep_files:
 - .git
 
-permalink: /writing/:title
+permalink: /:title

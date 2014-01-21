@@ -1,0 +1,47 @@
+// Social Media palettes
+
+$twitter: #00aced;
+$twitterhover: #0099d4;
+$github: #333333;
+$githubhover: #2d2d2d;
+$dribbble: #ea4c89;
+$dribbblehover: #e7357a;
+$rdio: #006ed2;
+$rdiohover: #0061b9;
+
+// Social Media Components
+
+a {
+  &.twitter {
+    color: $twitter;
+    border-bottom: 1px solid $twitter;
+    &:hover,&:active {
+      color: $twitterhover;
+      border-bottom: 1px solid $twitterhover;
+    }
+  }
+  &.github {
+    color: $github;
+    border-bottom: 1px solid $github;
+    &:hover,&:active {
+      color: $githubhover;
+      border-bottom: 1px solid $githubhover;
+    }
+  }
+  &.dribbble {
+    color: $dribbble;
+    border-bottom: 1px solid $dribbble;
+    &:hover,&:active {
+      color: $dribbblehover;
+      border-bottom: 1px solid $dribbblehover;
+    }
+  }
+  &.rdio {
+    color: $rdio;
+    border-bottom: 1px solid $rdio;
+    &:hover,&:active {
+      color: $rdiohover;
+      border-bottom: 1px solid $rdiohover;
+    }
+  }
+}

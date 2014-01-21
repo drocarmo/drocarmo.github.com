@@ -1,46 +1,47 @@
-// Blog page styles
+// Blog buttons
+
+// Blog button mixin
+
+@mixin blog-button {
+  a {
+    font-size: 0.875em;
+    text-decoration: none;
+    background-color: $color-light-gray;
+    border: none;
+    border-radius: 5px;
+    color: $color-gray;
+    padding: 10px;
+    &:hover,&:active {
+      background-color: darken($color-light-gray,3%);
+    }
+  }
+}
+
+// Button styles
 
 .back {
+  z-index: 1000;
   position: absolute;
   top: 20px;
   left: 2%;
   @include screen-medium {
     top: 30px;
   }
-  a {
-    font-size: 0.875em;
-    text-decoration: none;
-    background-color: $color-light-gray;
-    border: none;
-    border-radius: 5px;
-    color: $color-gray;
-    padding: 10px;
-    &:hover,&:active {
-      background-color: darken($color-light-gray,3%);
-    }
-  }
+  @include blog-button;
 }
 
 .next {
+  z-index: 1000;
   position: absolute;
   top: 20px;
   right: 2%;
   @include screen-large {
     top: 30px;
   }
-  a {
-    font-size: 0.875em;
-    text-decoration: none;
-    background-color: $color-light-gray;
-    border: none;
-    border-radius: 5px;
-    color: $color-gray;
-    padding: 10px;
-    &:hover,&:active {
-      background-color: darken($color-light-gray,3%);
-    }
-  }
+  @include blog-button;
 }
+
+// Blog styles
 
 .blog {
   padding-top: 80px;

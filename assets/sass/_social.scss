@@ -1,47 +1,47 @@
 // Social Media palettes
 
-$twitter: #00aced;
-$twitterhover: #0099d4;
-$github: #333333;
-$githubhover: #2d2d2d;
+$behance: #1769ff;
+$behancehover: darken($behance,10%);
 $dribbble: #ea4c89;
-$dribbblehover: #e7357a;
+$dribbblehover: darken($dribbble,10%);
+$github: #333333;
+$githubhover: darken($github,10%);
 $rdio: #006ed2;
-$rdiohover: #0061b9;
+$rdiohover: darken($rdio,10%);
+$twitter: #00aced;
+$twitterhover: darken($twitter,10%);
 
 // Social Media Components
 
 a {
   &.twitter {
     color: $twitter;
-    border-bottom: 1px solid $twitter;
     &:hover,&:active {
       color: $twitterhover;
-      border-bottom: 1px solid $twitterhover;
     }
   }
   &.github {
     color: $github;
-    border-bottom: 1px solid $github;
     &:hover,&:active {
       color: $githubhover;
-      border-bottom: 1px solid $githubhover;
     }
   }
   &.dribbble {
     color: $dribbble;
-    border-bottom: 1px solid $dribbble;
     &:hover,&:active {
       color: $dribbblehover;
-      border-bottom: 1px solid $dribbblehover;
+    }
+  }
+  &.behance {
+    color: $behance;
+    &:hover,&:active {
+      color: $behancehover;
     }
   }
   &.rdio {
     color: $rdio;
-    border-bottom: 1px solid $rdio;
     &:hover,&:active {
       color: $rdiohover;
-      border-bottom: 1px solid $rdiohover;
     }
   }
 }

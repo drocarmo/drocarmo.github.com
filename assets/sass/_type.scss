@@ -74,9 +74,9 @@ a {
   text-decoration: none;
   text-transform: none;
   color: $color-black;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px solid darken($color-light-gray,5%);
   &:hover,&:active {
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: 1px solid $color-gray;
   }
 }
 

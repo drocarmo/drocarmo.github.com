@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Redesigning DevMynd"
-date: 2014-01-24
+date: 2014-02-04
 ---
 
 ![Devmynd_Redesign](https://devmynd-production-uploads.s3.amazonaws.com/uploads/photos/22bdac9d-399b-4641-a015-f2a90d9eb5ac.png)

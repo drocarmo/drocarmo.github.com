@@ -212,39 +212,39 @@ table {
       width: 700px; } }
 
 body {
-  font-family: "rooney-web", sans-serif;
-  font-style: normal; }
-
-h1 {
-  font-size: 1.625em;
-  font-weight: 500;
+  font-family: "menlo", monospace;
+  font-style: normal;
   color: #333333;
   line-height: 1.65; }
+
+h1 {
+  font-size: 26px;
+  font-family: "rooney-web", Helvetica Neue, sans-serif;
+  font-weight: 500; }
   @media screen and (min-width: 700px) {
     h1 {
-      font-size: 1.750em; } }
+      font-size: 28px; } }
 
 h2 {
-  font-size: 1.500em;
-  font-weight: 500;
-  color: #1464ad;
-  line-height: 1.65; }
+  font-size: 24px;
+  font-family: "rooney-web", Helvetica Neue, sans-serif;
+  font-weight: 500; }
 
 h3 {
-  font-size: 1.250em;
+  font-size: 20px;
+  font-family: "rooney-web", Helvetica Neue, sans-serif;
   font-weight: 500;
   color: #4d4d4d; }
   @media screen and (min-width: 700px) {
     h3 {
-      font-size: 1.375em; } }
+      font-size: 22px; } }
 
 h4 {
-  font-family: "minion-pro", sans-serif;
-  font-style: italic;
+  font-family: "rooney-web", Helvetica Neue, sans-serif;
   font-weight: 100;
-  font-size: 0.750em;
+  font-size: 12px;
   letter-spacing: 4px;
-  color: #333333;
+  color: gainsboro;
   padding-bottom: 10px;
   padding-left: 2px;
   margin-top: -10px; }
@@ -254,14 +254,12 @@ h4 {
       margin-top: -15px; } }
 
 p {
-  font-size: 1.125em;
+  font-size: 16px;
   font-weight: 300;
-  color: #333333;
-  line-height: 1.65;
   word-wrap: break-word; }
   @media screen and (min-width: 700px) {
     p {
-      font-size: 1.250em; } }
+      font-size: 18px; } }
 
 a {
   text-decoration: none;
@@ -269,7 +267,7 @@ a {
   color: #333333;
   border-bottom: 1px solid gainsboro; }
   a:hover, a:active {
-    border-bottom: 1px solid #aaaaaa; }
+    border-color: #c3c3c3; }
 
 blockquote {
   margin: 50px 20px;
@@ -277,25 +275,20 @@ blockquote {
   border-left: 1px solid #e9e9e9; }
 
 hr {
-  border: none; }
+  border: 0;
+  margin: 100px auto;
+  clear: both; }
   hr:after {
     display: block;
     content: "∾";
     text-align: center;
     font-size: 30px;
-    padding: 5px 0px;
+    padding: 5px 0;
     font-weight: 300;
     color: #e9e9e9; }
     @media screen and (min-width: 700px) {
       hr:after {
         font-size: 50px; } }
-
-code {
-  display: block;
-  padding: 10px;
-  font-family: "droid-sans-mono", sans-serif;
-  background: #e9e9e9;
-  border-radius: 5px; }
 
 *,
 *:after,
@@ -310,32 +303,37 @@ code {
   color: white;
   text-shadow: none; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
   margin: 0 auto; }
 
-a.twitter {
-  color: #00aced; }
-  a.twitter:hover, a.twitter:active {
-    color: #0087ba; }
-a.github {
-  color: #333333; }
-  a.github:hover, a.github:active {
-    color: #1a1a1a; }
-a.dribbble {
-  color: #ea4c89; }
-  a.dribbble:hover, a.dribbble:active {
-    color: #e51e6b; }
 a.behance {
   color: #1769ff; }
   a.behance:hover, a.behance:active {
     color: #0050e3; }
+a.dribbble {
+  color: #ea4c89; }
+  a.dribbble:hover, a.dribbble:active {
+    color: #e51e6b; }
+a.github {
+  color: #333333; }
+  a.github:hover, a.github:active {
+    color: #1a1a1a; }
 a.rdio {
   color: #006ed2; }
   a.rdio:hover, a.rdio:active {
     color: #00539f; }
+a.tumblr {
+  color: #32506d; }
+  a.tumblr:hover, a.tumblr:active {
+    color: #22364a; }
+a.twitter {
+  color: #00aced; }
+  a.twitter:hover, a.twitter:active {
+    color: #0087ba; }
 
 .about {
   padding-top: 10px;
@@ -347,21 +345,21 @@ a.rdio {
   .about .head {
     margin-bottom: 200px; }
     .about .head .intro {
-      margin-top: 0px; }
+      margin-top: 0; }
       .about .head .intro h1 {
         float: left;
         width: 100%;
         margin-bottom: -20px; }
         @media screen and (min-width: 700px) {
           .about .head .intro h1 {
-            margin-bottom: -30px;
-            width: 70%; } }
+            margin-bottom: -25px;
+            width: 75%; } }
       .about .head .intro p {
         float: left;
         width: 100%; }
         @media screen and (min-width: 700px) {
           .about .head .intro p {
-            width: 70%; } }
+            width: 75%; } }
     .about .head .images {
       display: none;
       float: right;
@@ -375,7 +373,7 @@ a.rdio {
           width: 100px;
           margin-top: -20px; } }
       .about .head .images:hover {
-        opacity: 0.9; }
+        opacity: .9; }
 
 .posts {
   width: 100%;
@@ -390,10 +388,16 @@ a.rdio {
   width: 100%;
   display: block;
   margin-bottom: 100px; }
+  .projects span {
+    color: gainsboro; }
   @media screen and (min-width: 700px) {
     .projects {
       float: left;
       width: 47%; } }
+
+.contact {
+  color: gainsboro;
+  border-bottom: 0; }
 
 .back {
   z-index: 1000;
@@ -404,10 +408,10 @@ a.rdio {
     .back {
       top: 30px; } }
   .back a {
-    font-size: 0.875em;
+    font-size: .875em;
     text-decoration: none;
     background-color: #e9e9e9;
-    border: none;
+    border: 0;
     border-radius: 5px;
     color: #aaaaaa;
     padding: 10px; }
@@ -423,10 +427,10 @@ a.rdio {
     .next {
       top: 30px; } }
   .next a {
-    font-size: 0.875em;
+    font-size: .875em;
     text-decoration: none;
     background-color: #e9e9e9;
-    border: none;
+    border: 0;
     border-radius: 5px;
     color: #aaaaaa;
     padding: 10px; }
@@ -440,24 +444,59 @@ a.rdio {
     .blog {
       padding-top: 40px;
       padding-bottom: 150px; } }
+  .blog h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #1464ad;
+    line-height: 1.65; }
+    @media screen and (min-width: 700px) {
+      .blog h1 {
+        font-size: 28px; } }
+  .blog h3 {
+    padding: 40px 0; }
   .blog h4 {
     margin-bottom: 50px; }
     @media screen and (min-width: 700px) {
       .blog h4 {
         margin-bottom: 100px; } }
-  .blog h3 {
-    padding: 40px 0px; }
   .blog img {
-    border-radius: 5px;
     width: 100%;
     margin: 0 auto; }
     .blog img:hover {
-      opacity: 0.9; }
+      opacity: .9; }
+  .blog ul {
+    list-style: none; }
+    .blog ul li {
+      text-indent: -20px;
+      font-size: 16px;
+      font-weight: 300;
+      word-wrap: break-word; }
+      @media screen and (min-width: 700px) {
+        .blog ul li {
+          font-size: 18px; } }
+      .blog ul li:before {
+        content: "→";
+        margin-right: 10px;
+        color: #333333; }
   .blog #disqus_thread {
     margin-top: 100px; }
     @media screen and (min-width: 700px) {
       .blog #disqus_thread {
         margin-top: 200px; } }
+
+code {
+  color: #e83943;
+  display: inline;
+  word-wrap: break-word; }
+
+pre {
+  color: #e83943;
+  background-color: #f6f6f6;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+  max-width: auto; }
 
 .info-main {
   background: url(images/info.jpeg) no-repeat center;

@@ -3,45 +3,55 @@
 .about {
   padding-top: 10px;
   padding-bottom: 100px;
+
   @include screen-medium {
     padding-top: 40px;
     padding-bottom: 150px;
   }
+
   .head {
     margin-bottom: 200px;
+
     .intro {
-      margin-top: 0px;
+      margin-top: 0;
+
       h1 {
         float: left;
         width: 100%;
         margin-bottom: -20px;
+
         @include screen-medium {
-          margin-bottom: -30px;
-          width: 70%;
+          margin-bottom: -25px;
+          width: 75%;
         }
       }
+
       p {
         float: left;
         width: 100%;
+
         @include screen-medium {
-          width: 70%;
+          width: 75%;
         }
       }
     }
+
     .images {
       display: none;
       float: right;
       border-radius: 50%;;
       height: 50px;
       width: 50px;
+
       @include screen-medium {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin-top: -20px;
       }
+
       &:hover {
-        opacity: 0.9;
+        opacity: .9;
       }
     }
   }
@@ -50,6 +60,7 @@
 .posts {
   width: 100%;
   display: block;
+
   @include screen-medium {
     float: left;
     width: 47%;
@@ -61,22 +72,18 @@
   width: 100%;
   display: block;
   margin-bottom: 100px;
+
+  span {
+    color: darken($color-light-gray, 5%);
+  }
+
   @include screen-medium {
     float: left;
     width: 47%;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contact {
+  color: darken($color-light-gray, 5%);
+  border-bottom: 0;
+}

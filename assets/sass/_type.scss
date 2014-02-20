@@ -1,8 +1,7 @@
 // Typography variables
 
-$type-rooney: "rooney-web", sans-serif;
-$type-minion: "minion-pro", sans-serif;
-$type-droid: "droid-sans-mono", sans-serif;
+$type-rooney: "rooney-web", Helvetica Neue, sans-serif;
+$type-menlo: "menlo", monospace;
 $type-weight-light: 100;
 $type-weight-regular: 300;
 $type-weight-bold: 500;
@@ -13,46 +12,49 @@ $line-height: 1.65;
 // Document type styles
 
 body {
-  font-family: $type-rooney;
+  font-family: $type-menlo;
   font-style: $type-style-normal;
+  color: $color-black;
+  line-height: $line-height;
 }
 
 h1 {
-  font-size: 1.625em;
+  font-size: 26px;
+  font-family: $type-rooney;
   font-weight: $type-weight-bold;
-  color: $color-black;
-  line-height: $line-height;
+
   @include screen-medium {
-    font-size: 1.750em;
+    font-size: 28px;
   }
 }
 
 h2 {
-  font-size: 1.500em;
+  font-size: 24px;
+  font-family: $type-rooney;
   font-weight: $type-weight-bold;
-  color: $color-blue;
-  line-height: $line-height;
 }
 
 h3 {
-  font-size: 1.250em;
+  font-size: 20px;
+  font-family: $type-rooney;
   font-weight: $type-weight-bold;
   color: lighten($color-black, 10%);
+
   @include screen-medium {
-    font-size: 1.375em;
+    font-size: 22px;
   }
 }
 
 h4 {
-  font-family: $type-minion;
-  font-style: $type-style-italic;
+  font-family: $type-rooney;
   font-weight: $type-weight-light;
-  font-size: 0.750em;
+  font-size: 12px;
   letter-spacing: 4px;
-  color: $color-black;
+  color: darken($color-light-gray, 5%);
   padding-bottom: 10px;
   padding-left: 2px;
   margin-top: -10px;
+
   @include screen-medium {
     letter-spacing: 5px;
     margin-top: -15px;
@@ -60,13 +62,12 @@ h4 {
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 16px;
   font-weight: $type-weight-regular;
-  color: $color-black;
-  line-height: $line-height;
   word-wrap: break-word;
+
   @include screen-medium {
-    font-size: 1.250em;
+    font-size: 18px;
   }
 }
 
@@ -74,9 +75,11 @@ a {
   text-decoration: none;
   text-transform: none;
   color: $color-black;
-  border-bottom: 1px solid darken($color-light-gray,5%);
-  &:hover,&:active {
-    border-bottom: 1px solid $color-gray;
+  border-bottom: 1px solid darken($color-light-gray, 5%);
+
+  &:hover,
+  &:active {
+    border-color: darken($color-light-gray, 15%);
   }
 }
 
@@ -87,26 +90,21 @@ blockquote {
 }
 
 hr {
-  border: none;
+  border: 0;
+  margin: 100px auto;
+  clear: both;
+
   &:after {
     display: block;
     content: "∾";
     text-align: center;
     font-size: 30px;
-    padding: 5px 0px;
+    padding: 5px 0;
     font-weight: $type-weight-regular;
     color: $color-light-gray;
+
     @include screen-medium {
       font-size: 50px;
     }
   }
 }
-
-code {
-  display: block;
-  padding: 10px;
-  font-family: $type-droid;
-  background: $color-light-gray;
-  border-radius: 5px;
-}
-

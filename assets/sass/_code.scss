@@ -1,7 +1,15 @@
 code {
-  display: block;
+  color: $color-red;
+  display: inline;
+  word-wrap: break-word;
+}
+
+pre {
+  color: $color-red;
+  background-color: lighten($color-light-gray, 5%);
   padding: 10px;
-  font-family: $type-droid;
-  background: $color-light-gray;
-  border-radius: 5px;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+  max-width: auto;
 }

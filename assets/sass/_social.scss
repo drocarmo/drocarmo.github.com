@@ -1,47 +1,32 @@
 // Social Media palettes
 
 $behance: #1769ff;
-$behancehover: darken($behance,10%);
 $dribbble: #ea4c89;
-$dribbblehover: darken($dribbble,10%);
-$github: #333333;
-$githubhover: darken($github,10%);
+$github: #333;
 $rdio: #006ed2;
-$rdiohover: darken($rdio,10%);
+$tumblr: #32506d;
 $twitter: #00aced;
-$twitterhover: darken($twitter,10%);
+
+// Social Media Mixin
+
+@mixin social($name, $color) {
+  &.#{$name} {
+    color: $color;
+
+    &:hover,
+    &:active {
+      color: darken($color, 10%);
+    }
+  }
+}
 
 // Social Media Components
 
 a {
-  &.twitter {
-    color: $twitter;
-    &:hover,&:active {
-      color: $twitterhover;
-    }
-  }
-  &.github {
-    color: $github;
-    &:hover,&:active {
-      color: $githubhover;
-    }
-  }
-  &.dribbble {
-    color: $dribbble;
-    &:hover,&:active {
-      color: $dribbblehover;
-    }
-  }
-  &.behance {
-    color: $behance;
-    &:hover,&:active {
-      color: $behancehover;
-    }
-  }
-  &.rdio {
-    color: $rdio;
-    &:hover,&:active {
-      color: $rdiohover;
-    }
-  }
+  @include social(behance, $behance);
+  @include social(dribbble, $dribbble);
+  @include social(github, $github);
+  @include social(rdio, $rdio);
+  @include social(tumblr, $tumblr);
+  @include social(twitter, $twitter);
 }

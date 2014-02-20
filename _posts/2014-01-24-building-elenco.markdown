@@ -16,32 +16,34 @@ TJ and I did some research into what Chrome actually needs from our app to parse
 
 It looks something like this:
 
-    {
+```
+{
 
-        "manifest_version": 2,
-        "name": "Elenco",
-        "description":"Elenco helps you stay on track, with every new tab.",
-        "version":"0.1",
-        "permissions": [
-            "storage"
-        ],
+    "manifest_version": 2,
+    "name": "Elenco",
+    "description":"Elenco helps you stay on track",
+    "version":"0.1",
+    "permissions": [
+        "storage"
+    ],
 
-       "icons": {
-            "16":"/assets/images/icon-16.png",
-            "48":"/assets/images/icon-48.png",
-            "128":"/assets/images/icon-128.png"
-        },
+   "icons": {
+        "16":"/assets/images/icon-16.png",
+        "48":"/assets/images/icon-48.png",
+        "128":"/assets/images/icon-128.png"
+    },
 
-        "browser_action": {
-            "default_title":"Elenco",
-            "default_icon":"/assets/images/icon.png"
-        },
+    "browser_action": {
+        "default_title":"Elenco",
+        "default_icon":"/assets/images/icon.png"
+    },
 
-        "chrome_url_overrides": {
-            "newtab":"index.html"
-        }
-
+    "chrome_url_overrides": {
+        "newtab":"index.html"
     }
+
+}
+```
 
 As you can see, I’m telling chrome two important things: allow permission for local storage, and override every new tab with Elenco’s interface. The rest is up to us. I built the front-end interface while TJ cranked out all the heavy API lifting.
 

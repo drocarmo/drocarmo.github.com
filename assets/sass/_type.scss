@@ -4,8 +4,8 @@ $type-rooney: "rooney-web", Helvetica Neue, sans-serif;
 $type-rooney-sans: "rooney-sans", Helvetica Neue, sans-serif;
 $type-menlo: Menlo, monospace;
 $type-weight-light: 300;
-$type-weight-regular: 500;
-$type-weight-bold: 400;
+$type-weight-regular: 400;
+$type-weight-bold: 500;
 $type-style-italic: italic;
 $type-style-normal: normal;
 $line-height: 1.65;
@@ -31,12 +31,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: $type-weight-regular;
+  font-weight: $type-weight-bold;
 }
 
 h3 {
   font-family: $type-rooney-sans;
-  font-weight: $type-weight-bold;
+  font-weight: $type-weight-regular;
   font-size: 20px;
   color: lighten($color-black, 10%);
 
@@ -71,6 +71,10 @@ p {
   }
 }
 
+strong {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   text-transform: none;
@@ -100,7 +104,7 @@ hr {
     text-align: center;
     font-size: 30px;
     padding: 5px 0;
-    font-weight: $type-weight-regular;
+    font-weight: $type-weight-bold;
     color: $color-light-gray;
 
     @include screen-medium {

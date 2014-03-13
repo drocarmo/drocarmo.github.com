@@ -215,12 +215,12 @@ body {
   font-family: "rooney-web", Helvetica Neue, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #333333;
+  color: #383838;
   line-height: 1.65; }
 
 h1 {
   font-size: 26px;
-  font-weight: 500; }
+  font-weight: 400; }
   @media screen and (min-width: 700px) {
     h1 {
       font-size: 28px; } }
@@ -233,7 +233,7 @@ h3 {
   font-family: "rooney-sans", Helvetica Neue, sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #4d4d4d; }
+  color: #525252; }
   @media screen and (min-width: 700px) {
     h3 {
       font-size: 22px; } }
@@ -260,10 +260,13 @@ p {
     p {
       font-size: 18px; } }
 
+strong {
+  font-weight: 400; }
+
 a {
   text-decoration: none;
   text-transform: none;
-  color: #333333;
+  color: #383838;
   border-bottom: 1px solid gainsboro; }
   a:hover, a:active {
     border-color: #c3c3c3; }
@@ -298,7 +301,7 @@ hr {
   position: relative; }
 
 ::selection {
-  background: #333333;
+  background: #383838;
   color: white;
   text-shadow: none; }
 
@@ -410,13 +413,13 @@ a.twitter {
   .back a {
     font-size: .875em;
     text-decoration: none;
-    background-color: #e9e9e9;
-    border: 0;
-    border-radius: 4px;
+    border: 1px solid #aaaaaa;
     color: #aaaaaa;
+    border-radius: 4px;
     padding: 10px; }
     .back a:hover, .back a:active {
-      background-color: #e1e1e1; }
+      border: 1px solid #383838;
+      color: #383838; }
 
 .next {
   z-index: 1000;
@@ -429,13 +432,13 @@ a.twitter {
   .next a {
     font-size: .875em;
     text-decoration: none;
-    background-color: #e9e9e9;
-    border: 0;
-    border-radius: 4px;
+    border: 1px solid #aaaaaa;
     color: #aaaaaa;
+    border-radius: 4px;
     padding: 10px; }
     .next a:hover, .next a:active {
-      background-color: #e1e1e1; }
+      border: 1px solid #383838;
+      color: #383838; }
 
 .blog {
   padding-top: 80px;
@@ -444,13 +447,6 @@ a.twitter {
     .blog {
       padding-top: 40px;
       padding-bottom: 150px; } }
-  .blog h1 {
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1.65; }
-    @media screen and (min-width: 700px) {
-      .blog h1 {
-        font-size: 28px; } }
   .blog h3 {
     padding: 40px 0; }
   .blog h4 {
@@ -536,4 +532,4 @@ ul {
     ul li:before {
       content: "→";
       margin-right: 10px;
-      color: #333333; }
+      color: #383838; }

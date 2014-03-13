@@ -4,15 +4,15 @@
   a {
     font-size: .875em;
     text-decoration: none;
-    background-color: $color-light-gray;
-    border: 0;
-    border-radius: 4px;
+    border: 1px solid $color-gray;
     color: $color-gray;
+    border-radius: 4px;
     padding: 10px;
 
     &:hover,
     &:active {
-      background-color: darken($color-light-gray, 3%);
+      border: 1px solid $color-black;
+      color: $color-black;
     }
   }
 }
@@ -54,16 +54,6 @@
   @include screen-large {
     padding-top: 40px;
     padding-bottom: 150px;
-  }
-
-  h1 {
-    font-size: 26px;
-    font-weight: $type-weight-bold;
-    line-height: 1.65;
-
-    @include screen-medium {
-      font-size: 28px;
-    }
   }
 
   h3 {

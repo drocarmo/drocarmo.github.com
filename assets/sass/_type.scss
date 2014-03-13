@@ -105,7 +105,7 @@ hr {
     font-size: 30px;
     padding: 5px 0;
     font-weight: $type-weight-bold;
-    color: $color-light-gray;
+    color: darken($color-black, 5%);
 
     @include screen-medium {
       font-size: 50px;

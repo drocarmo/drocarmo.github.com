@@ -1,0 +1,27 @@
+.error {
+  margin: -20px auto;
+  height: 100%;
+  background: url("https://raw.github.com/drocarmo/gifs/master/upset/wwe.gif") no-repeat center;
+  background-size: cover;
+  color: $color-white;
+
+  .container {
+    padding: 20px auto;
+
+    h1 {
+      font-family: $type-rooney-sans;
+    }
+
+    p {
+      a {
+        color: inherit;
+      }
+
+      .small {
+        font-size: 14px;
+        font-family: $type-rooney-sans;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -359,19 +359,19 @@ a.twitter {
         @media screen and (min-width: 700px) {
           .about .head .intro p {
             width: 75%; } }
-    .about .head .images {
+    .about .head .image {
       display: none;
       float: right;
       border-radius: 50%;
       height: 50px;
       width: 50px; }
       @media screen and (min-width: 700px) {
-        .about .head .images {
+        .about .head .image {
           display: inline-block;
           height: 100px;
           width: 100px;
           margin-top: -20px; } }
-      .about .head .images:hover {
+      .about .head .image:hover {
         opacity: .9; }
 
 .posts {
@@ -395,6 +395,7 @@ a.twitter {
       width: 47%; } }
 
 .contact {
+  text-align: center;
   color: gainsboro;
   border-bottom: 0; }
 

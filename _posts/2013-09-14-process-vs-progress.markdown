@@ -21,6 +21,11 @@ We have all heard that cheesy quote, "it's not about the desination, but it's ab
 
 In the book _Mere Christianity_, C.S Lewis does an excellent job of illustrating how progress is directly impacted by the process:
 
+<figure class="small-left">
+  <img src="http://img1.wikia.nocookie.net/__cb20130619161536/lotr/images/6/6e/C.S._Lewis.jpg" alt="C.S Lewis" />
+  <figcaption>C.S Lewis doing what he does best.</figcaption>
+</figure>
+
 >“We all want progress. But progress means getting nearer to the place where you want to be. And if you have taken a wrong turning, then to go forward does not get you any nearer. If you are on the wrong road, progress means doing an about-turn and walking back to the right road; and in that case the man who turns back sooniest is the most progressive man.”
 
 ### All Hype Shawty

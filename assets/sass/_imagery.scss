@@ -1,5 +1,60 @@
 // Info Page
 .info-main {
-  background: url(images/info.jpeg) no-repeat center;
+  background: url("images/info.jpeg") no-repeat center;
   background-size: cover;
+}
+
+// Image styles for the blog
+
+figure {
+
+  img {
+    width: 100%;
+    @include flex;
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  figcaption {
+    font-size: 10px;
+    color: darken($color-light-gray, 5%);
+
+    a {
+      color: inherit;
+    }
+
+    @include screen-medium {
+      font-size: 12px;
+    }
+  }
+
+  &.big {
+    width: 100%;
+
+    @include screen-large {
+      width: 120%;
+      margin-left: -10%;
+    }
+  }
+
+  &.small-left {
+    width: 100%;
+
+    @include screen-large {
+      float: left;
+      max-width: 30%;
+      margin-left: -35%;
+    }
+  }
+
+  &.small-right {
+    width: 100%;
+
+    @include screen-large {
+      float: right;
+      max-width: 30%;
+      margin-right: -35%;
+    }
+  }
 }

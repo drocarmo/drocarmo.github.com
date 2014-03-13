@@ -13,7 +13,7 @@
 }
 
 @mixin screen-large {
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }
@@ -25,9 +25,11 @@
   text-align: left;
   @include flex;
   width: 85%;
+
   @include screen-medium {
     width: 500px;
   }
+
   @include screen-large {
     width: 700px;
   }

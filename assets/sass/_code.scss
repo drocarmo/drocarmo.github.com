@@ -1,15 +1,23 @@
 code {
+  font-family: $type-menlo;
   color: $color-red;
   display: inline;
   word-wrap: break-word;
 }
 
 pre {
+  font-family: $type-menlo;
+  font-size: 12px;
   color: $color-red;
-  background-color: lighten($color-light-gray, 5%);
+  border: 2px solid lighten($color-light-gray, 5%);
+  border-radius: 5px;
   padding: 10px;
   overflow-x: auto;
   white-space: pre;
   word-wrap: normal;
   max-width: auto;
+
+  @include screen-medium {
+    font-size: 14px;
+  }
 }

@@ -4,7 +4,10 @@ title: "Redesigning DevMynd"
 date: 2014-02-04
 ---
 
-![Devmynd_Redesign](https://devmynd-production-uploads.s3.amazonaws.com/uploads/photos/22bdac9d-399b-4641-a015-f2a90d9eb5ac.png)
+<figure class="big">
+  <img src="https://devmynd-production-uploads.s3.amazonaws.com/uploads/photos/22bdac9d-399b-4641-a015-f2a90d9eb5ac.png" alt="DevMynd Redesign" />
+  <figcaption>Photo taken by <a href="https://twitter.com/bwilken" target="_blank">Brad Wilkening</a></figcaption>
+</figure>
 
 For the past three weeks, [JC](https://twitter.com/thegrubbsian) and I have been working on redesigning DevMynd's website from scratch. I’ve been working on the front-end (HAML, Sass &#38; Javascript) and JC has been doing the heavy lifting (Rails &#38; Javascript).
 
@@ -25,6 +28,11 @@ During the early stages, we spent time figuring out what we wanted the new desig
 I spent 3 days in Photoshop, mocking up what the initial pages would look like. After a few days, it became clear that moving layers two pixels left, not feeling good about it, and then moving it back wasn’t the right way to go about the re-design.
 
 Thus, we closed Photoshop and just began building the site. Sure, the design was barely half done, but we knew that everything would become clearer as we got closer to the finish line. As I began building the interactions and getting feedback from our team, it became clear what worked and what didn’t.
+
+<figure class="big">
+  <img src="http://d257xfj5czov65.cloudfront.net/assets/people/jobs-ac37df4554ebecd060443b9530b6acaf.jpg" alt="DevMynd Redesign" />
+  <figcaption>Photo taken by <a href="https://twitter.com/bwilken" target="_blank">Brad Wilkening</a></figcaption>
+</figure>
 
 ### Process
 

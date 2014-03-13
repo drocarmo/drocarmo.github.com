@@ -207,19 +207,19 @@ table {
   @media screen and (min-width: 700px) {
     .container {
       width: 500px; } }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     .container {
       width: 700px; } }
 
 body {
-  font-family: "menlo", monospace;
+  font-family: "rooney-web", Helvetica Neue, sans-serif;
+  font-weight: 300;
   font-style: normal;
   color: #333333;
   line-height: 1.65; }
 
 h1 {
   font-size: 26px;
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
   font-weight: 500; }
   @media screen and (min-width: 700px) {
     h1 {
@@ -227,21 +227,20 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
   font-weight: 500; }
 
 h3 {
+  font-family: "rooney-sans", Helvetica Neue, sans-serif;
+  font-weight: 400;
   font-size: 20px;
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-weight: 500;
   color: #4d4d4d; }
   @media screen and (min-width: 700px) {
     h3 {
       font-size: 22px; } }
 
 h4 {
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-weight: 100;
+  font-family: "rooney-sans", Helvetica Neue, sans-serif;
+  font-weight: 300;
   font-size: 12px;
   letter-spacing: 4px;
   color: gainsboro;
@@ -284,7 +283,7 @@ hr {
     text-align: center;
     font-size: 30px;
     padding: 5px 0;
-    font-weight: 300;
+    font-weight: 500;
     color: #e9e9e9; }
     @media screen and (min-width: 700px) {
       hr:after {
@@ -412,7 +411,7 @@ a.twitter {
     text-decoration: none;
     background-color: #e9e9e9;
     border: 0;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #aaaaaa;
     padding: 10px; }
     .back a:hover, .back a:active {
@@ -423,7 +422,7 @@ a.twitter {
   position: absolute;
   top: 20px;
   right: 2%; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     .next {
       top: 30px; } }
   .next a {
@@ -431,7 +430,7 @@ a.twitter {
     text-decoration: none;
     background-color: #e9e9e9;
     border: 0;
-    border-radius: 5px;
+    border-radius: 4px;
     color: #aaaaaa;
     padding: 10px; }
     .next a:hover, .next a:active {
@@ -440,14 +439,13 @@ a.twitter {
 .blog {
   padding-top: 80px;
   margin-bottom: 100px; }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     .blog {
       padding-top: 40px;
       padding-bottom: 150px; } }
   .blog h1 {
     font-size: 26px;
-    font-weight: 500;
-    color: #1464ad;
+    font-weight: 400;
     line-height: 1.65; }
     @media screen and (min-width: 700px) {
       .blog h1 {
@@ -459,15 +457,10 @@ a.twitter {
     @media screen and (min-width: 700px) {
       .blog h4 {
         margin-bottom: 100px; } }
-  .blog img {
-    width: 100%;
-    margin: 0 auto; }
-    .blog img:hover {
-      opacity: .9; }
   .blog ul {
     list-style: none; }
     .blog ul li {
-      text-indent: -20px;
+      text-indent: -28px;
       font-size: 16px;
       font-weight: 300;
       word-wrap: break-word; }
@@ -485,19 +478,60 @@ a.twitter {
         margin-top: 200px; } }
 
 code {
+  font-family: Menlo, monospace;
   color: #e83943;
   display: inline;
   word-wrap: break-word; }
 
 pre {
+  font-family: Menlo, monospace;
+  font-size: 12px;
   color: #e83943;
-  background-color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  border-radius: 5px;
   padding: 10px;
   overflow-x: auto;
   white-space: pre;
   word-wrap: normal;
   max-width: auto; }
+  @media screen and (min-width: 700px) {
+    pre {
+      font-size: 14px; } }
 
 .info-main {
-  background: url(images/info.jpeg) no-repeat center;
+  background: url("images/info.jpeg") no-repeat center;
   background-size: cover; }
+
+figure img {
+  width: 100%;
+  margin: 0 auto; }
+  figure img:hover {
+    opacity: .9; }
+figure figcaption {
+  font-size: 10px;
+  color: gainsboro; }
+  figure figcaption a {
+    color: inherit; }
+  @media screen and (min-width: 700px) {
+    figure figcaption {
+      font-size: 12px; } }
+figure.big {
+  width: 100%; }
+  @media screen and (min-width: 1200px) {
+    figure.big {
+      width: 120%;
+      margin-left: -10%; } }
+figure.small-left {
+  width: 100%; }
+  @media screen and (min-width: 1200px) {
+    figure.small-left {
+      float: left;
+      max-width: 30%;
+      margin-left: -35%; } }
+figure.small-right {
+  width: 100%; }
+  @media screen and (min-width: 1200px) {
+    figure.small-right {
+      float: right;
+      max-width: 30%;
+      margin-right: -35%; } }

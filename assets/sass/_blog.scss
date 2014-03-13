@@ -6,7 +6,7 @@
     text-decoration: none;
     background-color: $color-light-gray;
     border: 0;
-    border-radius: 5px;
+    border-radius: 4px;
     color: $color-gray;
     padding: 10px;
 
@@ -59,7 +59,6 @@
   h1 {
     font-size: 26px;
     font-weight: $type-weight-bold;
-    color: $color-blue;
     line-height: 1.65;
 
     @include screen-medium {
@@ -79,21 +78,13 @@
     }
   }
 
-  img {
-    width: 100%;
-    @include flex;
-    &:hover {
-      opacity: .9;
-    }
-  }
-
   ul {
     list-style: none;
 
     li {
-      text-indent: -20px;
+      text-indent: -28px;
       font-size: 16px;
-      font-weight: $type-weight-regular;
+      font-weight: $type-weight-light;
       word-wrap: break-word;
 
       @include screen-medium {

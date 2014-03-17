@@ -310,7 +310,9 @@ body {
   height: 100%; }
 
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
 
 a.behance {
   color: #1769ff; }
@@ -377,25 +379,29 @@ a.twitter {
       .about .head .image:hover {
         opacity: .9; }
 
-.posts {
-  width: 100%;
-  display: block; }
-  @media screen and (min-width: 700px) {
-    .posts {
-      float: left;
-      width: 47%;
-      margin-right: 6%; } }
-
 .projects {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px; }
+  clear: both; }
   .projects span {
     color: gainsboro; }
-  @media screen and (min-width: 700px) {
-    .projects {
-      float: left;
-      width: 47%; } }
+  .projects .col-2 {
+    width: 100%; }
+    @media screen and (min-width: 700px) {
+      .projects .col-2 {
+        float: left;
+        width: 48%;
+        margin-right: 4%; }
+        .projects .col-2:nth-child(2) {
+          margin-right: 0; } }
+
+.posts {
+  clear: both;
+  padding-top: 100px; }
+  .posts .post .date {
+    font-family: "rooney-web", Helvetica Neue, sans-serif; }
+    @media screen and (min-width: 700px) {
+      .posts .post .date {
+        float: right;
+        margin-top: -42px; } }
 
 .contact {
   text-align: center;

@@ -20,37 +20,43 @@ title: Product Designer
 
   <hr>
 
+  <section class="projects">
+    <section class="col-2">
+      <h2>Projects</h2>
+      <p>
+        <a href="{{ base.url }}/elenco">Elenco</a> <span>- A Chrome extension that helps you stay on track.</span>
+      </p>
+      <p>
+        <a href="http://dribbble.com/drocarmo/projects/179244-MassTransit">MassTransit</a> <span>- An iOS app that helps you get where you want to go, the most efficient way possible.</span>
+      </p>
+      <p>
+        <a href="http://www.startnagging.com/login">Nag</a> <span>- A web app that helps you get your things back.</span>
+      </p>
+    </section>
+    <section class="col-2">
+      <h2>Open-Source Tools</h2>
+      <p>
+        <a href="{{ base.url }}/wheat">Wheat</a> <span>- A simple Jekyll template for designers.</span>
+      </p>
+      <p>
+        <a href="https://github.com/aglobof">Glob</a> <span>- An ultimate Sass framework for the web (in the making).</span>
+      </p>
+      <p>
+        <a href="https://gist.github.com/drocarmo">Gists</a> <span>- Snippets of useful code on Github.</span>
+      </p>
+    </section>
+  </section>
+
   <section class="posts">
     <h2>Writing</h2>
     {% for post in site.posts %}
-      <p>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </p>
-      <h4>{{ post.date | date_to_long_string }}</h4>
+      <div class="post">
+        <p>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+      </div>
     {% endfor %}
-  </section>
-
-  <section class="projects">
-    <h2>Products</h2>
-    <p>
-      <a href="{{ base.url }}/elenco">Elenco</a> <span>- A Chrome extension that helps you stay on track.</span>
-    </p>
-    <p>
-      <a href="http://dribbble.com/drocarmo/projects/179244-MassTransit">MassTransit</a> <span>- An iOS app that helps you get where you want to go, the most efficient way possible.</span>
-    </p>
-    <p>
-      <a href="http://www.startnagging.com/login">Nag</a> <span>- A web app that helps you get your things back.</span>
-    </p>
-    <h2>Open-Source</h2>
-    <p>
-      <a href="{{ base.url }}/wheat">Wheat</a> <span>- A simple Jekyll template for designers.</span>
-    </p>
-    <p>
-      <a href="https://github.com/aglobof">Glob</a> <span>- An ultimate Sass framework for the web (in the making).</span>
-    </p>
-    <p>
-      <a href="https://gist.github.com/drocarmo">Gists</a> <span>- Snippets of useful code on Github.</span>
-    </p>
   </section>
 
   <hr>

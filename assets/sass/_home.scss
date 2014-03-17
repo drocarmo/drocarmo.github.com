@@ -57,29 +57,41 @@
   }
 }
 
-.posts {
-  width: 100%;
-  display: block;
-
-  @include screen-medium {
-    float: left;
-    width: 47%;
-    margin-right: 6%;
-  }
-}
-
 .projects {
-  width: 100%;
-  display: block;
-  margin-bottom: 100px;
+  clear: both;
 
   span {
     color: darken($color-light-gray, 5%);
   }
 
-  @include screen-medium {
-    float: left;
-    width: 47%;
+  .col-2 {
+    width: 100%;
+
+    @include screen-medium {
+      float: left;
+      width: 48%;
+      margin-right: 4%;
+
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.posts {
+  clear: both;
+  padding-top: 100px;
+
+  .post {
+    .date {
+      font-family: $type-rooney;
+
+      @include screen-medium {
+        float: right;
+        margin-top: -42px;
+      }
+    }
   }
 }
 

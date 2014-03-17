@@ -243,7 +243,7 @@ h4 {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 4px;
-  color: gainsboro;
+  color: #d0d0d0;
   padding-bottom: 10px;
   padding-left: 2px;
   margin-top: -10px; }
@@ -405,7 +405,7 @@ a.twitter {
 
 .contact {
   text-align: center;
-  color: gainsboro;
+  color: #d0d0d0;
   border-bottom: 0; }
 
 .back {

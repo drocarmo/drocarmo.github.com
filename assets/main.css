@@ -243,7 +243,7 @@ h4 {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 4px;
-  color: #d0d0d0;
+  color: #b6b6b6;
   padding-bottom: 10px;
   padding-left: 2px;
   margin-top: -10px; }
@@ -382,7 +382,7 @@ a.twitter {
 .projects {
   clear: both; }
   .projects span {
-    color: gainsboro; }
+    color: #b6b6b6; }
   .projects .col-2 {
     width: 100%; }
     @media screen and (min-width: 700px) {
@@ -405,7 +405,7 @@ a.twitter {
 
 .contact {
   text-align: center;
-  color: #d0d0d0;
+  color: #b6b6b6;
   border-bottom: 0; }
 
 .back {
@@ -498,7 +498,7 @@ figure img {
     opacity: .9; }
 figure figcaption {
   font-size: 10px;
-  color: #d0d0d0; }
+  color: #b6b6b6; }
   figure figcaption a {
     color: inherit; }
   @media screen and (min-width: 700px) {

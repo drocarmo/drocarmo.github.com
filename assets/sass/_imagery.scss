@@ -17,7 +17,7 @@ figure {
   }
 
   figcaption {
-    font-size: 10px;
+    font-size: 12px;
     color: darken($color-light-gray, 20%);
 
     a {
@@ -25,7 +25,7 @@ figure {
     }
 
     @include screen-medium {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 

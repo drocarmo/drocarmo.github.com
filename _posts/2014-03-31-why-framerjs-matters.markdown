@@ -11,9 +11,9 @@ This past week I’ve been [playing around](https://github.com/drocarmo/framer) 
   <figcaption>Screenshot of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.</figcaption>
 </figure>
 
-Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop + Sketch, so it’s easy to `export layers` and begin prototyping with them as `objects as views in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
+Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop + Sketch, so it’s easy to `export layers` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
 
-Enough about the characteristics of Framer though, let's talk about the bigger picture I'm trying to get at.
+Enough about the characteristics of Framer though, let's talk about the big picture I'm trying to get at.
 
 ### Why it matters.
 
@@ -21,7 +21,7 @@ Enough about the characteristics of Framer though, let's talk about the bigger p
 >
 >—Pasquale D’Silva on [Medium](https://medium.com/p/f755c6515368).
 
-Tools come and go, it's easy to get caught up trying to learn the latest framework. It's also easy to be caught using the wrong tool for a specific workflow.
+Tools come and go, it's easy to get caught up trying to learn the latest framework. It's also easy to get caught using the wrong tool for a specific workflow.
 
 Creating a good workflow for a project is a dificult task in the day to day as a product designer. There are multiple software programs that can help a designer do it's job, all of them require a different level of skill and a different approach. So it's an immensely important skill to be able to differentiate when and why you should jump into a design tool, especially one like Framer.js.
 
@@ -34,7 +34,7 @@ Allow me to elaborate on those two points.
 
 ### Improving the communication around Interaction Design.
 
-This past week, I gave a small presentation on Framer.js at our weekly code review at DevMynd (this article actually stemmed from the talk). During the presentation, I spoke a little bit on what my process was like designing [MassTransit](http://dribbble.com/drocarmo/projects/179244-MassTransit) with one of our team members, [Erin Hochstatter](https://twitter.com/prettyhandsome). I designed the iOS app all in Photoshop and handed over assets as well as a few numbers around type size, containers, iconography, etc.
+This past week, I gave a small presentation on Framer.js at our weekly code review at DevMynd (this post actually stemmed from the talk). During the presentation, I spoke a little bit on what my process was like designing [MassTransit](http://dribbble.com/drocarmo/projects/179244-MassTransit) with one of our team members, [Erin Hochstatter](https://twitter.com/prettyhandsome). I designed the iOS app all in Photoshop and handed over assets as well as a few numbers around type size, container widths, iconography, etc.
 
 Although I was pleased with the visuals, static images and numbers weren't enough. I know, _huge shocker_. There were multiple occasions where I had to sit with Erin to explain an interaction I had imagined or instances where she had to pull me and ask. Erin was relying solely on my word to understand the desired interaction, no visual representation. This is where Framer.js would have been an excellent tool for my workflow.
 
@@ -42,7 +42,7 @@ As a product designer, it is my job to create the interface and the imagined exp
 
 ### A Canvas To Learn
 
-The second point is something I strongly believe in and at times can cause controversy amongst designers. A good friend of mine, Mig, sums up what I strongly believe:
+My second point is something I strongly believe in and at times can cause controversy amongst designers. A good friend of mine, Mig, sums up what I strongly believe:
 
 > "Understanding our tools means designers should code." [(Source)](http://mig.io/thinks/#designers-should-code)
 
@@ -52,4 +52,4 @@ When you're prototyping in Framer you're not learning or writing code that will 
 
 ***
 
-To wrap it up, I recommend you join the [Facebook group](https://www.facebook.com/groups/framerjs/) and follow some folks that are building awesome stuff for the Framer.js community, such as [Koen Bok](https://github.com/koenbok), [Cemre Güngör](https://github.com/cemre) and [Ale Muñoz](https://github.com/bomberstudios) and [Josh Puckett](https://github.com/joshpuckett).
+To wrap up, I recommend you join the [Facebook group](https://www.facebook.com/groups/framerjs/) and follow some folks that are building awesome stuff for the Framer.js community, such as [Koen Bok](https://github.com/koenbok), [Cemre Güngör](https://github.com/cemre) and [Ale Muñoz](https://github.com/bomberstudios) and [Josh Puckett](https://github.com/joshpuckett).

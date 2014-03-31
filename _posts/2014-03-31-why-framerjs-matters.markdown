@@ -11,9 +11,9 @@ This past week I’ve been [playing around](https://github.com/drocarmo/framer) 
   <figcaption>Screenshot of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.</figcaption>
 </figure>
 
-Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop + Sketch, so it’s easy to `export layers` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
+Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop, so it’s easy to `export layers` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
 
-Enough about the characteristics of Framer though, let's talk about the big picture I'm trying to get at.
+Enough about the characteristics of Framer though, you can read about it on the website. Let's talk about the big picture I'm trying to get at.
 
 ### Why it matters.
 
@@ -34,7 +34,7 @@ Allow me to elaborate on those two points.
 
 ### Improving the communication around Interaction Design.
 
-This past week, I gave a small presentation on Framer.js at our weekly code review at DevMynd (this post actually stemmed from the talk). During the presentation, I spoke a little bit on what my process was like designing [MassTransit](http://dribbble.com/drocarmo/projects/179244-MassTransit) with one of our team members, [Erin Hochstatter](https://twitter.com/prettyhandsome). I designed the iOS app all in Photoshop and handed over assets as well as a few numbers around type size, container widths, iconography, etc.
+This past week, I gave a small presentation on Framer.js at our weekly code review at DevMynd (this post actually stemmed from the talk). During the presentation, I spoke a little bit on what my process was like building [MassTransit](http://dribbble.com/drocarmo/projects/179244-MassTransit) with [Erin Hochstatter](https://github.com/prettyhandsome) (an iOS developer). I designed the iOS app all in Photoshop and handed over assets as well as specific numbers around type size, container widths and heights, iconography, etc.
 
 Although I was pleased with the visuals, static images and numbers weren't enough. I know, _huge shocker_. There were multiple occasions where I had to sit with Erin to explain an interaction I had imagined or instances where she had to pull me and ask. Erin was relying solely on my word to understand the desired interaction, no visual representation. This is where Framer.js would have been an excellent tool for my workflow.
 

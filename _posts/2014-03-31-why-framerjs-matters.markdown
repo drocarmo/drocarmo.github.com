@@ -11,7 +11,7 @@ This past week I’ve been [playing around](https://github.com/drocarmo/framer) 
   <figcaption>Screenshot of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.</figcaption>
 </figure>
 
-Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop, so it’s easy to `export layers` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
+Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer also integrates with Photoshop (there is also a [Sketch plugin](https://github.com/bomberstudios/sketch-framer)), so it’s easy to `export assets` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
 
 Enough about the characteristics of Framer though, you can read about it on the website. Let's talk about the big picture I'm trying to get at.
 

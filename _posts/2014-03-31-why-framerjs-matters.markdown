@@ -11,7 +11,7 @@ This past week I’ve been [playing around](https://github.com/drocarmo/framer) 
   <figcaption>Screenshot of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.</figcaption>
 </figure>
 
-Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer, also integrates with Photoshop (there is a [Sketch plugin](https://github.com/bomberstudios/sketch-framer)), so it’s easy to `export assets` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the [community](https://www.facebook.com/groups/framerjs/) supporting it.
+Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer, also integrates with Photoshop (there is a [Sketch plugin](https://github.com/bomberstudios/sketch-framer)), so it’s easy to `export assets` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the community supporting it.
 
 Enough about the characteristics of Framer though, you can read about it on the website. Let's talk about the big picture I'm trying to get at.
 
@@ -23,14 +23,14 @@ Enough about the characteristics of Framer though, you can read about it on the 
 
 Tools come and go, it's easy to get caught up trying to learn the latest framework. It's also easy to get caught using the wrong tool for a specific workflow.
 
-Creating a good workflow for a project is a dificult task in the day to day as a product designer. There are multiple software programs that can help a designer do it's job, all of them require a different level of skill and a different approach. So it's an immensely important skill to be able to differentiate when and why you should jump into a design tool, especially one like Framer.js.
+Creating a good workflow for a project is a difficult task in the day to day as a product designer. There are multiple software programs that can help a designer do it's job, all of them require a different level of skill and a different approach. So it's an immensely important skill to be able to differentiate when and why you should jump into a design tool, especially one like Framer.js.
 
 I have two main points why Framer.js should matter to designers:
 
 - It helps designers create and communicate interactions.
 - It gives designers a canvas to learn and write code.
 
-Allow me to elaborate on those two points.
+Allow me to elaborate on these two points.
 
 ### Improving the communication around Interaction Design.
 
@@ -40,13 +40,13 @@ Although I was pleased with the visuals, static images and numbers weren't enoug
 
 As a product designer, it is my job to create the interface and the imagined experience a user will go through, but it is also my job to communicate and prototype the interaction the user will have with the product.
 
-### A Canvas To Learn
+### A canvas to learn.
 
 My second point is something I strongly believe in and at times can cause controversy amongst designers. A good friend of mine, Mig, sums up what I strongly believe:
 
 > “Understanding our tools means designers should code.” [(Source)](http://mig.io/thinks/#designers-should-code)
 
-Period. As product designers, I believe we have the responsibility to fully understand how software works to be able to design for it. Building the frontend is an easy way to put pieces together for the software to fully work.
+Period. As product designers, I believe we have the responsibility to fully understand how software works to be able to design for it. Building the front end is an easy way to put pieces together for the software to fully work.
 
 When you're prototyping in Framer you're not learning or writing code that will one day end up in a dark alley somewhere in your trash bin. Framer is a space where you can continually learn new ways to animate and manipulate objects in Javascript, that's huge!
 

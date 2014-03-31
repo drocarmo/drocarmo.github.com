@@ -44,7 +44,7 @@ As a product designer, it is my job to create the interface and the imagined exp
 
 My second point is something I strongly believe in and at times can cause controversy amongst designers. A good friend of mine, Mig, sums up what I strongly believe:
 
-> "Understanding our tools means designers should code." [(Source)](http://mig.io/thinks/#designers-should-code)
+> “Understanding our tools means designers should code.” [(Source)](http://mig.io/thinks/#designers-should-code)
 
 Period. As product designers, I believe we have the responsibility to fully understand how software works to be able to design for it. Building the frontend is an easy way to put pieces together for the software to fully work.
 

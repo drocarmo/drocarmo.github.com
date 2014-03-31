@@ -470,7 +470,12 @@ code {
   font-family: Menlo, monospace;
   color: #e83943;
   display: inline;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  font-size: 14px;
+  letter-spacing: .1px; }
+  @media screen and (min-width: 700px) {
+    code {
+      font-size: 15px; } }
 
 pre {
   font-family: Menlo, monospace;

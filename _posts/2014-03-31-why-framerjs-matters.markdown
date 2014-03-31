@@ -53,3 +53,5 @@ When you're prototyping in Framer you're not learning or writing code that will 
 ***
 
 To wrap up, I recommend you join the [Facebook group](https://www.facebook.com/groups/framerjs/) and follow some folks that are building awesome stuff for the Framer.js community, such as [Koen Bok](https://github.com/koenbok), [Cemre Güngör](https://github.com/cemre) and [Ale Muñoz](https://github.com/bomberstudios) and [Josh Puckett](https://github.com/joshpuckett).
+
+Also, be sure to check out my [Kippt](https://kippt.com/drocarmo/framerjs) list on curated Framer.js links.

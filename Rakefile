@@ -1,6 +1,7 @@
 # Standard library
 require 'rake'
 require 'yaml'
+require 'kramdown'
 
 # Load the configuration file
 config = YAML.load_file("_config.yml")

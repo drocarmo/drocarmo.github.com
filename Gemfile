@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
- 
+
 gem 'jekyll'
-gem 'maruku'
+gem 'kramdown'
 gem 'rake'
 gem 'sass'
 gem 'coffee-script'

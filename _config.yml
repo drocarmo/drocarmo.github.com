@@ -2,6 +2,8 @@ name: Pedro Carmo
 description: 'Product Designer'
 author: Pedro Carmo - @drocarmo
 
+markdown: kramdown
+
 pygments: true
 
 include:

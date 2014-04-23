@@ -6,10 +6,12 @@ date: 2014-03-31
 
 This past week I’ve been [playing around](https://github.com/drocarmo/framer) with a Javascript-based prototyping tool called [Framer](http://www.framerjs.com/). It’s really easy to get it running if you read through the documentation. It’s also pretty easy if you’re already pretty familiar with Javascript.
 
-<figure class="big">
-  <img src="/assets/images/posts/framerjs.png" alt="DevMynd Redesign" />
-  <figcaption>Screenshot of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.</figcaption>
-</figure>
+<video autoplay="autoplay" loop="loop" controls="controls" tabindex="0">
+  <source src="/assets/video/framer.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+> Interaction of a Framer prototype I built. Check it out live on <a href="http://codepen.io/drocarmo/full/uylip" target="_blank">CodePen</a>.
 
 Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for any designer looking to flesh out an interaction of an interface. Framer, also integrates with Photoshop (there is a [Sketch plugin](https://github.com/bomberstudios/sketch-framer)), so it’s easy to `export assets` and begin prototyping with them as `objects in Javascript`. I quickly fell in love with the tool and the community supporting it.
 

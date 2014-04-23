@@ -58,3 +58,13 @@ figure {
     }
   }
 }
+
+// Video styles for the blog
+
+video {
+  width: 100%;
+
+  @include screen-medium {
+    width: auto;
+  }
+}

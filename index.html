@@ -23,30 +23,19 @@ title: Product Designer
   <section class="projects">
     <section class="col-2">
       <h2>Projects</h2>
-      <p>
-        <a href="{{ base.url }}/elenco">Elenco</a> <span>- A Chrome extension that helps you stay on track.</span>
-      </p>
-      <p>
-        <a href="http://dribbble.com/drocarmo/projects/179244-MassTransit">MassTransit</a> <span>- An iOS app that helps you get where you want to go, the most efficient way possible.</span>
-      </p>
-      <p>
-        <a href="https://www.behance.net/gallery/Nag/11631741">Nag</a> <span>- A web app that helps you get your things back.</span>
-      </p>
+      {% for project in site.data.projects %}
+        <p>
+          <a href="{{ project.url }}">{{ project.title }}</a> <span>- {{ project.info }}</span>
+        </p>
+      {% endfor %}
     </section>
     <section class="col-2">
       <h2>Open-Source Tools</h2>
-      <p>
-        <a href="{{ base.url }}/wheat">Wheat</a> <span>- A simple Jekyll template for designers.</span>
-      </p>
-      <p>
-        <a href="https://github.com/aglobof">Glob</a> <span>- An ultimate Sass framework for the web (in the making).</span>
-      </p>
-      <p>
-        <a href="https://github.com/drocarmo/framer">Framer</a> <span>- A collection of iterative prototypes built with Framer.js.</span>
-      </p>
-      <p>
-        <a href="https://gist.github.com/drocarmo">Gists</a> <span>- Snippets of useful code on Github.</span>
-      </p>
+      {% for tool in site.data.tools %}
+        <p>
+          <a href="{{ tool.url }}">{{ tool.title }}</a> <span>- {{ tool.info }}</span>
+        </p>
+      {% endfor %}
     </section>
   </section>
 
@@ -64,6 +53,6 @@ title: Product Designer
 
   <hr>
 
-  <p class="contact"><a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">Contact</a></p>
+  <p class="contact"><a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">Get in touch.</a></p>
 
 </section>

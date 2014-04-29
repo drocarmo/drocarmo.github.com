@@ -460,6 +460,13 @@ a.twitter {
     @media screen and (min-width: 700px) {
       .blog h4 {
         margin-bottom: 100px; } }
+  .blog .video {
+    width: 320px;
+    height: 280px; }
+    @media screen and (min-width: 700px) {
+      .blog .video {
+        width: 560px;
+        height: 315px; } }
   .blog #disqus_thread {
     margin-top: 100px; }
     @media screen and (min-width: 700px) {

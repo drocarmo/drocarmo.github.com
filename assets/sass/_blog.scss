@@ -68,6 +68,16 @@
     }
   }
 
+  .video {
+    width: 320px;
+    height: 280px;
+
+    @include screen-medium {
+      width: 560px;
+      height: 315px;
+    }
+  }
+
   #disqus_thread {
     margin-top: 100px;
 

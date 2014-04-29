@@ -1,0 +1,21 @@
+# Open-source tools
+
+- title: Framer
+  url: https://github.com/drocarmo/framer
+  info: A collection of iterative prototypes built with Framer.js.
+
+- title: Gists
+  url: https://gist.github.com/drocarmo
+  info: Snippets of useful code on Github.
+
+- title: Glob
+  url: https://github.com/aglobof
+  info: An ultimate Sass framework for the web (in the making).
+
+- title: Resources
+  url: http://drocarmo.com/resources
+  info: A list of resources around the topic of product design.
+
+- title: Wheat
+  url: http://drocarmo.com/wheat
+  info: A simple Jekyll template for designers.

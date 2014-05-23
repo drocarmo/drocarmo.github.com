@@ -1,11 +1,11 @@
 # Open-source tools
 
 - title: Basetype
-  url: https://github.com/drocarmo/framer
+  url: https://github.com/drocarmo/basetype
   info: An eloquently modular typographic scale tool using Sass.
 
 - title: Framer.js
-  url: https://github.com/drocarmo/basetype
+  url: https://github.com/drocarmo/framer
   info: A collection of quick prototypes I've built you might find useful.
 
 - title: Glob

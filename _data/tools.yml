@@ -1,16 +1,16 @@
 # Open-source tools
 
-- title: Framer
+- title: Basetype
   url: https://github.com/drocarmo/framer
-  info: A collection of iterative prototypes built with Framer.js.
+  info: An eloquently modular typographic scale tool using Sass.
 
-- title: Gists
-  url: https://gist.github.com/drocarmo
-  info: Snippets of useful code on Github.
+- title: Framer.js
+  url: https://github.com/drocarmo/framer
+  info: A collection of quick prototypes I've built you might find useful.
 
 - title: Glob
   url: https://github.com/aglobof
-  info: Bower-managed globs of front-end goodness, in the making.
+  info: Bower-managed globs of front-end goodness.
 
 - title: Resources
   url: http://drocarmo.com/resources

@@ -30,6 +30,10 @@
         float: left;
         width: 100%;
 
+        span {
+          text-decoration: line-through;
+        }
+
         @include screen-medium {
           width: 75%;
         }
@@ -57,7 +61,7 @@
   }
 }
 
-.projects {
+.products {
   clear: both;
 
   span {

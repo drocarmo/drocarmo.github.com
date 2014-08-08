@@ -7,25 +7,27 @@ title: Product Designer
   <div class="head">
     <div class="intro">
       <h1>I'm Pedro Carmo.</h1>
-      <p>A product designer living in Chicago, Illinois.</p>
+      <p>A product designer living in <span>Chicago, Illinois</span>.</p>
     </div>
     <div class="info-main image"></div>
   </div>
 
-  <p>I design and build software for <i>people</i>. I like to approach design holistically, while always regarding people over technology or aethetic preference.</p>
+  <p>I design and build digital products for <i>people</i>. I like to approach design holistically, embracing constraints and always regarding people over technology.</p>
 
-  <p>I'm currently working as lead designer at <a href="http://www.devmynd.com/" target="_blank">DevMynd</a>. I co-organize a <a href="http://attending.io/events/chipd" target="_blank">home</a> for Chicago Product Designers and volunteer monthly at <a href="http://creativemornings.com/cities/chi" target="_blank">CreativeMornings</a>. Outside of design, you can find me dodging the potholes of <a href="http://goo.gl/raVbhQ" target="_blank">Lakeview</a> with my skateboard.</p>
+  <p>Later this month, I’ll be moving to San Francisco to join Teespring as Product Designer. You can read more about it <a href="http://t.co/5VFXHkAoVr" target="_blank">here</a>.</p>
+
+  <p>Previous to that, I worked as lead product designer at <a href="http://www.devmynd.com/" target="_blank">DevMynd</a> and co-organized multiple Chicago design events such as <a href="http://creativemornings.com/cities/chi" target="_blank">CreativeMornings</a> and the <a href="http://attending.io/events/chipd" target="_blank">ChiPD</a> community.</p>
 
   <p>On the internet, I'm actively on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a>, <a href="http://drocarmo.tumblr.com/" class="tumblr" target="_blank">Tumblr</a> and <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>. Some of my work is scattered on <a href="http://dribbble.com/drocarmo" class="dribbble" target="_blank">Dribbble</a> and <a href="https://www.behance.net/drocarmo" class="behance" target="_blank">Behance</a>. Go nuts.</p>
 
   <hr>
 
-  <section class="projects">
+  <section class="products">
     <section class="col-2">
-      <h2>Projects</h2>
-      {% for project in site.data.projects %}
+      <h2>Products</h2>
+      {% for products in site.data.products %}
         <p>
-          <a href="{{ project.url }}">{{ project.title }}</a> <span>- {{ project.info }}</span>
+          <a href="{{ products.url }}">{{ products.title }}</a> <span>- {{ products.info }}</span>
         </p>
       {% endfor %}
     </section>

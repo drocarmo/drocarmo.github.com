@@ -361,6 +361,8 @@ a.twitter {
       .about .head .intro p {
         float: left;
         width: 100%; }
+        .about .head .intro p span {
+          text-decoration: line-through; }
         @media screen and (min-width: 700px) {
           .about .head .intro p {
             width: 75%; } }
@@ -379,18 +381,18 @@ a.twitter {
       .about .head .image:hover {
         opacity: .9; }
 
-.projects {
+.products {
   clear: both; }
-  .projects span {
+  .products span {
     color: #b6b6b6; }
-  .projects .col-2 {
+  .products .col-2 {
     width: 100%; }
     @media screen and (min-width: 700px) {
-      .projects .col-2 {
+      .products .col-2 {
         float: left;
         width: 48%;
         margin-right: 4%; }
-        .projects .col-2:nth-child(2) {
+        .products .col-2:nth-child(2) {
           margin-right: 0; } }
 
 .posts {

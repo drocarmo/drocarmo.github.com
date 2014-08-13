@@ -6,15 +6,15 @@
 
 - title: Framer.js
   url: https://github.com/drocarmo/framer
-  info: A collection of quick prototypes I've built you might find useful.
+  info: A collection of prototypes I've built you might find useful.
 
 - title: Glob
   url: http://aglobof.github.io/
-  info: Bower-managed globs of Interface Modules.
+  info: A collaborative build of useful interface modules.
 
 - title: Resources
   url: http://drocarmo.com/resources
-  info: A list of resources around the topic of product design.
+  info: A library of resources around the topic of product design.
 
 - title: Wheat
   url: http://drocarmo.com/wheat

@@ -403,7 +403,7 @@ a.twitter {
     @media screen and (min-width: 700px) {
       .posts .post .date {
         float: right;
-        margin-top: -42px; } }
+        margin-top: -40px; } }
 
 .contact {
   text-align: center;

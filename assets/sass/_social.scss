@@ -3,6 +3,7 @@
 $behance: #1769ff;
 $dribbble: #ea4c89;
 $github: #333;
+$instagram: #517fa4;
 $rdio: #006ed2;
 $tumblr: #32506d;
 $twitter: #00aced;
@@ -23,10 +24,9 @@ $twitter: #00aced;
 // Social Media Components
 
 a {
-  @include social(behance, $behance);
   @include social(dribbble, $dribbble);
   @include social(github, $github);
+  @include social(instagram, $instagram);
   @include social(rdio, $rdio);
-  @include social(tumblr, $tumblr);
   @include social(twitter, $twitter);
 }

@@ -314,10 +314,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
-a.behance {
-  color: #1769ff; }
-  a.behance:hover, a.behance:active {
-    color: #0050e3; }
 a.dribbble {
   color: #ea4c89; }
   a.dribbble:hover, a.dribbble:active {
@@ -326,14 +322,14 @@ a.github {
   color: #333333; }
   a.github:hover, a.github:active {
     color: #1a1a1a; }
+a.instagram {
+  color: #517fa4; }
+  a.instagram:hover, a.instagram:active {
+    color: #406582; }
 a.rdio {
   color: #006ed2; }
   a.rdio:hover, a.rdio:active {
     color: #00539f; }
-a.tumblr {
-  color: #32506d; }
-  a.tumblr:hover, a.tumblr:active {
-    color: #22364a; }
 a.twitter {
   color: #00aced; }
   a.twitter:hover, a.twitter:active {

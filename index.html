@@ -4,57 +4,40 @@ title: Product Designer
 ---
 
 <section class="container about">
-  <div class="head">
-    <div class="intro">
-      <h1>I'm Pedro Carmo.</h1>
-      <p>A product designer living in San Francisco, CA.</p>
-    </div>
-    <div class="info-main image"></div>
-  </div>
+  <figure class="small-left">
+    <img src="{{ base.url }}/assets/info.jpg" alt="Portrait">
+    <figcaption>Photo taken at <a href="http://instagram.com/yellowdogeats" target="_blank">Yellow Dog Eats</a></figcaption>
+  </figure>
 
-  <p>I design and build digital products for <i>people</i>. I like to approach design holistically, embracing constraints and always regarding people over technology.</p>
+  <h1>Hello, I'm Pedro.</h1>
 
-  <p>Currently, I'm working at Teespring as product designer. We’re changing the way people buy and create t-shirts. <a href="http://teespring.com/">Explore it</a>.</p>
+  <p>I'm a product designer living in San Francisco. Currently, I'm designing a new way for people to buy and create apparel with <a href="http://teespring.com/">Teespring</a>.</p>
 
-  <p>Previously, I lived in Chicago, IL and worked as lead product designer at <a href="http://www.devmynd.com/" target="_blank">DevMynd</a>. Additionally, I co-organized multiple Chicago design events such as <a href="http://creativemornings.com/cities/chi" target="_blank">CreativeMornings</a> and the <a href="http://attending.io/events/chipd" target="_blank">ChiPD</a> community.</p>
-
-  <p>On the internet, I'm actively on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a>, <a href="http://dribbble.com/drocarmo" class="dribbble" target="_blank">Dribbble</a>, <a href="http://instagram.com/drocarmo" class="instagram" target="_blank">Instagram</a>  and <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>.
-
-  <hr>
+  <p>In the past, I’ve lived in Orlando and Chicago, working and learning alongside some great friends at <a href="http://futura.io/" target="_blank">Futura</a>, <a href="http://www.starterleague.com/" target="_blank">Starterleague</a> and <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>.</p>
 
   <section class="products">
-    <section class="col-2">
-      <h2>Products</h2>
-      {% for products in site.data.products %}
-        <p>
-          <a href="{{ products.url }}">{{ products.title }}</a> <span>- {{ products.info }}</span>
-        </p>
-      {% endfor %}
-    </section>
-    <section class="col-2">
-      <h2>Open-Source Tools</h2>
-      {% for tool in site.data.tools %}
-        <p>
-          <a href="{{ tool.url }}">{{ tool.title }}</a> <span>- {{ tool.info }}</span>
-        </p>
-      {% endfor %}
-    </section>
-  </section>
-
-  <section class="posts">
-    <h2>Writing</h2>
-    {% for post in site.posts %}
-      <div class="post">
-        <p>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </p>
-        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
-      </div>
+    <h2>Working On</h2>
+    {% for products in site.data.products %}
+      <p>
+        <a href="{{ products.url }}">{{ products.title }}</a> <span>  — {{ products.info }}</span>
+      </p>
     {% endfor %}
   </section>
 
+  <section class="posts">
+  <h2>Thoughts On</h2>
+  {% for post in site.posts %}
+    <div class="post">
+      <p>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </p>
+      <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+    </div>
+  {% endfor %}
+  </section>
+
   <hr>
 
-  <p class="contact"><a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">Get in touch.</a></p>
+  <p>On the interwebs, you can reach out on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, see my work on <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a> or <a href="http://dribbble.com/drocarmo" class="dribbble" target="_blank">Dribbble</a>, or jam out with me <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>. Occasionally, I respond to kind <a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">emails.</a> ☻</p>
 
 </section>

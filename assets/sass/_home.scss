@@ -9,55 +9,8 @@
     padding-bottom: 150px;
   }
 
-  .head {
-    margin-bottom: 200px;
-
-    .intro {
-      margin-top: 0;
-
-      h1 {
-        float: left;
-        width: 100%;
-        margin-bottom: -20px;
-
-        @include screen-medium {
-          margin-bottom: -25px;
-          width: 75%;
-        }
-      }
-
-      p {
-        float: left;
-        width: 100%;
-
-        span {
-          text-decoration: line-through;
-        }
-
-        @include screen-medium {
-          width: 75%;
-        }
-      }
-    }
-
-    .image {
-      display: none;
-      float: right;
-      border-radius: 50%;;
-      height: 50px;
-      width: 50px;
-
-      @include screen-medium {
-        display: inline-block;
-        height: 100px;
-        width: 100px;
-        margin-top: -20px;
-      }
-
-      &:hover {
-        opacity: .9;
-      }
-    }
+  section {
+    margin-top: 50px;
   }
 }
 
@@ -67,25 +20,10 @@
   span {
     color: darken($color-light-gray, 20%);
   }
-
-  .col-2 {
-    width: 100%;
-
-    @include screen-medium {
-      float: left;
-      width: 48%;
-      margin-right: 4%;
-
-      &:nth-child(2) {
-        margin-right: 0;
-      }
-    }
-  }
 }
 
 .posts {
   clear: both;
-  padding-top: 100px;
 
   .post {
     .date {
@@ -97,10 +35,4 @@
       }
     }
   }
-}
-
-.contact {
-  text-align: center;
-  color: darken($color-light-gray, 20%);
-  border-bottom: 0;
 }

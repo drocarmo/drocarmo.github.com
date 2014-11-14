@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thoughts On User Onboarding"
+title: "User Onboarding"
 date: 2014-05-09
 ---
  

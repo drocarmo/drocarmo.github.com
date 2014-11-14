@@ -1,21 +1,25 @@
 # Products
 
+- title: Basetype
+  url: https://github.com/drocarmo/basetype
+  info: Modular typographic scale tool for your Sass workflow.
+
 - title: Elenco
   url: http://drocarmo.com/elenco
-  info: A Chrome-extension that helps you stay on track.
+  info: Chrome-extension designed to help you stay on track.
 
-- title: Fields
-  url: http://fields.io/
-  info: A realtime server-side analytics proxy for web and mobile product development.
+- title: Glob
+  url: http://aglobof.github.io/
+  info: Bower-managed packages of interface goodness ftw.
 
-- title: MassTransit
-  url: http://dribbble.com/drocarmo/projects/179244-MassTransit
-  info: An iOS app that helps you get where you want to go, the most efficient way possible.
+- title: Framer
+  url: https://github.com/drocarmo/framer
+  info: Prototypes I've built with Framer.js that you might find useful.
 
-- title: Nag
-  url: https://www.behance.net/gallery/Nag/11631741
-  info: A web app that helps you get your things back.
+- title: Resources
+  url: http://drocarmo.com/resources
+  info: Library of resources that encompass the discipline of Product Design.
 
-- title: Stride
-  url: https://www.behance.net/gallery/17756875/Stride
-  info: An iOS app for runners in Chicago.
+- title: Wheat
+  url: http://drocarmo.com/wheat
+  info: A Jekyll starter-template for designers.

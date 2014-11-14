@@ -7,7 +7,7 @@ date: 2013-10-06
 It's a human desideratum to make mistakes, to experience failure. Without it, we risk never experiencing true iterative growth.
 
 <figure class="small-left">
-  <img src="http://newsroom.ucla.edu/portal/ucla/artwork/6/0/9/8/3/160983/jw07-prv.jpg" alt="John Wooden" />
+  <img src="http://www.victorycoaches.com/wp-content/uploads/2014/07/Wooden.jpg" alt="John Wooden" />
   <figcaption>John Wooden coaching his players at UCLA during a time-out.</figcaption>
 </figure>
 

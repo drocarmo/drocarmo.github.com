@@ -1,7 +1,7 @@
 drocarmo.github.com
 ===================
 
-Personal site
+Welcome to my personal site.
 
 Built with Jekyll, HTML and CSS (Sass).
 

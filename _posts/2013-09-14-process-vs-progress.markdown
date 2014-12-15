@@ -1,5 +1,6 @@
 ---
 layout: post
+category: writing
 title: "Process vs Progress"
 date: 2013-09-14
 ---

@@ -1,5 +1,6 @@
 // Typography variables
 
+$type-source: "source-sans-pro", Helvetica Neue, sans-serif;
 $type-rooney: "rooney-web", Helvetica Neue, sans-serif;
 $type-rooney-sans: "rooney-sans", Helvetica Neue, sans-serif;
 $type-menlo: Menlo, monospace;
@@ -13,7 +14,7 @@ $line-height: 1.65;
 // Document type styles
 
 body {
-  font-family: $type-rooney;
+  font-family: $type-source;
   font-weight: $type-weight-light;
   font-style: $type-style-normal;
   color: $color-black;
@@ -21,6 +22,7 @@ body {
 }
 
 h1 {
+  font-family: $type-rooney;
   font-size: 26px;
   font-weight: $type-weight-regular;
 
@@ -30,16 +32,16 @@ h1 {
 }
 
 h2 {
+  font-family: $type-rooney;
   font-size: 22px;
   font-weight: $type-weight-bold;
 }
 
 h3 {
-  font-family: $type-rooney-sans;
+  font-family: $type-rooney;
   font-weight: $type-weight-regular;
-  font-style: $type-style-italic;
+  text-align: center;
   font-size: 18px;
-  color: lighten($color-black, 10%);
 
   @include screen-medium {
     font-size: 20px;
@@ -47,7 +49,7 @@ h3 {
 }
 
 h4 {
-  font-family: $type-rooney-sans;
+  font-family: $type-rooney;
   font-weight: $type-weight-light;
   font-size: 12px;
   letter-spacing: 4px;

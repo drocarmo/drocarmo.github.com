@@ -1,5 +1,6 @@
 ---
 layout: post
+category: writing
 title: "Why Framer.js Matters"
 date: 2014-03-31
 ---

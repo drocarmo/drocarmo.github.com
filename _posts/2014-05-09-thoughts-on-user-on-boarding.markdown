@@ -1,5 +1,6 @@
 ---
 layout: post
+category: writing
 title: "User Onboarding"
 date: 2014-05-09
 ---

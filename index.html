@@ -16,23 +16,39 @@ title: Product Designer
   <p>In the past, I’ve lived in Orlando and Chicago, working and learning alongside some great friends at <a href="http://futura.io/" target="_blank">Futura</a>, <a href="http://www.starterleague.com/" target="_blank">Starterleague</a> and <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>.</p>
 
   <section class="products">
-    <h2>Working On</h2>
+    <h2>Projects</h2>
     {% for products in site.data.products %}
       <p>
-        <a href="{{ products.url }}">{{ products.title }}</a> <span>  — {{ products.info }}</span>
+        <a href="{{ products.url }}">{{ products.title }}</a>, {{ products.info }}
       </p>
     {% endfor %}
   </section>
 
   <section class="posts">
-  <h2>Thoughts On</h2>
+  <h2>Writing</h2>
   {% for post in site.posts %}
-    <div class="post">
-      <p>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </p>
-      <h4 class="date">{{ post.date | date_to_long_string }}</h4>
-    </div>
+    {% if post.categories contains 'writing' %}
+      <div class="post">
+        <p>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </section>
+
+  <section class="posts">
+  <h2>Photography</h2>
+  {% for post in site.posts %}
+    {% if post.categories contains 'photography' %}
+      <div class="post">
+        <p>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+      </div>
+    {% endif %}
   {% endfor %}
   </section>
 

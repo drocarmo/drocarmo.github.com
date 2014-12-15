@@ -16,10 +16,6 @@
 
 .products {
   clear: both;
-
-  span {
-    color: darken($color-light-gray, 20%);
-  }
 }
 
 .posts {
@@ -27,8 +23,6 @@
 
   .post {
     .date {
-      font-family: $type-rooney;
-
       @include screen-medium {
         float: right;
         margin-top: -40px;

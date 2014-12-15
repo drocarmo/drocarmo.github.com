@@ -2,20 +2,20 @@
 
 - title: Elenco
   url: http://drocarmo.com/elenco
-  info: Chrome-extension designed to help you stay on track.
+  info: a chrome-extension designed to help you stay on track.
 
 - title: Glob
   url: http://aglobof.github.io/
-  info: Bower-managed packages of interface goodness ftw.
+  info: bower-managed packages of interface goodness ftw.
 
 - title: Framer
   url: https://github.com/drocarmo/framer
-  info: Prototypes I've built with Framer.js that you might find useful.
+  info: prototypes built with Framer.js that you might find useful.
 
 - title: Resources
   url: http://drocarmo.com/resources
-  info: Library of resources on digital Product Design.
+  info: a library of resources on digital Product Design.
 
 - title: Wheat
   url: http://drocarmo.com/wheat
-  info: A Jekyll starter-template for designers.
+  info: a Jekyll starter-template for designers.

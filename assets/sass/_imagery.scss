@@ -11,9 +11,6 @@ figure {
   img {
     width: 100%;
     @include flex;
-    &:hover {
-      opacity: .9;
-    }
   }
 
   figcaption {
@@ -55,6 +52,26 @@ figure {
       float: right;
       max-width: 30%;
       margin-right: -35%;
+    }
+  }
+
+  &.grid-2-left {
+    width: 100%;
+
+    @include screen-large {
+      float: left;
+      width: 49%;
+    }
+  }
+
+  &.grid-2-right {
+    width: 100%;
+
+    @include screen-large {
+      float: left;
+      width: 49%;
+      margin-left: 1%;
+      margin-right: 1%;
     }
   }
 }

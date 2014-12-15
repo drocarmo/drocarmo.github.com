@@ -213,23 +213,22 @@ table {
 
 body {
   font-family: "source-sans-pro", Helvetica Neue, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   color: #383838;
   line-height: 1.65; }
 
 h1 {
   font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-size: 26px;
-  font-weight: 400; }
+  font-size: 26px; }
   @media screen and (min-width: 700px) {
     h1 {
       font-size: 28px; } }
 
 h2 {
   font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-size: 22px;
-  font-weight: 500; }
+  font-weight: 400;
+  font-size: 22px; }
 
 h3 {
   font-family: "rooney-web", Helvetica Neue, sans-serif;
@@ -256,14 +255,13 @@ h4 {
 
 p {
   font-size: 16px;
-  font-weight: 300;
   word-wrap: break-word; }
   @media screen and (min-width: 700px) {
     p {
       font-size: 18px; } }
 
 strong {
-  font-weight: 400; }
+  font-weight: 600; }
 
 a {
   text-decoration: none;
@@ -288,7 +286,6 @@ hr {
     text-align: center;
     font-size: 30px;
     padding: 5px 0;
-    font-weight: 500;
     color: #2b2b2b; }
     @media screen and (min-width: 700px) {
       hr:after {
@@ -523,11 +520,8 @@ ul {
   color: white; }
   .error .container {
     padding: 20px auto; }
-    .error .container h1 {
-      font-family: "rooney-sans", Helvetica Neue, sans-serif; }
     .error .container p a {
       color: inherit; }
     .error .container p .small {
       font-size: 14px;
-      font-family: "rooney-sans", Helvetica Neue, sans-serif;
       text-transform: uppercase; }

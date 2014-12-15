@@ -2,11 +2,10 @@
 
 $type-source: "source-sans-pro", Helvetica Neue, sans-serif;
 $type-rooney: "rooney-web", Helvetica Neue, sans-serif;
-$type-rooney-sans: "rooney-sans", Helvetica Neue, sans-serif;
 $type-menlo: Menlo, monospace;
 $type-weight-light: 300;
 $type-weight-regular: 400;
-$type-weight-bold: 500;
+$type-weight-semi-bold: 600;
 $type-style-italic: italic;
 $type-style-normal: normal;
 $line-height: 1.65;
@@ -15,7 +14,7 @@ $line-height: 1.65;
 
 body {
   font-family: $type-source;
-  font-weight: $type-weight-light;
+  font-weight: $type-weight-regular;
   font-style: $type-style-normal;
   color: $color-black;
   line-height: $line-height;
@@ -24,7 +23,6 @@ body {
 h1 {
   font-family: $type-rooney;
   font-size: 26px;
-  font-weight: $type-weight-regular;
 
   @include screen-medium {
     font-size: 28px;
@@ -33,8 +31,8 @@ h1 {
 
 h2 {
   font-family: $type-rooney;
+  font-weight: $type-weight-regular;
   font-size: 22px;
-  font-weight: $type-weight-bold;
 }
 
 h3 {
@@ -66,7 +64,6 @@ h4 {
 
 p {
   font-size: 16px;
-  font-weight: $type-weight-light;
   word-wrap: break-word;
 
   @include screen-medium {
@@ -75,7 +72,7 @@ p {
 }
 
 strong {
-  font-weight: 400;
+  font-weight: $type-weight-semi-bold;
 }
 
 a {
@@ -107,7 +104,6 @@ hr {
     text-align: center;
     font-size: 30px;
     padding: 5px 0;
-    font-weight: $type-weight-bold;
     color: darken($color-black, 5%);
 
     @include screen-medium {

@@ -5,8 +5,9 @@ title: "Brooklyn Beta"
 date: 2014-10-11
 ---
 
-
-Photos from a recent trip to Providence, RI + Brooklyn, NY for [Brooklyn Beta](https://brooklynbeta.org) with the Teespring Design team:
+__Location__: Providence, Rhode Island & Brooklyn, New York  
+__Coordinates__: 41°49′25″N 71°25′20″W & 40°37′29″N 73°57′8″W  
+__Camera__: iPhone 5s
 
 <figure class="grid-2-left">
   <img src="http://image.vsco.co/1/51b751bdbbc81693/548e32bd0c561504418b4570/600x800/vsco_121414.jpg" alt="">
@@ -54,6 +55,14 @@ Photos from a recent trip to Providence, RI + Brooklyn, NY for [Brooklyn Beta](h
 
 <figure class="grid-2-right">
   <img src="http://image.vsco.co/1/51b751bdbbc81693/548e4fd4475615327c8b4572/vsco_121414.jpg" alt="">
+</figure>
+
+<figure class="grid-2-left">
+  <img src="http://image.vsco.co/1/51b751bdbbc81693/548e34b42b5615255c8b4585/600x450/vsco_121414.jpg" alt="">
+</figure>
+
+<figure class="grid-2-right">
+  <img src="http://image.vsco.co/1/51b751bdbbc81693/548e35f52b5615205c8b45a2/600x450/vsco_121414.jpg" alt="">
 </figure>
 
 ***

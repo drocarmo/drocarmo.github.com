@@ -8,10 +8,6 @@
   .container {
     padding: 20px auto;
 
-    h1 {
-      font-family: $type-rooney-sans;
-    }
-
     p {
       a {
         color: inherit;
@@ -19,7 +15,6 @@
 
       .small {
         font-size: 14px;
-        font-family: $type-rooney-sans;
         text-transform: uppercase;
       }
     }

@@ -4,7 +4,6 @@ code {
   display: inline;
   word-wrap: break-word;
   font-size: 14px;
-  letter-spacing: .1px;
 
   @include screen-medium {
     font-size: 15px;

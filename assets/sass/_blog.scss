@@ -3,15 +3,13 @@
 @mixin blog-button {
   a {
     font-size: .875em;
-    text-decoration: none;
-    border: 1px solid $color-gray;
     color: $color-gray;
-    border-radius: 4px;
-    padding: 10px;
+    border-bottom: none;
+    background: $color-white;
+    padding: 15px;
 
     &:hover,
     &:active {
-      border: 1px solid $color-black;
       color: $color-black;
     }
   }
@@ -21,7 +19,7 @@
 
 .back {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 2%;
 
@@ -34,7 +32,7 @@
 
 .next {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 2%;
 

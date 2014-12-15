@@ -353,7 +353,7 @@ a.twitter {
 
 .back {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 2%; }
   @media screen and (min-width: 700px) {
@@ -361,18 +361,16 @@ a.twitter {
       top: 30px; } }
   .back a {
     font-size: .875em;
-    text-decoration: none;
-    border: 1px solid #aaaaaa;
     color: #aaaaaa;
-    border-radius: 4px;
-    padding: 10px; }
+    border-bottom: none;
+    background: white;
+    padding: 15px; }
     .back a:hover, .back a:active {
-      border: 1px solid #383838;
       color: #383838; }
 
 .next {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 2%; }
   @media screen and (min-width: 1200px) {
@@ -380,13 +378,11 @@ a.twitter {
       top: 30px; } }
   .next a {
     font-size: .875em;
-    text-decoration: none;
-    border: 1px solid #aaaaaa;
     color: #aaaaaa;
-    border-radius: 4px;
-    padding: 10px; }
+    border-bottom: none;
+    background: white;
+    padding: 15px; }
     .next a:hover, .next a:active {
-      border: 1px solid #383838;
       color: #383838; }
 
 .blog {
@@ -421,8 +417,7 @@ code {
   color: #e83943;
   display: inline;
   word-wrap: break-word;
-  font-size: 14px;
-  letter-spacing: .1px; }
+  font-size: 14px; }
   @media screen and (min-width: 700px) {
     code {
       font-size: 15px; } }

@@ -23,6 +23,8 @@
 
   .post {
     .date {
+      margin-top: -10px;
+
       @include screen-medium {
         float: right;
         margin-top: -40px;

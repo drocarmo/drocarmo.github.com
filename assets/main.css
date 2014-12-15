@@ -216,7 +216,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #383838;
-  line-height: 1.65; }
+  line-height: 1.5; }
 
 h1 {
   font-family: "rooney-web", Helvetica Neue, sans-serif;
@@ -247,11 +247,10 @@ h4 {
   color: #b6b6b6;
   padding-bottom: 10px;
   padding-left: 2px;
-  margin-top: -10px; }
+  margin-top: -20px; }
   @media screen and (min-width: 700px) {
     h4 {
-      letter-spacing: 5px;
-      margin-top: -15px; } }
+      letter-spacing: 5px; } }
 
 p {
   font-size: 16px;
@@ -345,10 +344,12 @@ a.twitter {
 
 .posts {
   clear: both; }
-  @media screen and (min-width: 700px) {
-    .posts .post .date {
-      float: right;
-      margin-top: -40px; } }
+  .posts .post .date {
+    margin-top: -10px; }
+    @media screen and (min-width: 700px) {
+      .posts .post .date {
+        float: right;
+        margin-top: -40px; } }
 
 .back {
   z-index: 1000;

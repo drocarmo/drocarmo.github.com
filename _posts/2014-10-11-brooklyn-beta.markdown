@@ -5,7 +5,7 @@ title: "Brooklyn Beta"
 date: 2014-10-11
 ---
 
-__Location__: Providence, Rhode Island & Brooklyn, New York  
+__Locations__: Providence, Rhode Island & Brooklyn, New York  
 __Coordinates__: 41°49′25″N 71°25′20″W & 40°37′29″N 73°57′8″W  
 __Camera__: iPhone 5s
 

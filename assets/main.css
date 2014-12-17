@@ -453,7 +453,9 @@ figure figcaption {
     figure figcaption {
       font-size: 14px; } }
 figure.big {
-  width: 100%; }
+  clear: both;
+  width: 100%;
+  padding: 20px 0; }
   @media screen and (min-width: 1200px) {
     figure.big {
       width: 120%;

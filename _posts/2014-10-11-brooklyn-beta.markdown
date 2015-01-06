@@ -57,12 +57,10 @@ __Camera__: iPhone 5s
   <img src="http://image.vsco.co/1/51b751bdbbc81693/548e34ac0b56150c6b8b458a/600x800/vsco_121414.jpg" alt="">
 </figure>
 
-
 <figure class="big">
   <img src="http://image.vsco.co/1/51b751bdbbc81693/548e4fd4475615327c8b4572/vsco_121414.jpg" alt="">
   <figcaption>The sunset from the 102nd floor in the Empire State Building.</figcaption>
-</figure>  
-  
+</figure>    
 
 <figure class="grid-2-left">
   <img src="http://image.vsco.co/1/51b751bdbbc81693/548e34b42b5615255c8b4585/600x450/vsco_121414.jpg" alt="">

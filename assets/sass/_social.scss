@@ -1,6 +1,5 @@
 // Social Media palettes
 
-$dribbble: #ea4c89;
 $github: #676767;
 $rdio: #006ed2;
 $twitter: #00aced;
@@ -21,7 +20,6 @@ $twitter: #00aced;
 // Social Media Components
 
 a {
-  @include social(dribbble, $dribbble);
   @include social(github, $github);
   @include social(rdio, $rdio);
   @include social(twitter, $twitter);

@@ -312,10 +312,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
-a.dribbble {
-  color: #ea4c89; }
-  a.dribbble:hover, a.dribbble:active {
-    color: #e51e6b; }
 a.github {
   color: #676767; }
   a.github:hover, a.github:active {

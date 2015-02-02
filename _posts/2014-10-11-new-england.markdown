@@ -1,7 +1,7 @@
 ---
 layout: post
 category: photography
-title: "Brooklyn Beta"
+title: "Through New England"
 date: 2014-10-11
 ---
 

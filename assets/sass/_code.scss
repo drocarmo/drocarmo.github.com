@@ -1,9 +1,12 @@
 code {
-  font-family: $type-menlo;
+  font-family: $type-source-code;
   color: $color-red;
   display: inline;
   word-wrap: break-word;
   font-size: 14px;
+  background-color: lighten($color-red, 40%);
+  padding: 2px 4px;
+  border-radius: 4px;
 
   @include screen-medium {
     font-size: 15px;
@@ -11,7 +14,7 @@ code {
 }
 
 pre {
-  font-family: $type-menlo;
+  font-family: $type-source-code;
   font-size: 12px;
   color: $color-red;
   border: 1px solid lighten($color-light-gray, 5%);

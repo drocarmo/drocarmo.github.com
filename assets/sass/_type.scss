@@ -1,8 +1,8 @@
 // Typography variables
 
 $type-source: "source-sans-pro", Helvetica Neue, sans-serif;
+$type-source-code: "source-code-pro", sans-serif;
 $type-rooney: "rooney-web", Helvetica Neue, sans-serif;
-$type-menlo: Menlo, monospace;
 $type-weight-light: 300;
 $type-weight-regular: 400;
 $type-weight-semi-bold: 600;
@@ -78,11 +78,11 @@ a {
   text-decoration: none;
   text-transform: none;
   color: $color-black;
-  border-bottom: 1px solid darken($color-light-gray, 5%);
+  border-bottom: 1px solid lighten($color-blue, 52%);
 
   &:hover,
   &:active {
-    border-color: darken($color-light-gray, 15%);
+    border-color: $color-blue;
   }
 }
 
@@ -94,19 +94,21 @@ blockquote {
 
 hr {
   border: 0;
-  margin: 30px auto;
+  margin: 60px auto;
   clear: both;
 
   &:after {
     display: block;
-    content: "∾";
+    content: "⌇";
     text-align: center;
-    font-size: 30px;
-    padding: 5px 0;
-    color: darken($color-black, 5%);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 10px;
+    color: $color-orange;
 
     @include screen-medium {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 }

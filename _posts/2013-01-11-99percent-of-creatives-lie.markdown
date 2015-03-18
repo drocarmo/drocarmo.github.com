@@ -10,7 +10,7 @@ First and foremost, it is 2:33 am. So forgive my grammatical errors.
 
 This is a blog entry in response to [@Erondu’](https://twitter.com/erondu") blog entry [You are Your Number One User](http://blog.jarederondu.com/you-are-your-number-one-user) & ["Go Out and Do Nothing"](http://blog.jarederondu.com/go-outside-and-do-nothing) on Svbtle. So go read that first for inspiration, I guess. Then go write a blog entry on your inspiration. Then come back here, and read this.
 
-### My Story
+#### My Story
 
 Back? Awesome. Whew!
 
@@ -22,7 +22,7 @@ Back? Awesome. Whew!
 Ok, so some back drop to get you updated with the past 12 hours.
 I am fairly new to the tech community. Self-taught for the past 4 months, and now a student at [StarterLeague](http://www.starterleague.com/). A quick explanation of why I got into web development is because pixel pushing and code puzzling challenging me to solve problems in an incredibly creative platform (designing and building the web).
 
-### Too Much Caffeine
+#### Too Much Caffeine
 
 
 So back to now, I am currently in the [1871 Workspace](http://1871.com), hacking away my brain from learning JS library assets to pixel pushing in Photoshop. I have drank my share of caffeine and sleep is no longer in sight, so on my midnight snack break I was scrolling through my twitter feed and Jared’s post caught my eye.
@@ -34,7 +34,7 @@ So back to now, I am currently in the [1871 Workspace](http://1871.com), hacking
 
 After reading Jared’s post, I decided to extend my snack period because it was truly what I needed. I decided to ride around 1871 with the many [Razor Scooters](https://i.chzbgr.com/maxW500/6687127040/hD56DB022/) in the facility and then sat down to do some writing. As my writing developed, an increasing desire to go back to my computer to do “work" kept tugging inside of me. I kept writing and that’s when a lot became clear to me (Somewhat like Jared’s ‘That’s when it hit me’ moment).
 
-### No Fear of Perfection
+#### No Fear of Perfection
 
 Conclusion: 99.9% of people lie about their creativity.
 

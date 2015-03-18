@@ -18,7 +18,7 @@ Framer.js was built by [Koen Bok](http://koenbok.com/), it is a great tool for a
 
 Enough about the characteristics of Framer though, you can read about it on the website. Let's talk about the big picture I'm trying to get at.
 
-### Why it matters.
+#### Why it matters.
 
 > “The current state of tools is decent, but how they fit together is less than ideal.”
 >
@@ -35,7 +35,7 @@ I have two main points why Framer.js should matter to designers:
 
 Allow me to elaborate on these two points.
 
-### Improving the communication around Interaction Design.
+#### Improving the communication around Interaction Design.
 
 This past week, I gave a small presentation on Framer.js at our weekly code review at DevMynd (this post actually stemmed from the talk). During the presentation, I spoke a little bit on what my process was like building [MassTransit](http://dribbble.com/drocarmo/projects/179244-MassTransit) with [Erin Hochstatter](https://github.com/prettyhandsome) (an iOS developer). I designed the iOS app all in Photoshop and handed over assets as well as specific numbers around type size, container widths and heights, iconography, etc.
 
@@ -43,7 +43,7 @@ Although I was pleased with the visuals, static images and numbers weren't enoug
 
 As a product designer, it is my job to create the interface and the imagined experience a user will go through, but it is also my job to communicate and prototype the interaction the user will have with the product.
 
-### A canvas to learn.
+#### A canvas to learn.
 
 My second point is something I strongly believe in and at times can cause controversy amongst designers. A good friend of mine, Mig, sums up what I strongly believe:
 

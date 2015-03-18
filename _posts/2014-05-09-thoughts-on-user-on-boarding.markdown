@@ -15,7 +15,7 @@ Now, consider that statement through the lens of a digital product. Onboarding i
 
 Heavy task it seems. Let’s break it down into two segments: understanding the user and applying effective onboarding procedures for that user.
 
-### Understanding The User 
+#### Understanding The User 
 
 If you’ve been in digital product design, development or management you’ve probably run across the term _personas_. A persona is a fictional character that represents a subset of the market the product wishes to address[2]. In other words, an ideal user for the specific product you’re trying to build.
 
@@ -28,7 +28,7 @@ Creating one or two personas in your product development process is key because 
 A user does not pick your product because his/her hair is blonde. A user is going to use your product because he/she sees it as value to a specific situation or problem he/she is trying to solve. Attributes play a role in the consequential situation he/she finds itself in, but it is ultimately the situation of the problem itself that leads the user to desire your product’s value or solution.
 
 
-### Applying Effective Onboarding Procedures
+#### Applying Effective Onboarding Procedures
 
 As the product owner, manager, designer or developer, it’s your job to hone exactly what problem you are trying solve, and how useful one user might find your product.
 

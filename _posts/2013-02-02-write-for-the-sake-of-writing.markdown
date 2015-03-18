@@ -10,7 +10,7 @@ Hi there web, it has been quite some time since I’ve published anything on the
 
 The reason isn’t due to a lack of content. The past 2 months have been an incredible time of learning. As a design student at [StarterLeague](http://www.starterleague.com) there has been no shortage of things to write about when learning with [Mig](http://migreyes.com/), mentors, fellow students and the Chicago community.
 
-### Houston, We Have A Problem
+#### Houston, We Have A Problem
 
 The problem is I find myself making the typical mental notes that any blog writer makes once crossing paths with a deep thought: “Oh, I should totally post a blog entry about this” or “Is it worth posting about?”. These mental notes usually end up discouraging my desire to write anything at all. It also hinders my entire creative process as a writer.
 
@@ -18,13 +18,13 @@ The problem is I find myself making the typical mental notes that any blog write
 
 Now, I am no longer freely writing about a topic that has intrigued me enough to sit down and write/type about. My thoughts are constantly bouncing back and forth between two connections. The connection between my mind and the paper/screen, and the connection between the screen and the reader. I’m perpetually  rechecking grammar, making sure thoughts are clear, etc etc.
 
-### Writing Is Good
+#### Writing Is Good
 
 Writing is an art, a gift. It’s not meant to be robotic or planned out. One of my favorite writing sessions I’ve ever experienced was with a pencil and a journal, I wrote to never look back at it again. Write to just for the sake of writing. It rewarding to the soul, trust me.
 
 This writing was ironically never meant to reach the web but thoughts are meant to be shared. Not all are meant to end up in your 8th grade journal in the closet of your parents house.
 
-### Be Vulnerable
+#### Be Vulnerable
 
 The interesting lesson this writing taught me was the same way I was obstructing my creative writing by thinking about how others may judge it, the same way about my design. What if I had an illustrative idea about a design and immediately thought.. “Ooh, I should make it 800 pixels wide and 600 pixels high pixels in Photoshop then post it on dribbble”. See where I’m getting at?
 

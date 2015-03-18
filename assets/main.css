@@ -212,52 +212,58 @@ table {
       width: 700px; } }
 
 body {
-  font-family: "source-sans-pro", Helvetica Neue, sans-serif;
+  font-family: "garamond-premier-pro-subhead", serif;
   font-weight: 400;
   font-style: normal;
   color: #383838;
-  line-height: 1.5; }
+  line-height: 1.5;
+  word-wrap: break-word; }
 
 h1 {
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-size: 26px; }
+  font-family: "freight-sans-pro", sans-serif;
+  font-weight: 600;
+  font-size: 32px; }
   @media screen and (min-width: 700px) {
     h1 {
-      font-size: 28px; } }
+      font-size: 36px; } }
 
 h2 {
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-weight: 400;
-  font-size: 22px; }
+  font-size: 24px; }
+  @media screen and (min-width: 700px) {
+    h2 {
+      font-size: 26px; } }
 
 h3 {
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  font-size: 18px; }
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: .5px;
+  text-transform: uppercase; }
   @media screen and (min-width: 700px) {
     h3 {
-      font-size: 20px; } }
+      font-size: 16px; } }
 
 h4 {
-  font-family: "rooney-web", Helvetica Neue, sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: #b6b6b6;
-  padding-bottom: 10px;
-  padding-left: 2px;
-  margin-top: -20px; }
+  font-family: "freight-sans-pro", sans-serif;
+  text-align: center;
+  font-size: 22px; }
   @media screen and (min-width: 700px) {
     h4 {
+      font-size: 24px; } }
+
+h5 {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9d9d9d;
+  margin-top: -22px; }
+  @media screen and (min-width: 700px) {
+    h5 {
       letter-spacing: 5px; } }
 
 p {
-  font-size: 16px;
-  word-wrap: break-word; }
+  font-size: 20px; }
   @media screen and (min-width: 700px) {
     p {
-      font-size: 18px; } }
+      font-size: 22px; } }
 
 strong {
   font-weight: 600; }
@@ -266,9 +272,9 @@ a {
   text-decoration: none;
   text-transform: none;
   color: #383838;
-  border-bottom: 1px solid #d1e6fa; }
+  border-bottom: 1px solid #e9e9e9; }
   a:hover, a:active {
-    border-color: #1464ad; }
+    border-color: #aaaaaa; }
 
 blockquote {
   margin: 50px 0;
@@ -277,17 +283,15 @@ blockquote {
 
 hr {
   border: 0;
-  margin: 60px auto;
+  margin: 0 0 60px auto;
+  padding-top: 60px;
   clear: both; }
   hr:after {
     display: block;
-    content: "⌇";
+    content: "✕";
     text-align: center;
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    font-size: 10px;
-    color: #f5b308; }
+    font-size: 30px;
+    color: #e9e9e9; }
     @media screen and (min-width: 700px) {
       hr:after {
         font-size: 40px; } }
@@ -328,14 +332,14 @@ a.twitter {
     color: #0087ba; }
 
 .about {
-  padding-top: 10px;
   padding-bottom: 100px; }
+  .about figure {
+    margin-top: -100px; }
   @media screen and (min-width: 700px) {
     .about {
-      padding-top: 40px;
       padding-bottom: 150px; } }
   .about section {
-    margin-top: 50px; }
+    margin-top: 100px; }
 
 .products {
   clear: both; }
@@ -347,7 +351,7 @@ a.twitter {
     @media screen and (min-width: 700px) {
       .posts .post .date {
         float: right;
-        margin-top: -40px; } }
+        margin-top: -45px; } }
 
 .back {
   z-index: 1000;
@@ -358,7 +362,7 @@ a.twitter {
     .back {
       top: 30px; } }
   .back a {
-    font-size: .875em;
+    font-size: .9em;
     color: #aaaaaa;
     border-bottom: none;
     background: white;
@@ -375,7 +379,7 @@ a.twitter {
     .next {
       top: 30px; } }
   .next a {
-    font-size: .875em;
+    font-size: .9em;
     color: #aaaaaa;
     border-bottom: none;
     background: white;
@@ -390,12 +394,12 @@ a.twitter {
     .blog {
       padding-top: 40px;
       padding-bottom: 150px; } }
-  .blog h3 {
-    padding: 40px 0; }
   .blog h4 {
+    padding: 40px 0; }
+  .blog h5 {
     margin-bottom: 50px; }
     @media screen and (min-width: 700px) {
-      .blog h4 {
+      .blog h5 {
         margin-bottom: 100px; } }
   .blog .video {
     width: 320px;
@@ -438,16 +442,12 @@ pre {
     pre {
       font-size: 14px; } }
 
-.info-main {
-  background: url("images/info.jpg") no-repeat center;
-  background-size: cover; }
-
 figure img {
   width: 100%;
   margin: 0 auto; }
 figure figcaption {
   font-size: 12px;
-  color: #b6b6b6; }
+  color: #9d9d9d; }
   figure figcaption a {
     color: inherit; }
   @media screen and (min-width: 700px) {

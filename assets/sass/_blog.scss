@@ -2,7 +2,7 @@
 
 @mixin blog-button {
   a {
-    font-size: .875em;
+    font-size: .9em;
     color: $color-gray;
     border-bottom: none;
     background: $color-white;
@@ -54,11 +54,11 @@
     padding-bottom: 150px;
   }
 
-  h3 {
+  h4 {
     padding: 40px 0;
   }
 
-  h4 {
+  h5 {
     margin-bottom: 50px;
 
     @include screen-medium {

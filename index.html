@@ -4,19 +4,18 @@ title: Product Designer
 ---
 
 <section class="container about">
-  <figure class="small-left">
-    <img src="{{ base.url }}/assets/images/info.jpg" alt="Portrait">
-    <figcaption>Photo taken at <a href="http://instagram.com/yellowdogeats" target="_blank">Yellow Dog Eats</a></figcaption>
+  <figure class="big">
+    <img src="{{ base.url }}/assets/images/info.jpg" alt="photo">
   </figure>
 
-  <h1>Hello, I'm Pedro.</h1>
+  <h1><img class="chromoji" title="hello" alt="✌" src="chrome-extension://cahedbegdkagmcjfolhdlechbkeaieki/images/apple/270c.png"> Hello, I’m Pedro.</h1>
 
-  <p>I'm a digital product designer living in San Francisco. Currently, I'm designing a new way for people to buy and create apparel with <a href="http://teespring.com/">Teespring</a>.</p>
+  <h2>I’m a digital product designer living in San Francisco. Currently, I’m designing a new way for people to buy and create products with <a href="http://teespring.com/">Teespring</a>.</h2>
 
   <p>In the past, I’ve lived in Chicago and Orlando, working and learning alongside some great friends at <a href="http://www.starterleague.com/" target="_blank">Starterleague</a>, <a href="http://www.devmynd.com/" target="_blank">Devmynd</a> and <a href="http://futura.io/" target="_blank">Futura</a>.</p>
 
   <section class="products">
-    <h2>Projects</h2>
+    <h3>Projects</h3>
     {% for products in site.data.products %}
       <p>
         <a href="{{ products.url }}">{{ products.title }}</a>, {{ products.info }}
@@ -25,28 +24,28 @@ title: Product Designer
   </section>
 
   <section class="posts">
-  <h2>Writing</h2>
+  <h3>Writing</h3>
   {% for post in site.posts %}
     {% if post.categories contains 'writing' %}
       <div class="post">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </p>
-        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+        <h5 class="date">{{ post.date | date_to_long_string }}</h5>
       </div>
     {% endif %}
   {% endfor %}
   </section>
 
   <section class="posts">
-  <h2>Photography</h2>
+  <h3>Travels</h3>
   {% for post in site.posts %}
     {% if post.categories contains 'photography' %}
       <div class="post">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </p>
-        <h4 class="date">{{ post.date | date_to_long_string }}</h4>
+        <h5 class="date">{{ post.date | date_to_long_string }}</h5>
       </div>
     {% endif %}
   {% endfor %}
@@ -54,6 +53,6 @@ title: Product Designer
 
   <hr>
 
-  <p>On the interwebs, you can reach out on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, see my work on <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a>, or listen to some tunes with me on <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>. If you're into emails, just remember to <a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice</a>. ☻</p>
+  <p>On the internet, you can reach out to me on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, see my work on <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a>, or listen to some tunes with me on <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>. If you're into emails, just remember to <a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice</a>. ☻</p>
 
 </section>

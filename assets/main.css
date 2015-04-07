@@ -225,13 +225,13 @@ h1 {
   font-size: 32px; }
   @media screen and (min-width: 700px) {
     h1 {
-      font-size: 36px; } }
+      font-size: 40px; } }
 
 h2 {
-  font-size: 24px; }
+  font-size: 26px; }
   @media screen and (min-width: 700px) {
     h2 {
-      font-size: 26px; } }
+      font-size: 30px; } }
 
 h3 {
   font-size: 14px;
@@ -331,15 +331,11 @@ a.twitter {
   a.twitter:hover, a.twitter:active {
     color: #0087ba; }
 
-.about {
-  padding-bottom: 100px; }
-  .about figure {
-    margin-top: -100px; }
+.about section {
+  margin: 100px auto; }
   @media screen and (min-width: 700px) {
-    .about {
-      padding-bottom: 150px; } }
-  .about section {
-    margin-top: 100px; }
+    .about section {
+      margin: 250px auto; } }
 
 .products {
   clear: both; }

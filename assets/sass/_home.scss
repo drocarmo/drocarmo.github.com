@@ -1,6 +1,10 @@
 // Home page style
 
 .about {
+  @include screen-medium {
+    margin-top: 300px;
+  }
+
   section {
     margin: 100px auto;
 

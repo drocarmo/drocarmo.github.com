@@ -331,6 +331,9 @@ a.twitter {
   a.twitter:hover, a.twitter:active {
     color: #0087ba; }
 
+@media screen and (min-width: 700px) {
+  .about {
+    margin-top: 300px; } }
 .about section {
   margin: 100px auto; }
   @media screen and (min-width: 700px) {

@@ -1,21 +1,23 @@
 // Typography variables
 
+$type-sofia: "sofia-pro",sans-serif;
+$type-karmina: "karmina",serif;
 $type-source: "source-sans-pro", Helvetica Neue, sans-serif;
 $type-source-code: "source-code-pro", sans-serif;
-$type-rooney: "rooney-web", Helvetica Neue, sans-serif;
 $type-garamond: "garamond-premier-pro-subhead", serif;
-$type-freight: "freight-sans-pro",sans-serif;
 $type-weight-light: 300;
 $type-weight-regular: 400;
 $type-weight-semi-bold: 600;
+$type-weight-bold: 700;
 $type-style-italic: italic;
 $type-style-normal: normal;
+$line-height-headings: 1.2;
 $line-height: 1.5;
 
 // Document type styles
 
 body {
-  font-family: $type-garamond;
+  font-family: $type-karmina;
   font-weight: $type-weight-regular;
   font-style: $type-style-normal;
   color: $color-black;
@@ -24,20 +26,24 @@ body {
 }
 
 h1 {
-  font-family: $type-freight;
-  font-weight: $type-weight-semi-bold;
-  font-size: 32px;
+  font-family: $type-sofia;
+  font-weight: $type-weight-bold;
+  line-height: $line-height-headings;
+  font-size: 40px;
 
   @include screen-medium {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 
 h2 {
-  font-size: 26px;
+  font-family: $type-sofia;
+  font-weight: $type-weight-bold;
+  line-height: $line-height;
+  font-size: 24px;
 
   @include screen-medium {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
@@ -53,7 +59,7 @@ h3 {
 }
 
 h4 {
-  font-family: $type-freight;
+  font-family: $type-sofia;
   text-align: center;
   font-size: 22px;
 
@@ -82,7 +88,7 @@ p {
 }
 
 strong {
-  font-weight: $type-weight-semi-bold;
+  font-weight: $type-weight-bold;
 }
 
 a {

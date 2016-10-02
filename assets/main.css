@@ -212,7 +212,7 @@ table {
       width: 700px; } }
 
 body {
-  font-family: "garamond-premier-pro-subhead", serif;
+  font-family: "karmina", serif;
   font-weight: 400;
   font-style: normal;
   color: #383838;
@@ -220,18 +220,22 @@ body {
   word-wrap: break-word; }
 
 h1 {
-  font-family: "freight-sans-pro", sans-serif;
-  font-weight: 600;
-  font-size: 32px; }
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 40px; }
   @media screen and (min-width: 700px) {
     h1 {
-      font-size: 40px; } }
+      font-size: 60px; } }
 
 h2 {
-  font-size: 26px; }
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 24px; }
   @media screen and (min-width: 700px) {
     h2 {
-      font-size: 30px; } }
+      font-size: 40px; } }
 
 h3 {
   font-size: 14px;
@@ -243,7 +247,7 @@ h3 {
       font-size: 16px; } }
 
 h4 {
-  font-family: "freight-sans-pro", sans-serif;
+  font-family: "sofia-pro", sans-serif;
   text-align: center;
   font-size: 22px; }
   @media screen and (min-width: 700px) {
@@ -266,7 +270,7 @@ p {
       font-size: 22px; } }
 
 strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 a {
   text-decoration: none;
@@ -331,14 +335,18 @@ a.twitter {
   a.twitter:hover, a.twitter:active {
     color: #0087ba; }
 
-@media screen and (min-width: 700px) {
-  .about {
-    margin-top: 300px; } }
-.about section {
-  margin: 100px auto; }
+.about {
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-size: 300px; }
   @media screen and (min-width: 700px) {
-    .about section {
-      margin: 250px auto; } }
+    .about {
+      padding-top: 300px; } }
+  .about section {
+    margin: 100px auto; }
+    @media screen and (min-width: 700px) {
+      .about section {
+        margin: 250px auto; } }
 
 .products {
   clear: both; }

@@ -31,6 +31,12 @@
   }
 
   @include screen-large {
-    width: 700px;
+    width: 750px;
+  }
+
+  &.container__home {
+    @include screen-large {
+      width: 1024px;
+    }
   }
 }

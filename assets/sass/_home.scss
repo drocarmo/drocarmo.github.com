@@ -1,26 +1,99 @@
 // Home page style
 
+section {
+  margin: 200px auto;
+  clear: both;
+  display: block;
+}
 .about {
-  // background: url(https://scontent-sjc2-1.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11380769_720316468072984_423035325_n.jpg);
+  background: url(/assets/images/head.png);
   background-repeat: no-repeat;
-  background-position: 10px 10px;
-  background-size: 300px;
+  background-position: 600px 100px;
+  background-size: 332px;
 
   @include screen-medium {
     padding-top: 300px;
+
+    h2, h3 {
+      margin-left: 85px;
+    }
   }
 
-  section {
-    margin: 100px auto;
+  margin: 0 auto 150px;
 
-    @include screen-medium {
-      margin: 250px auto;
+  // section {
+  //   margin: 100px auto;
+
+  //   @include screen-medium {
+  //     margin: 250px auto;
+  //   }
+  // }
+}
+
+.experience {
+  background: url(/assets/images/were.png);
+  background-repeat: no-repeat;
+  background-position: 85px 0px;
+  background-size: 298px;
+
+  @include screen-medium {
+    h3 {
+      margin-left: 491px;
+
+      &.h3-bold {
+        font-weight: $type-weight-bold;
+      }
     }
   }
 }
 
-.products {
+.projects {
   clear: both;
+
+  .featured_project {
+    display: inline;
+    float: left;
+    margin: 40px 0.6825938702%;
+    width: 31.9681455929%;
+
+    a {
+      text-decoration: none;
+    }
+
+    .featured_project__image_container {
+      position: relative;
+      overflow: hidden;
+      height: 250px;
+      margin-bottom: 20px;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 10px 10px 0px $color-yellow;
+      }
+
+    }
+
+    .featured_project__text {
+      word-wrap: break-word;
+
+      h3,
+      h5 {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .featured_project__soon {
+    opacity: .3;
+    .featured_project__image_container {
+      &:hover {
+         box-shadow: none;
+      }
+    }
+  }
 }
 
 .posts {

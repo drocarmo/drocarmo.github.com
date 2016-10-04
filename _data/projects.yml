@@ -1,0 +1,21 @@
+# Project
+
+- image: /assets/images/resources.png
+  title: /Resources
+  url: http://drocarmo.com/resources
+  info: A curated library of resources on design.
+
+# - image: /assets/images/ritma.png
+#   title: Ritma
+#   url: http://drocarmo.com/ritma
+#   info: A personal exploration into creating art.
+
+# - image: /assets/images/elenco.png
+#   title: Elenco
+#   url: http://drocarmo.com/elenco
+#   info: Chrome-extension designed to help you stay on track.
+
+# - image: /assets/images/change.png
+#   title: Change.org
+#   url: http://drocarmo.com/work/change/
+#   info: Re-designing mobile petitions.

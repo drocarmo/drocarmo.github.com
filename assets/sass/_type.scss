@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-family: $type-sofia;
   font-weight: $type-weight-bold;
-  line-height: $line-height;
+  line-height: $line-height-headings;
   font-size: 24px;
 
   @include screen-medium {
@@ -48,13 +48,14 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
-  font-style: $type-style-italic;
-  letter-spacing: .5px;
-  text-transform: uppercase;
+  font-size: 18px;
 
   @include screen-medium {
-    font-size: 16px;
+    font-size: 24px;
+  }
+
+  .h3-bold {
+    font-weight: $type-weight-bold;
   }
 }
 
@@ -69,22 +70,12 @@ h4 {
 }
 
 h5 {
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: darken($color-light-gray, 30%);
-  margin-top: -22px;
-
-  @include screen-medium {
-    letter-spacing: 5px;
-  }
+  font-size: 16px;
+  font-weight: $type-weight-bold;
 }
 
 p {
   font-size: 20px;
-
-  @include screen-medium {
-    font-size: 22px;
-  }
 }
 
 strong {
@@ -92,14 +83,13 @@ strong {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   text-transform: none;
   color: $color-black;
-  border-bottom: 1px solid $color-light-gray;
 
   &:hover,
   &:active {
-    border-color: $color-gray;
+    color: darken($color-black, 10%);
   }
 }
 
@@ -126,4 +116,8 @@ hr {
       font-size: 40px;
     }
   }
+}
+
+.text__highlight {
+  text-shadow: 10px 10px $color-yellow;
 }

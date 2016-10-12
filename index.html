@@ -3,81 +3,66 @@ layout: default
 title: Product Designer
 ---
 
+
 <section class="container container__home">
   <section class="about">
-    <h1 class="text__highlight">—Oi</h1>
+    <h1 class="text__highlight">—Hello</h1>
 
-    <h2>I’m Pedro Carmo.<br>A multidisciplinary ḓesigner<br>in San Francisco, California.</h2>
-    <h3>I'm updating this space. Please come back soon.</h3>
+    <h2>I’m Pedro Carmo.<br>A multidisciplinary designer<br> based in foggy San Francisco, California.</h2>
   </section>
-<!--
-  <section class="experience">
-    <h3><span class="h3-bold">Currently</span><br>I’m designing a new way to shop and create custom products with <a href="http://www.starterleague.com/" target="_blank">Teespring</a>. I also mentor students at <a href="http://trydesignlab.com/drocarmo/" target="_blank">DesignLab</a>.</h3>
 
-    <h3><span class="h3-bold">Previously</span><br>In past lives, I’ve lived in Chicago and Orlando. Having the pleasure of working, learning and volunteering alongside some great friends at <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>, <a href="http://www.starterleague.com/" target="_blank">The Starter League</a>, <a href="https://www.creativemornings.com/cities/chi" target="_blank">CreativeMornings</a> and <a href="http://www.futura.io/" target="_blank">Futura</a>.</h3>
+  <section class="experience">
+    <h4>Currently</h4>
+    <p>For the past 2 years, I’ve been a product designer at <a href="http://www.starterleague.com/" target="_blank">Teespring</a>, designing a new way for people to shop and create custom products. In my downtime, I mentor students at <a href="http://trydesignlab.com/drocarmo/" target="_blank">DesignLab</a>.</p>
+
+    <h4>Previously</h4>
+    <p>Before San Francisco, I was a product designer at <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>, rolling my sleeves up in the consultancy world in Chicago. I also took part in building some amazing design communities at <a href="https://www.creativemornings.com/cities/chi" target="_blank">CreativeMornings Chicago</a> and <a href="http://www.starterleague.com/" target="_blank">The Starter League</a>.
   </section>
 
   <section class="projects">
-    <h2 class="text__highlight">—Projects</h2>
-    {% for comingsoon in site.data.comingsoon %}
-      <div class="featured_project featured_project__soon">
-        <div class="featured_project__image_container">
-          <img class="projects__image" src="{{ comingsoon.image }}">
-        </div>
+    <h2 class="text__highlight">—Selected Projects</h2>
+    <h4 class="comingsoon">Coming very soon, truss me</h4>
+    <!-- {% for comingsoon in site.data.comingsoon %}
+      <div class="featured_project featured_project__{{comingsoon.class}}" style="background-image:url({{ comingsoon.image }})">
         <div class="featured_project__text">
-          <h3>{{ comingsoon.title }}</h3>
+          <h4>{{ comingsoon.title }}</h4>
           <h5>{{ comingsoon.info }}</h5>
+          <br>
+          <h5>✶ Coming soon ✶</h5>
         </div>
+        <div class="featured_project__image_container" style="background-image:url({{ comingsoon.image }})"></div>
       </div>
     {% endfor %}
     {% for projects in site.data.projects %}
-      <div class="featured_project">
+      <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
         <a href="{{ projects.url }}">
-          <div class="featured_project__image_container">
-            <img class="projects__image" src="{{ projects.image }}">
-          </div>
           <div class="featured_project__text">
-            <h3>{{ projects.title }}</h3>
-            <h5>{{ projects.info }}</h5>
+            <h4>{{ projects.title }}</h4>
+            <h5>{{ projects.info }}.</h5>
+            <br>
+            <h5>View project →</h5>
           </div>
         </a>
       </div>
-    {% endfor %}
+    {% endfor %} -->
   </section>
 
   <section class="posts">
-  <h2 class="text__highlight">—Writing</h2>
-  {% for post in site.posts %}
-    {% if post.categories contains 'writing' %}
+    <h2 class="text__highlight">—Writing</h2>
+    {% for post in site.posts %}
       <div class="post">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </p>
         <h5 class="date">{{ post.date | date_to_long_string }}</h5>
       </div>
-    {% endif %}
-  {% endfor %}
-  </section> -->
+    {% endfor %}
+    <div style="clear: both;"></div>
+  </section>
 
-  <!-- <section class="posts">
-  <h3>Travels</h3>
-  {% for post in site.posts %}
-    {% if post.categories contains 'photography' %}
-      <div class="post">
-        <p>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </p>
-        <h5 class="date">{{ post.date | date_to_long_string }}</h5>
-      </div>
-    {% endif %}
-  {% endfor %}
-  </section> -->
-
-<!--   <section class="elsewhere">
+  <section class="elsewhere">
     <h2 class="text__highlight">—Elsewhere</h2>
-
-    <section>
-      <p>On the internet, you can reach out to me on <a href="https://twitter.com/drocarmo" class="twitter" target="_blank">Twitter</a>, see my work on <a href="https://github.com/drocarmo" class="github" target="_blank">Github</a>, or listen to some tunes with me on <a href="http://www.rdio.com/people/drocarmo/" class="rdio" target="_blank">Rdio</a>. If you're into emails, just remember to <a class="contact" href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice</a>. ☻</p>
-    </section> -->
-
+    <p>On the interwebs, you can find me on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://www.instagram.com/drocarmo/" target="_blank">Instagram</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a> and <a href="https://dribbble.com/drocarmo" target="_blank">Dribbble</a>.</p>
+    <p>If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☻</a>.</p>
+  </section>
 </section>

@@ -1,6 +1,5 @@
 ---
 layout: post
-category: writing
 title: "99% of Creatives Lie"
 date: 2013-01-11
 ---

@@ -1,6 +1,5 @@
 ---
 layout: post
-category: writing
 title: "Write For The Sake Of Writing"
 date: 2013-02-02
 ---

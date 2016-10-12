@@ -1,9 +1,16 @@
-# Products
+Products
 
-- image: /assets/images/ts_shopping.png
-  title: Teespring Shopping
-  info: iOS Product
+# - image: /assets/images/projects/campaign.png
+#   title: Teespring Campaign Page
+#   url: http://drocarmo.com/work/
+#   info: Improving the campaign page checkout experience for buyers with saved information
+#   class: quickcheckout
 
-- image: /assets/images/ts_storefronts.png
-  title: Teespring Storefronts
-  info: Web Product
+# - title: Teespring Shopping
+#   info: Coming soon
+
+# - title: Teespring Storefronts
+#   info: Coming soon
+
+# - title: Teespring Search
+#   info: Coming soon

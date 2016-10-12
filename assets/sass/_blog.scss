@@ -16,8 +16,8 @@
 }
 
 // Button styles
-
 .back {
+  margin: 0 auto;
   z-index: 1000;
   position: fixed;
   top: 20px;
@@ -31,6 +31,7 @@
 }
 
 .next {
+  margin: 0 auto;
   z-index: 1000;
   position: fixed;
   top: 20px;
@@ -59,10 +60,23 @@
   }
 
   h5 {
+
+    &.date {
+      color: $color-gray;
+    }
+
     margin-bottom: 50px;
 
     @include screen-medium {
       margin-bottom: 100px;
+    }
+  }
+
+  li {
+    font-size: 18px;
+
+    @include screen-medium {
+      font-size: 20px;
     }
   }
 

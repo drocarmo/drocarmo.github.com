@@ -1,6 +1,5 @@
 ---
 layout: post
-category: writing
 title: "Mistakes Are Propellers"
 date: 2013-10-06
 ---

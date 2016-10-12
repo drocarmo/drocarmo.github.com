@@ -4,7 +4,6 @@ $type-sofia: "sofia-pro",sans-serif;
 $type-karmina: "karmina",serif;
 $type-source: "source-sans-pro", Helvetica Neue, sans-serif;
 $type-source-code: "source-code-pro", sans-serif;
-$type-garamond: "garamond-premier-pro-subhead", serif;
 $type-weight-light: 300;
 $type-weight-regular: 400;
 $type-weight-semi-bold: 600;
@@ -48,34 +47,40 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
+  line-height: $line-height-headings;
 
   @include screen-medium {
     font-size: 24px;
-  }
-
-  .h3-bold {
-    font-weight: $type-weight-bold;
   }
 }
 
 h4 {
   font-family: $type-sofia;
-  text-align: center;
-  font-size: 22px;
+  font-weight: $type-weight-bold;
+  line-height: $line-height-headings;
+  font-size: 18px;
 
   @include screen-medium {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
+
 h5 {
-  font-size: 16px;
-  font-weight: $type-weight-bold;
+  font-size: 14px;
+
+  @include screen-medium {
+    font-size: 16px;
+  }
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
+
+  @include screen-medium {
+    font-size: 20px;
+  }
 }
 
 strong {
@@ -83,20 +88,21 @@ strong {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: none;
+  border-bottom: 2px solid $color-black;
   color: $color-black;
 
   &:hover,
   &:active {
-    color: darken($color-black, 10%);
+    border-bottom: 2px solid darken($color-light-gray, 10s%);
   }
 }
 
 blockquote {
   margin: 50px 0;
   padding-left: 20px;
-  border-left: 1px solid $color-light-gray;
+  border-left: 4px solid $color-light-gray;
 }
 
 hr {

@@ -18,9 +18,13 @@ section {
     background-position: 642px 60px;
     background-size: 380px;
     padding-top: 300px;
-
-    h2, h3 {
+    h4,p {
       margin-left: 85px;
+
+      span {
+        text-decoration: line-through;
+        color: darken($color-light-gray, 10%);
+      }
     }
   }
 }
@@ -47,6 +51,7 @@ section {
   .comingsoon {
     color: darken($color-light-gray, 10%);
   }
+
   .featured_project {
     z-index: 1;
     margin: 40px auto;
@@ -73,6 +78,17 @@ section {
   }
 
   // Color classes for the projects
+
+  .featured_project__storefronts {
+    height: 300px;
+    background-size: 100%;
+    background-color: #fff;
+    background-position-y: 0px;
+    border: 4px solid $color-whitesmoke;
+    h4,h5 {
+      color: $color-black;
+    }
+  }
 
   .featured_project__resources {
     height: 300px;

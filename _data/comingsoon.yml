@@ -1,4 +1,4 @@
-Products
+# Products
 
 # - image: /assets/images/projects/campaign.png
 #   title: Teespring Campaign Page
@@ -9,8 +9,10 @@ Products
 # - title: Teespring Shopping
 #   info: Coming soon
 
-# - title: Teespring Storefronts
-#   info: Coming soon
+- image: /assets/images/projects/storefronts.png
+  title: Teespring Storefronts 2.0
+  info: Coming soon
+  class: storefronts
 
 # - title: Teespring Search
 #   info: Coming soon

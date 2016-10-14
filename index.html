@@ -6,9 +6,9 @@ title: Product Designer
 
 <section class="container container__home">
   <section class="about">
-    <h1 class="text__highlight">—Hello</h1>
-
-    <h2>I’m Pedro Carmo.<br>A multidisciplinary designer<br> based in foggy San Francisco, California.</h2>
+    <h1>@drocarmo</h1>
+    <h4>Hello, my name is Pedro Carmo.</h4>
+    <p>I'm a multidisciplinary designer<br>based in foggy San Francisco, California.</p>
   </section>
 
   <section class="experience">
@@ -20,19 +20,16 @@ title: Product Designer
   </section>
 
   <section class="projects">
-    <h2 class="text__highlight">—Selected Projects</h2>
-    <h4 class="comingsoon">Coming very soon, truss me</h4>
+    <h2>—Selected Projects</h2>
     <!-- {% for comingsoon in site.data.comingsoon %}
       <div class="featured_project featured_project__{{comingsoon.class}}" style="background-image:url({{ comingsoon.image }})">
         <div class="featured_project__text">
           <h4>{{ comingsoon.title }}</h4>
           <h5>{{ comingsoon.info }}</h5>
-          <br>
-          <h5>✶ Coming soon ✶</h5>
         </div>
         <div class="featured_project__image_container" style="background-image:url({{ comingsoon.image }})"></div>
       </div>
-    {% endfor %}
+    {% endfor %} -->
     {% for projects in site.data.projects %}
       <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
         <a href="{{ projects.url }}">
@@ -44,11 +41,11 @@ title: Product Designer
           </div>
         </a>
       </div>
-    {% endfor %} -->
+    {% endfor %}
   </section>
 
   <section class="posts">
-    <h2 class="text__highlight">—Writing</h2>
+    <h2>—Writing</h2>
     {% for post in site.posts %}
       <div class="post">
         <p>
@@ -61,8 +58,9 @@ title: Product Designer
   </section>
 
   <section class="elsewhere">
-    <h2 class="text__highlight">—Elsewhere</h2>
-    <p>On the interwebs, you can find me on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://www.instagram.com/drocarmo/" target="_blank">Instagram</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a> and <a href="https://dribbble.com/drocarmo" target="_blank">Dribbble</a>.</p>
-    <p>If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☻</a>.</p>
+    <h2>—Elsewhere</h2>
+    <p>I'm @drocarmo on the internet. If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☺</a>.</p>
+    <!-- <p>On the interwebs, you can find me on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://www.instagram.com/drocarmo/" target="_blank">Instagram</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a> and <a href="https://dribbble.com/drocarmo" target="_blank">Dribbble</a>.</p>
+    <p>If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☻</a>.</p> -->
   </section>
 </section>

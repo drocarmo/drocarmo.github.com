@@ -31,7 +31,7 @@ h1 {
   font-size: 40px;
 
   @include screen-medium {
-    font-size: 60px;
+    font-size: 54px;
   }
 }
 
@@ -90,12 +90,14 @@ strong {
 a {
   text-decoration: none;
   text-transform: none;
-  border-bottom: 2px solid $color-black;
+  box-shadow: inset 0px -8px $color-yellow;
   color: $color-black;
+  transition: all 100ms;
 
   &:hover,
   &:active {
-    border-bottom: 2px solid darken($color-light-gray, 10s%);
+    box-shadow: inset 0px -30px $color-yellow;
+    color: $color-gray;
   }
 }
 
@@ -122,8 +124,4 @@ hr {
       font-size: 40px;
     }
   }
-}
-
-.text__highlight {
-  text-shadow: 10px 10px $color-yellow;
 }

@@ -9,8 +9,13 @@
 # - title: Teespring Shopping
 #   info: Coming soon
 
+- image: /assets/images/projects/search.png
+  title: Teespring Search
+  info: Coming soon
+  class: search
+
 - image: /assets/images/projects/storefronts.png
-  title: Teespring Storefronts 2.0
+  title: Teespring Storefronts
   info: Coming soon
   class: storefronts
 

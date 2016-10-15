@@ -369,8 +369,6 @@ section {
       .experience h4.h4-bold, .experience p.h4-bold {
         font-weight: 700; } }
 
-.projects .comingsoon {
-  color: #dbdbdb; }
 .projects .featured_project {
   z-index: 1;
   margin: 40px auto;
@@ -379,7 +377,11 @@ section {
   overflow: hidden;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.1);
+  border-radius: 4px; }
+  .projects .featured_project:hover {
+    box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.15); }
   .projects .featured_project a {
     text-decoration: none; }
   .projects .featured_project .featured_project__text {
@@ -388,12 +390,18 @@ section {
     .projects .featured_project .featured_project__text h4,
     .projects .featured_project .featured_project__text h5 {
       margin: 0 auto; }
+.projects .featured_project__search {
+  height: 300px;
+  background-size: 50%;
+  background-color: #f2f2f2;
+  background-position: 385px 0px; }
+  .projects .featured_project__search h4, .projects .featured_project__search h5 {
+    color: #1f1d1d; }
 .projects .featured_project__storefronts {
   height: 300px;
   background-size: 100%;
   background-color: #fff;
-  background-position-y: 0px;
-  border: 4px solid #fcfcfc; }
+  background-position: 85px 0px; }
   .projects .featured_project__storefronts h4, .projects .featured_project__storefronts h5 {
     color: #1f1d1d; }
 .projects .featured_project__resources {
@@ -404,22 +412,29 @@ section {
   .projects .featured_project__resources a {
     color: white; }
 .projects .featured_project__ritma {
-  height: 300px;
-  border: 4px solid #403f3a; }
+  height: 150px;
+  background-position: 140px 0px;
+  background-size: cover;
+  background-color: #d2d6fe;
+  float: left;
+  width: 47%;
+  margin-right: 3%; }
   .projects .featured_project__ritma a {
     color: #0a1efa; }
 .projects .featured_project__elenco {
-  height: 300px;
-  background-color: white;
-  background-position: 510px -53px;
-  background-size: 50%;
-  border: 4px solid #f4f4f4; }
+  height: 150px;
+  background-color: #c7f1e0;
+  background-position: 50px 104px;
+  background-size: 80%;
+  float: left;
+  width: 47%;
+  margin-left: 3%; }
   .projects .featured_project__elenco a {
     color: #2aa876; }
 .projects .featured_project__change {
+  clear: both;
   height: 300px;
-  background-color: #fff;
-  border: 4px solid #f4f4f4;
+  background-color: #FDE9E8;
   background-position: 90px -10px; }
   .projects .featured_project__change a {
     color: #EC2C22; }

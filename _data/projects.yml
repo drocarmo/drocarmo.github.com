@@ -1,10 +1,5 @@
 # Project
 
-- image: /assets/images/projects/ritma.png
-  title: /Ritma
-  url: http://drocarmo.com/ritma/
-  info: A personal exploration into creating art
-  class: ritma
 
 - image: /assets/images/projects/resources.png
   title: /Resources
@@ -12,8 +7,12 @@
   info: A personal curated library of resources on product design
   class: resources
 
-- image: /assets/images/projects/elenco.png
-  title: Elenco
+- title: /Ritma
+  url: http://drocarmo.com/ritma/
+  info: A personal exploration into creating art
+  class: ritma
+
+- title: Elenco
   url: http://drocarmo.com/elenco/
   info: A Chrome-extension designed to help you stay on track
   class: elenco

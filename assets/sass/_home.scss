@@ -48,10 +48,6 @@ section {
 }
 
 .projects {
-  .comingsoon {
-    color: darken($color-light-gray, 10%);
-  }
-
   .featured_project {
     z-index: 1;
     margin: 40px auto;
@@ -61,6 +57,12 @@ section {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+    box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.10);
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.15);
+    }
 
     a {
       text-decoration: none;
@@ -79,12 +81,21 @@ section {
 
   // Color classes for the projects
 
+  .featured_project__search {
+    height: 300px;
+    background-size: 50%;
+    background-color: #f2f2f2;
+    background-position:385px 0px;
+    h4,h5 {
+      color: $color-black;
+    }
+  }
+
   .featured_project__storefronts {
     height: 300px;
     background-size: 100%;
     background-color: #fff;
-    background-position-y: 0px;
-    border: 4px solid $color-whitesmoke;
+    background-position: 85px 0px;
     h4,h5 {
       color: $color-black;
     }
@@ -101,28 +112,35 @@ section {
   }
 
   .featured_project__ritma {
-    height: 300px;
-    border: 4px solid #403f3a;
+    height: 150px;
+    background-position: 140px 0px;
+    background-size: cover;
+    background-color: lighten($color-blue, 40%);
+    float: left;
+    width: 47%;
+    margin-right: 3%;
     a {
       color: $color-blue;
     }
   }
 
   .featured_project__elenco {
-    height: 300px;
-    background-color: $color-white;
-    background-position: 510px -53px;
-    background-size: 50%;
-    border: 4px solid $color-light-gray;
+    height: 150px;
+    background-color: lighten(#2aa876, 45%);
+    background-position: 50px 104px;
+    background-size: 80%;
+    float: left;
+    width: 47%;
+    margin-left: 3%;
     a {
       color: #2aa876;
     }
   }
 
   .featured_project__change {
+    clear: both;
     height: 300px;
-    background-color: #fff;
-    border: 4px solid $color-light-gray;
+    background-color: #FDE9E8;
     background-position: 90px -10px;
     a {
       color: #EC2C22;

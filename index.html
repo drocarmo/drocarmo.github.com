@@ -21,7 +21,7 @@ title: Product Designer
 
   <section class="projects">
     <h2>—Selected Projects</h2>
-    <!-- {% for comingsoon in site.data.comingsoon %}
+    {% for comingsoon in site.data.comingsoon %}
       <div class="featured_project featured_project__{{comingsoon.class}}" style="background-image:url({{ comingsoon.image }})">
         <div class="featured_project__text">
           <h4>{{ comingsoon.title }}</h4>
@@ -29,7 +29,7 @@ title: Product Designer
         </div>
         <div class="featured_project__image_container" style="background-image:url({{ comingsoon.image }})"></div>
       </div>
-    {% endfor %} -->
+    {% endfor %}
     {% for projects in site.data.projects %}
       <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
         <a href="{{ projects.url }}">

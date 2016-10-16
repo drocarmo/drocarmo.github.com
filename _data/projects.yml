@@ -1,24 +1,18 @@
 # Project
 
-
 - image: /assets/images/projects/resources.png
   title: /Resources
   url: http://drocarmo.com/resources/
   info: A personal curated library of resources on product design
   class: resources
 
-- title: /Ritma
-  url: http://drocarmo.com/ritma/
-  info: A personal exploration into creating art
-  class: ritma
+- title: /Wheat
+  url: http://drocarmo.com/wheat/
+  info: A Jekyll starter-template for designers
+  class: wheat
 
-- title: Elenco
+- title: /Elenco
   url: http://drocarmo.com/elenco/
   info: A Chrome-extension designed to help you stay on track
   class: elenco
 
-- image: /assets/images/projects/change.png
-  title: Change.org
-  url: http://drocarmo.com/work/change
-  info: Re-purposing the petition page
-  class: change

@@ -8,40 +8,26 @@ title: Product Designer
   <section class="about">
     <h1>@drocarmo</h1>
     <h4>Hello, my name is Pedro Carmo.</h4>
-    <p>I'm a multidisciplinary designer<br>based in foggy San Francisco, California.</p>
-  </section>
-
-  <section class="experience">
-    <h4>Currently</h4>
-    <p>For the past 2 years, I’ve been a product designer at <a href="http://www.starterleague.com/" target="_blank">Teespring</a>, designing a new way for people to shop and create custom products. In my downtime, I mentor students at <a href="http://trydesignlab.com/drocarmo/" target="_blank">DesignLab</a>.</p>
-
-    <h4>Previously</h4>
-    <p>Before San Francisco, I was a product designer at <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>, rolling my sleeves up in the consultancy world in Chicago. I also took part in building some amazing design communities at <a href="https://www.creativemornings.com/cities/chi" target="_blank">CreativeMornings Chicago</a> and <a href="http://www.starterleague.com/" target="_blank">The Starter League</a>.
+    <p>I'm a multidisciplinary designer based in foggy San Francisco, California.</p>
+    <p>Over the past 2 years, I’ve been a product designer at <a href="http://www.starterleague.com/" target="_blank">Teespring</a> designing a new way for people shop and create custom products. Beyond Teespring, I also mentor design students at <a href="http://trydesignlab.com/drocarmo/" target="_blank">DesignLab</a>.</p>
+    <p>Before San Francisco, I was a product designer at <a href="http://www.devmynd.com/" target="_blank">Devmynd</a>, rolling up my sleeves in the consultancy world in Chicago, Illinois. Apart from Devmynd, I also took part in building some amazing design communities at <a href="https://www.creativemornings.com/cities/chi" target="_blank">CreativeMornings Chicago</a> and <a href="http://www.starterleague.com/" target="_blank">The Starter League</a>.
   </section>
 
   <section class="projects">
-    <h2>—Selected Projects</h2>
-    {% for comingsoon in site.data.comingsoon %}
-      <div class="featured_project featured_project__{{comingsoon.class}}" style="background-image:url({{ comingsoon.image }})">
-        <div class="featured_project__text">
-          <h4>{{ comingsoon.title }}</h4>
-          <h5>{{ comingsoon.info }}</h5>
-        </div>
-        <div class="featured_project__image_container" style="background-image:url({{ comingsoon.image }})"></div>
-      </div>
-    {% endfor %}
-    {% for projects in site.data.projects %}
-      <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
-        <a href="{{ projects.url }}">
+    <h2>—Selected Work</h2>
+    {% for work in site.data.work %}
+      <div class="featured_project featured_project__{{work.class}}" style="background-image:url({{ work.image }})">
+        <a href="{{ work.url }}">
           <div class="featured_project__text">
-            <h4>{{ projects.title }}</h4>
-            <h5>{{ projects.info }}.</h5>
+            <h4>{{ work.title }}</h4>
+            <h5>{{ work.info }}.</h5>
             <br>
             <h5>View project →</h5>
           </div>
         </a>
       </div>
     {% endfor %}
+    <p>More coming soon...</p>
   </section>
 
   <section class="posts">
@@ -57,10 +43,25 @@ title: Product Designer
     <div style="clear: both;"></div>
   </section>
 
+  <section class="projects">
+    <h2>—Side Projects</h2>
+    {% for projects in site.data.projects %}
+      <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
+        <a href="{{ projects.url }}">
+          <div class="featured_project__text">
+            <h4>{{ projects.title }}</h4>
+            <h5>{{ projects.info }}.</h5>
+            <br>
+            <h5>View project →</h5>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+    <div style="clear: both;"></div>
+  </section>
+
   <section class="elsewhere">
-    <h2>—Elsewhere</h2>
-    <p>I'm @drocarmo on the internet. If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☺</a>.</p>
-    <!-- <p>On the interwebs, you can find me on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://www.instagram.com/drocarmo/" target="_blank">Instagram</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a> and <a href="https://dribbble.com/drocarmo" target="_blank">Dribbble</a>.</p>
-    <p>If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☻</a>.</p> -->
+    <h2>—Contact</h2>
+    <p>I'm @drocarmo on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a> and everywhere else on the internet. If you're into emails, just remember to <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">be nice ☺</a></p>
   </section>
 </section>

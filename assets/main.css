@@ -276,7 +276,7 @@ a {
   text-transform: none;
   box-shadow: inset 0px -8px #fae60a;
   color: #1f1d1d;
-  transition: all 100ms; }
+  transition: all 500ms; }
   a:hover, a:active {
     box-shadow: inset 0px -30px #fae60a;
     color: #868080; }
@@ -315,7 +315,8 @@ hr {
 
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  background: #fefefe; }
   html.body-black,
   body.body-black {
     background: #0a0909; }
@@ -342,46 +343,39 @@ section {
   display: block; }
   @media screen and (min-width: 1200px) {
     section {
-      margin: 200px auto; } }
+      margin: 300px auto; } }
 
 @media screen and (min-width: 1200px) {
   .about {
+    width: 750px;
     margin: 0 auto 150px;
     background: url(/assets/images/head.png);
     background-repeat: no-repeat;
-    background-position: 642px 60px;
-    background-size: 380px;
-    padding-top: 300px; }
+    background-size: 300px;
+    background-position: 400px 5px;
+    padding-top: 165px; }
     .about h4, .about p {
       margin-left: 85px; }
       .about h4 span, .about p span {
         text-decoration: line-through;
         color: #dbdbdb; } }
 
-@media screen and (min-width: 1200px) {
-  .experience {
-    background: url(/assets/images/were.png);
-    background-repeat: no-repeat;
-    background-position: 85px 0px;
-    background-size: 313px; }
-    .experience h4, .experience p {
-      margin-left: 491px; }
-      .experience h4.h4-bold, .experience p.h4-bold {
-        font-weight: 700; } }
-
+.projects p {
+  text-align: center;
+  color: #868080; }
 .projects .featured_project {
-  z-index: 1;
   margin: 40px auto;
   min-height: 30px;
   width: 100%;
   overflow: hidden;
-  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.1);
-  border-radius: 4px; }
-  .projects .featured_project:hover {
-    box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.15); }
+  background-color: white;
+  box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.08);
+  border-radius: 4px;
+  transition: all 500ms; }
+  .projects .featured_project:hover, .projects .featured_project:active {
+    background-size: 105%; }
   .projects .featured_project a {
     text-decoration: none; }
   .projects .featured_project .featured_project__text {
@@ -390,60 +384,61 @@ section {
     .projects .featured_project .featured_project__text h4,
     .projects .featured_project .featured_project__text h5 {
       margin: 0 auto; }
-.projects .featured_project__search {
-  height: 300px;
-  background-size: 50%;
-  background-color: #f2f2f2;
-  background-position: 385px 0px; }
-  .projects .featured_project__search h4, .projects .featured_project__search h5 {
-    color: #1f1d1d; }
-.projects .featured_project__storefronts {
-  height: 300px;
-  background-size: 100%;
-  background-color: #fff;
-  background-position: 85px 0px; }
-  .projects .featured_project__storefronts h4, .projects .featured_project__storefronts h5 {
-    color: #1f1d1d; }
-.projects .featured_project__resources {
-  height: 300px;
-  background-size: 90%;
-  background-color: #e83943;
-  background-position-y: -10px; }
-  .projects .featured_project__resources a {
-    color: white; }
-.projects .featured_project__ritma {
-  height: 150px;
-  background-position: 140px 0px;
-  background-size: cover;
-  background-color: #d2d6fe;
-  float: left;
-  width: 47%;
-  margin-right: 3%; }
-  .projects .featured_project__ritma a {
-    color: #0a1efa; }
-.projects .featured_project__elenco {
-  height: 150px;
-  background-color: #c7f1e0;
-  background-position: 50px 104px;
-  background-size: 80%;
-  float: left;
-  width: 47%;
-  margin-left: 3%; }
-  .projects .featured_project__elenco a {
-    color: #2aa876; }
 .projects .featured_project__change {
-  clear: both;
-  height: 300px;
-  background-color: #FDE9E8;
-  background-position: 90px -10px; }
+  background-position: 50px -10px; }
+  @media screen and (min-width: 1200px) {
+    .projects .featured_project__change {
+      height: 300px; } }
   .projects .featured_project__change a {
     color: #EC2C22; }
+.projects .featured_project__resources {
+  background: none; }
+  .projects .featured_project__resources:hover, .projects .featured_project__resources:active {
+    background: #e83943; }
+    .projects .featured_project__resources:hover a, .projects .featured_project__resources:active a {
+      color: white; }
+  @media screen and (min-width: 1200px) {
+    .projects .featured_project__resources {
+      background-position-y: -40px;
+      background-size: 100%;
+      height: 300px; }
+      .projects .featured_project__resources:hover, .projects .featured_project__resources:active {
+        background-image: url(/assets/images/projects/resources_2.png) !important;
+        background-position-y: -40px;
+        background-size: 100%; } }
+  .projects .featured_project__resources a {
+    color: #e83943; }
+@media screen and (min-width: 1200px) {
+  .projects .featured_project__wheat {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+    height: 150px; } }
+.projects .featured_project__wheat a {
+  color: #0046fe; }
+.projects .featured_project__wheat:hover, .projects .featured_project__wheat:active {
+  background: #0046fe; }
+  .projects .featured_project__wheat:hover a, .projects .featured_project__wheat:active a {
+    color: white; }
+@media screen and (min-width: 1200px) {
+  .projects .featured_project__elenco {
+    height: 150px;
+    float: left;
+    width: 47%;
+    margin-left: 3%; } }
+.projects .featured_project__elenco a {
+  color: #2aa876; }
+.projects .featured_project__elenco:hover, .projects .featured_project__elenco:active {
+  background: #2aa876; }
+  .projects .featured_project__elenco:hover a, .projects .featured_project__elenco:active a {
+    color: white; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1200px) {
   .posts .post {
     margin: 10px auto;
     float: left;
-    width: 50%; } }
+    width: 33%;
+    word-wrap: break-word; } }
 .posts .post a {
   border-bottom: 0; }
 .posts .post .date {
@@ -464,7 +459,8 @@ section {
     color: #868080;
     border-bottom: none;
     background: white;
-    padding: 15px; }
+    padding: 15px;
+    box-shadow: none; }
     .back a:hover, .back a:active {
       color: #1f1d1d; }
 
@@ -482,7 +478,8 @@ section {
     color: #868080;
     border-bottom: none;
     background: white;
-    padding: 15px; }
+    padding: 15px;
+    box-shadow: none; }
     .next a:hover, .next a:active {
       color: #1f1d1d; }
 

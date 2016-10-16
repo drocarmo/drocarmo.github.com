@@ -6,18 +6,19 @@ section {
   display: block;
 
   @include screen-large {
-    margin: 200px auto;
+    margin: 300px auto;
   }
 }
 
 .about {
   @include screen-large {
+    width: 750px;
     margin: 0 auto 150px;
     background: url(/assets/images/head.png);
     background-repeat: no-repeat;
-    background-position: 642px 60px;
-    background-size: 380px;
-    padding-top: 300px;
+    background-size: 300px;
+    background-position: 400px 5px;
+    padding-top: 165px;
     h4,p {
       margin-left: 85px;
 
@@ -29,39 +30,29 @@ section {
   }
 }
 
-.experience {
-
-  @include screen-large {
-    background: url(/assets/images/were.png);
-    background-repeat: no-repeat;
-    background-position: 85px 0px;
-    background-size: 313px;
-
-    h4, p {
-      margin-left: 491px;
-
-      &.h4-bold {
-        font-weight: $type-weight-bold;
-      }
-    }
-  }
-}
-
 .projects {
+  // delete this later
+  p {
+    text-align: center;
+    color: $color-gray;
+  }
+  //
+
   .featured_project {
-    z-index: 1;
     margin: 40px auto;
     min-height: 30px;
     width: 100%;
     overflow: hidden;
-    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
-    box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.10);
+    background-color: $color-white;
+    box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.08);
     border-radius: 4px;
+    transition: all 500ms;
 
-    &:hover {
-      box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.15);
+
+    &:hover,&:active {
+      background-size: 105%;
     }
 
     a {
@@ -81,79 +72,115 @@ section {
 
   // Color classes for the projects
 
-  .featured_project__search {
-    height: 300px;
-    background-size: 50%;
-    background-color: #f2f2f2;
-    background-position:385px 0px;
-    h4,h5 {
-      color: $color-black;
-    }
-  }
+  // .featured_project__search {
+  //   height: 300px;
+  //   background-color: $color-white;
+  //   background-position: 0px -25px;
+  //   h4,h5 {
+  //     color: $color-gray;
+  //   }
+  // }
 
-  .featured_project__storefronts {
-    height: 300px;
-    background-size: 100%;
-    background-color: #fff;
-    background-position: 85px 0px;
-    h4,h5 {
-      color: $color-black;
+  // .featured_project__storefronts {
+  //   height: 300px;
+  //   background-color: $color-white;
+  //   background-position: 85px 0px;
+  //   h4,h5 {
+  //     color: $color-gray;
+  //   }
+  // }
+
+  .featured_project__change {
+    background-position: 50px -10px;
+
+    @include screen-large {
+      height: 300px;
+    }
+
+    a {
+      color: #EC2C22;
     }
   }
 
   .featured_project__resources {
-    height: 300px;
-    background-size: 90%;
-    background-color: #e83943;
-    background-position-y: -10px;
+    background: none;
+
+    &:hover,&:active {
+      background: #e83943;
+
+      a {
+        color: $color-white;
+      }
+    }
+
+    @include screen-large {
+      background-position-y: -40px;
+      background-size: 100%;
+      height: 300px;
+
+      &:hover,&:active {
+        background-image: url(/assets/images/projects/resources_2.png) !important;
+        background-position-y: -40px;
+        background-size: 100%;
+      }
+    }
+
     a {
-      color: lighten(#e83943, 45%);
+      color: #e83943;
     }
   }
 
-  .featured_project__ritma {
-    height: 150px;
-    background-position: 140px 0px;
-    background-size: cover;
-    background-color: lighten($color-blue, 40%);
-    float: left;
-    width: 47%;
-    margin-right: 3%;
+  .featured_project__wheat {
+    @include screen-large {
+      float: left;
+      width: 47%;
+      margin-right: 3%;
+      height: 150px;
+    }
+
     a {
       color: $color-blue;
     }
+
+    &:hover,&:active {
+      background: $color-blue;
+
+      a {
+        color: $color-white;
+      }
+    }
+
   }
 
   .featured_project__elenco {
-    height: 150px;
-    background-color: lighten(#2aa876, 45%);
-    background-position: 50px 104px;
-    background-size: 80%;
-    float: left;
-    width: 47%;
-    margin-left: 3%;
+    @include screen-large {
+      height: 150px;
+      float: left;
+      width: 47%;
+      margin-left: 3%;
+    }
+
     a {
       color: #2aa876;
     }
-  }
 
-  .featured_project__change {
-    clear: both;
-    height: 300px;
-    background-color: #FDE9E8;
-    background-position: 90px -10px;
-    a {
-      color: #EC2C22;
+    &:hover,&:active {
+      background: #2aa876;
+
+      a {
+        color: $color-white;
+      }
     }
   }
 }
 
 .posts {
   .post {
-    @include screen-medium {
+    @include screen-large {
       margin: 10px auto;
       float: left;
-      width: 50%;
+      width: 33%;
+      word-wrap: break-word;
      }
 
     a {

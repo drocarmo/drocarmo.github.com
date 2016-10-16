@@ -6,6 +6,8 @@ markdown: kramdown
 
 pygments: true
 
+highlighter: rouge
+
 include:
 - .htaccess
 

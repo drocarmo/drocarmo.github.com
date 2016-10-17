@@ -277,8 +277,10 @@ a {
   box-shadow: inset 0px -8px #fae60a;
   color: #1f1d1d;
   transition: all 500ms; }
-  a:hover, a:active {
-    box-shadow: inset 0px -30px #fae60a;
+  a:hover {
+    box-shadow: inset 0px 8px #fae60a; }
+  a:active {
+    box-shadow: inset 0px 25px #fae60a;
     color: #868080; }
 
 blockquote {

@@ -362,7 +362,7 @@ section {
         text-decoration: line-through;
         color: #dbdbdb; } }
 
-.projects p {
+.projects .soon {
   text-align: center;
   color: #868080; }
 .projects .featured_project {

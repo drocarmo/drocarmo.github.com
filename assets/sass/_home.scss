@@ -57,6 +57,7 @@ section {
 
     a {
       text-decoration: none;
+      color: $color-black;
     }
 
     .featured_project__text {
@@ -95,10 +96,6 @@ section {
 
     @include screen-large {
       height: 300px;
-    }
-
-    a {
-      color: #EC2C22;
     }
   }
 

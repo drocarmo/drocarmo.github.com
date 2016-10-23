@@ -379,7 +379,8 @@ section {
   .projects .featured_project:hover, .projects .featured_project:active {
     background-size: 105%; }
   .projects .featured_project a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #1f1d1d; }
   .projects .featured_project .featured_project__text {
     word-wrap: break-word;
     padding: 20px; }
@@ -391,8 +392,6 @@ section {
   @media screen and (min-width: 1200px) {
     .projects .featured_project__change {
       height: 300px; } }
-  .projects .featured_project__change a {
-    color: #EC2C22; }
 .projects .featured_project__resources {
   background: none; }
   .projects .featured_project__resources:hover, .projects .featured_project__resources:active {

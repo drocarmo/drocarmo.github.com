@@ -345,7 +345,7 @@ section {
   display: block; }
   @media screen and (min-width: 1200px) {
     section {
-      margin: 300px auto; } }
+      margin: 150px auto; } }
 
 @media screen and (min-width: 1200px) {
   .about {

@@ -6,22 +6,14 @@ section {
   display: block;
 
   @include screen-large {
-    margin: 150px auto;
+    margin: 200px auto;
   }
 }
 
 .about {
   @include screen-large {
-    width: 750px;
-    margin: 0 auto 150px;
-    background: url(/assets/images/head.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: 400px 5px;
-    padding-top: 165px;
     h4,p {
-      margin-left: 85px;
-
+      // margin-left: 60px;
       span {
         text-decoration: line-through;
         color: darken($color-light-gray, 10%);

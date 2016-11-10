@@ -17,7 +17,7 @@
 html,
 body {
   height: 100%;
-  background: lighten($color-light-gray, 4%);
+  background: lighten($color-light-gray, 3%);
 
   &.body-black {
     background: darken($color-black, 8%);

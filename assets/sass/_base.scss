@@ -19,15 +19,12 @@ body {
   height: 100%;
   background: lighten($color-light-gray, 3%);
 
-  &.body-black {
-    background: darken($color-black, 8%);
-
-    h1,
-    h2,
-    h3,
-    p,
-    a {
-      color: darken($color-light-gray, 7%);
+  &.body-home {
+    @include screen-large {
+      background-image: url(/assets/images/bkg.jpg);
+      background-size: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
   }
 

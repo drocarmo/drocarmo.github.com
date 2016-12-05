@@ -319,20 +319,13 @@ html,
 body {
   height: 100%;
   background: #fcfcfc; }
-  html.body-black,
-  body.body-black {
-    background: #0a0909; }
-    html.body-black h1,
-    html.body-black h2,
-    html.body-black h3,
-    html.body-black p,
-    html.body-black a,
-    body.body-black h1,
-    body.body-black h2,
-    body.body-black h3,
-    body.body-black p,
-    body.body-black a {
-      color: #e2e2e2; }
+  @media screen and (min-width: 1200px) {
+    html.body-home,
+    body.body-home {
+      background-image: url(/assets/images/bkg.jpg);
+      background-size: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat; } }
 
 body {
   margin: 0 auto;
@@ -347,10 +340,15 @@ section {
     section {
       margin: 200px auto; } }
 
-@media screen and (min-width: 1200px) {
-  .about h4 span, .about p span {
-    text-decoration: line-through;
-    color: #dbdbdb; } }
+.about .about__text {
+  word-wrap: break-word; }
+  @media screen and (min-width: 1200px) {
+    .about .about__text {
+      margin: 60px 0px 50px 200px; }
+      .about .about__text h5 {
+        float: left;
+        width: 45%;
+        margin: 10px 2.5%; } }
 
 .projects .soon {
   text-align: center;
@@ -430,10 +428,9 @@ section {
     float: left;
     width: 33%;
     word-wrap: break-word; } }
-.posts .post a {
-  border-bottom: 0; }
 .posts .post .date {
-  margin-top: -20px;
+  margin-top: -15px;
+  margin-left: 20px;
   color: #868080; }
 
 .back {

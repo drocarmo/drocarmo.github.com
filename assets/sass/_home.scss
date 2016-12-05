@@ -11,12 +11,16 @@ section {
 }
 
 .about {
-  @include screen-large {
-    h4,p {
-      // margin-left: 60px;
-      span {
-        text-decoration: line-through;
-        color: darken($color-light-gray, 10%);
+  .about__text {
+    word-wrap: break-word;
+
+    @include screen-large {
+      margin: 60px 0px 50px 200px;
+
+      h5 {
+        float: left;
+        width: 45%;
+        margin: 10px 2.5%;
       }
     }
   }
@@ -172,11 +176,9 @@ section {
       word-wrap: break-word;
      }
 
-    a {
-      border-bottom: 0;
-    }
     .date {
-      margin-top: -20px;
+      margin-top: -15px;
+      margin-left: 20px;
       color: $color-gray;
     }
   }

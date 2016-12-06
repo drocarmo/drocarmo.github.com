@@ -455,7 +455,7 @@ section {
     font-size: .9em;
     color: #9a9898;
     border-bottom: none;
-    background: white;
+    background: #fcfcfc;
     padding: 15px;
     box-shadow: none; }
     .back a:hover, .back a:active {
@@ -474,7 +474,7 @@ section {
     font-size: .9em;
     color: #9a9898;
     border-bottom: none;
-    background: white;
+    background: #fcfcfc;
     padding: 15px;
     box-shadow: none; }
     .next a:hover, .next a:active {

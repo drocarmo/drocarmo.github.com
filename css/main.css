@@ -281,7 +281,7 @@ a {
     box-shadow: inset 0px 8px #fae60a; }
   a:active {
     box-shadow: inset 0px 25px #fae60a;
-    color: #868080; }
+    color: #9a9898; }
 
 blockquote {
   margin: 50px 0;
@@ -340,6 +340,15 @@ section {
     section {
       margin: 200px auto; } }
 
+.about a.popup__link {
+  position: relative;
+  box-shadow: none; }
+  .about a.popup__link span {
+    position: absolute;
+    display: none;
+    z-index: 99; }
+  .about a.popup__link:hover span {
+    display: block; }
 .about .about__text {
   word-wrap: break-word; }
   @media screen and (min-width: 1200px) {
@@ -352,7 +361,7 @@ section {
 
 .projects .soon {
   text-align: center;
-  color: #868080; }
+  color: #9a9898; }
 .projects .featured_project {
   margin: 40px auto;
   min-height: 30px;
@@ -431,7 +440,7 @@ section {
 .posts .post .date {
   margin-top: -15px;
   margin-left: 20px;
-  color: #868080; }
+  color: #9a9898; }
 
 .back {
   margin: 0 auto;
@@ -444,7 +453,7 @@ section {
       top: 30px; } }
   .back a {
     font-size: .9em;
-    color: #868080;
+    color: #9a9898;
     border-bottom: none;
     background: white;
     padding: 15px;
@@ -463,7 +472,7 @@ section {
       top: 30px; } }
   .next a {
     font-size: .9em;
-    color: #868080;
+    color: #9a9898;
     border-bottom: none;
     background: white;
     padding: 15px;
@@ -483,7 +492,7 @@ section {
   .blog h5 {
     margin-bottom: 50px; }
     .blog h5.date {
-      color: #868080; }
+      color: #9a9898; }
     @media screen and (min-width: 700px) {
       .blog h5 {
         margin-bottom: 100px; } }

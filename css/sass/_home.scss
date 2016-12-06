@@ -11,6 +11,21 @@ section {
 }
 
 .about {
+  a.popup__link {
+    position: relative;
+    box-shadow: none;
+
+    span {
+      position: absolute;
+      display: none;
+      z-index: 99;
+    }
+
+    &:hover span {
+      display: block;
+    }
+  }
+
   .about__text {
     word-wrap: break-word;
 

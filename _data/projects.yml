@@ -1,18 +1,18 @@
 # Project
 
 - image: /assets/images/projects/resources.png
-  title: /Resources
+  title: Resources
   url: http://drocarmo.com/resources/
   info: A personal curated library of resources on product design
   class: resources
 
-- title: /Wheat
-  url: http://drocarmo.com/wheat/
-  info: A Jekyll starter-template for designers
-  class: wheat
-
-- title: /Elenco
+- title: Elenco
   url: http://drocarmo.com/elenco/
   info: A Chrome-extension designed to help you stay on track
   class: elenco
+
+- title: Wheat
+  url: http://drocarmo.com/wheat/
+  info: A Jekyll starter-template for designers
+  class: wheat
 

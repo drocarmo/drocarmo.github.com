@@ -334,7 +334,6 @@ body {
 
 section {
   margin: 100px auto;
-  clear: both;
   display: block; }
   @media screen and (min-width: 1200px) {
     section {
@@ -359,22 +358,39 @@ section {
         width: 45%;
         margin: 10px 2.5%; } }
 
-.projects .soon {
-  text-align: center;
-  color: #9a9898; }
+@media screen and (min-width: 1200px) {
+  .posts {
+    margin: 10px auto;
+    float: left;
+    width: 68%;
+    word-wrap: break-word; } }
+@media screen and (min-width: 700px) {
+  .posts .post {
+    float: left;
+    width: 48%;
+    margin: auto 2% auto 0; } }
+.posts .post a {
+  box-shadow: none; }
+.posts .post .date {
+  margin-top: -20px;
+  color: #9a9898;
+  font-style: italic; }
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    margin: 10px auto;
+    float: left;
+    width: 32%;
+    word-wrap: break-word; } }
 .projects .featured_project {
-  margin: 40px auto;
+  margin: 20px auto;
   min-height: 30px;
   width: 100%;
   overflow: hidden;
-  background-repeat: no-repeat;
   background-size: 100%;
   background-color: white;
   box-shadow: 0px 2px 8px 0px rgba(31, 29, 29, 0.1);
-  border-radius: 4px;
-  transition: all 500ms; }
-  .projects .featured_project:hover, .projects .featured_project:active {
-    background-size: 105%; }
+  transition: all 50ms; }
   .projects .featured_project a {
     text-decoration: none;
     color: #1f1d1d; }
@@ -384,63 +400,26 @@ section {
     .projects .featured_project .featured_project__text h4,
     .projects .featured_project .featured_project__text h5 {
       margin: 0 auto; }
-.projects .featured_project__change {
-  background-position: 50px -10px; }
-  @media screen and (min-width: 1200px) {
-    .projects .featured_project__change {
-      height: 300px; } }
-.projects .featured_project__resources {
-  background: none; }
-  .projects .featured_project__resources:hover, .projects .featured_project__resources:active {
-    background: #e83943; }
-    .projects .featured_project__resources:hover a, .projects .featured_project__resources:active a {
-      color: white; }
-  @media screen and (min-width: 1200px) {
-    .projects .featured_project__resources {
-      background-position-y: -40px;
-      background-size: 100%;
-      height: 300px; }
-      .projects .featured_project__resources:hover, .projects .featured_project__resources:active {
-        background-image: url(/assets/images/projects/resources_2.png) !important;
-        background-position-y: -40px;
-        background-size: 100%; } }
-  .projects .featured_project__resources a {
+    .projects .featured_project .featured_project__text h5 {
+      color: #9a9898; }
+.projects .featured_project__resources:hover, .projects .featured_project__resources:active {
+  box-shadow: inset 0px 0px 0px 4px #e83943; }
+  .projects .featured_project__resources:hover h4, .projects .featured_project__resources:hover h5, .projects .featured_project__resources:active h4, .projects .featured_project__resources:active h5 {
     color: #e83943; }
-@media screen and (min-width: 1200px) {
-  .projects .featured_project__wheat {
-    float: left;
-    width: 47%;
-    margin-right: 3%;
-    height: 150px; } }
-.projects .featured_project__wheat a {
-  color: #0046fe; }
-.projects .featured_project__wheat:hover, .projects .featured_project__wheat:active {
-  background: #0046fe; }
-  .projects .featured_project__wheat:hover a, .projects .featured_project__wheat:active a {
-    color: white; }
-@media screen and (min-width: 1200px) {
-  .projects .featured_project__elenco {
-    height: 150px;
-    float: left;
-    width: 47%;
-    margin-left: 3%; } }
-.projects .featured_project__elenco a {
-  color: #2aa876; }
 .projects .featured_project__elenco:hover, .projects .featured_project__elenco:active {
-  background: #2aa876; }
-  .projects .featured_project__elenco:hover a, .projects .featured_project__elenco:active a {
-    color: white; }
+  box-shadow: inset 0px 0px 0px 4px #2aa876; }
+  .projects .featured_project__elenco:hover h4, .projects .featured_project__elenco:hover h5, .projects .featured_project__elenco:active h4, .projects .featured_project__elenco:active h5 {
+    color: #2aa876; }
+.projects .featured_project__wheat:hover, .projects .featured_project__wheat:active {
+  box-shadow: inset 0px 0px 0px 4px #0046fe; }
+  .projects .featured_project__wheat:hover h4, .projects .featured_project__wheat:hover h5, .projects .featured_project__wheat:active h4, .projects .featured_project__wheat:active h5 {
+    color: #0046fe; }
 
-@media screen and (min-width: 1200px) {
-  .posts .post {
-    margin: 10px auto;
-    float: left;
-    width: 33%;
-    word-wrap: break-word; } }
-.posts .post .date {
-  margin-top: -15px;
-  margin-left: 20px;
-  color: #9a9898; }
+.footer {
+  clear: both; }
+  @media screen and (min-width: 1200px) {
+    .footer {
+      padding-top: 200px; } }
 
 .back {
   margin: 0 auto;

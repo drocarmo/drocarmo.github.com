@@ -2,7 +2,6 @@
 
 section {
   margin: 100px auto;
-  clear: both;
   display: block;
 
   @include screen-large {
@@ -41,30 +40,50 @@ section {
   }
 }
 
-.projects {
-  // delete this later
-  .soon {
-    text-align: center;
-    color: $color-gray;
+.posts {
+  @include screen-large {
+    margin: 10px auto;
+    float: left;
+    width: 68%;
+    word-wrap: break-word;
   }
-  //
+
+  .post {
+    @include screen-medium {
+      float: left;
+      width: 48%;
+      margin: auto 2% auto 0;
+    }
+
+    a {
+      box-shadow: none;
+    }
+
+    .date {
+      margin-top: -20px;
+      color: $color-gray;
+      font-style: $type-style-italic;
+    }
+  }
+}
+
+.projects {
+  @include screen-large {
+    margin: 10px auto;
+    float: left;
+    width: 32%;
+    word-wrap: break-word;
+  }
 
   .featured_project {
-    margin: 40px auto;
+    margin: 20px auto;
     min-height: 30px;
     width: 100%;
     overflow: hidden;
-    background-repeat: no-repeat;
     background-size: 100%;
     background-color: $color-white;
     box-shadow: 0px 2px 8px 0px rgba(31,29,29,0.10);
-    border-radius: 4px;
-    transition: all 500ms;
-
-
-    &:hover,&:active {
-      background-size: 105%;
-    }
+    transition: all 50ms;
 
     a {
       text-decoration: none;
@@ -79,122 +98,47 @@ section {
       h5 {
         margin: 0 auto;
       }
-    }
-  }
 
-  // Color classes for the projects
-
-  // .featured_project__search {
-  //   height: 300px;
-  //   background-color: $color-white;
-  //   background-position: 0px -25px;
-  //   h4,h5 {
-  //     color: $color-gray;
-  //   }
-  // }
-
-  // .featured_project__storefronts {
-  //   height: 300px;
-  //   background-color: $color-white;
-  //   background-position: 85px 0px;
-  //   h4,h5 {
-  //     color: $color-gray;
-  //   }
-  // }
-
-  .featured_project__change {
-    background-position: 50px -10px;
-
-    @include screen-large {
-      height: 300px;
+      h5 {
+        color: $color-gray;
+      }
     }
   }
 
   .featured_project__resources {
-    background: none;
-
     &:hover,&:active {
-      background: #e83943;
+      box-shadow: inset 0px 0px 0px 4px #e83943;
 
-      a {
-        color: $color-white;
+      h4,h5 {
+        color: #e83943;
       }
     }
+  }
 
-    @include screen-large {
-      background-position-y: -40px;
-      background-size: 100%;
-      height: 300px;
+  .featured_project__elenco {
+    &:hover,&:active {
+      box-shadow: inset 0px 0px 0px 4px #2aa876;
 
-      &:hover,&:active {
-        background-image: url(/assets/images/projects/resources_2.png) !important;
-        background-position-y: -40px;
-        background-size: 100%;
+      h4,h5 {
+        color: #2aa876;
       }
-    }
-
-    a {
-      color: #e83943;
     }
   }
 
   .featured_project__wheat {
-    @include screen-large {
-      float: left;
-      width: 47%;
-      margin-right: 3%;
-      height: 150px;
-    }
-
-    a {
-      color: $color-blue;
-    }
-
     &:hover,&:active {
-      background: $color-blue;
+      box-shadow: inset 0px 0px 0px 4px $color-blue;
 
-      a {
-        color: $color-white;
-      }
-    }
-
-  }
-
-  .featured_project__elenco {
-    @include screen-large {
-      height: 150px;
-      float: left;
-      width: 47%;
-      margin-left: 3%;
-    }
-
-    a {
-      color: #2aa876;
-    }
-
-    &:hover,&:active {
-      background: #2aa876;
-
-      a {
-        color: $color-white;
+      h4,h5 {
+        color: $color-blue;
       }
     }
   }
 }
 
-.posts {
-  .post {
-    @include screen-large {
-      margin: 10px auto;
-      float: left;
-      width: 33%;
-      word-wrap: break-word;
-     }
-
-    .date {
-      margin-top: -15px;
-      margin-left: 20px;
-      color: $color-gray;
-    }
+.footer {
+  clear: both;
+  @include screen-large {
+    padding-top: 200px;
   }
 }

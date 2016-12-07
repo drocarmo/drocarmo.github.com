@@ -24,25 +24,8 @@ title: Product Designer
     </section>
   </section>
 
-  <section class="projects">
-    <h2>Selected Work</h2>
-    {% for work in site.data.work %}
-      <div class="featured_project featured_project__{{work.class}}" style="background-image:url({{ work.image }})">
-        <a href="{{ work.url }}">
-          <div class="featured_project__text">
-            <h4>{{ work.title }}</h4>
-            <h5>{{ work.info }}.</h5>
-            <br>
-            <h5>View work ⟶</h5>
-          </div>
-        </a>
-      </div>
-    {% endfor %}
-    <h5 class="soon">More coming soon...</h5>
-  </section>
-
   <section class="posts">
-    <h2>Writing</h2>
+    <h2>—Writing</h2>
     {% for post in site.posts %}
       <div class="post">
         <p>
@@ -55,15 +38,13 @@ title: Product Designer
   </section>
 
   <section class="projects">
-    <h2>Side Projects</h2>
+    <h2>—Projects</h2>
     {% for projects in site.data.projects %}
       <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
         <a href="{{ projects.url }}">
           <div class="featured_project__text">
             <h4>{{ projects.title }}</h4>
             <h5>{{ projects.info }}.</h5>
-            <br>
-            <h5>Visit project ⟶</h5>
           </div>
         </a>
       </div>
@@ -71,7 +52,8 @@ title: Product Designer
     <div style="clear: both;"></div>
   </section>
 
-  <section>
+  <section class="footer">
+    <br>
     <h5>Thanks for stopping by, follow me on interwebs for more ✌🏽</h5>
   </section>
 </section>

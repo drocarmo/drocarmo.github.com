@@ -593,15 +593,14 @@ ul {
       color: #1f1d1d; }
 
 .error {
-  margin: -19px auto;
   height: 100%;
   background: url("https://raw.github.com/drocarmo/gifs/master/upset/wwe.gif") no-repeat center;
-  background-size: cover;
-  color: white; }
-  .error .container {
-    padding: 20px auto; }
-    .error .container p a {
-      color: inherit; }
-    .error .container p .small {
-      font-size: 14px;
-      text-transform: uppercase; }
+  background-size: cover; }
+  .error body {
+    background: none;
+    color: white; }
+  .error .error__text p a {
+    color: inherit; }
+  .error .error__text p .small {
+    font-size: 14px;
+    text-transform: uppercase; }

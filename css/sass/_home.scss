@@ -57,6 +57,10 @@ section {
 
     a {
       box-shadow: none;
+
+      &:hover, &:active {
+        color: $color-gray;
+      }
     }
 
     .date {

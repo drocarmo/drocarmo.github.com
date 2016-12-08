@@ -371,6 +371,8 @@ section {
     margin: auto 2% auto 0; } }
 .posts .post a {
   box-shadow: none; }
+  .posts .post a:hover, .posts .post a:active {
+    color: #9a9898; }
 .posts .post .date {
   margin-top: -20px;
   color: #9a9898;

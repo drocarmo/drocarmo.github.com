@@ -319,13 +319,6 @@ html,
 body {
   height: 100%;
   background: #fcfcfc; }
-  @media screen and (min-width: 1200px) {
-    html.body-home,
-    body.body-home {
-      background-image: url(/assets/images/bkg.jpg);
-      background-size: 100%;
-      background-attachment: fixed;
-      background-repeat: no-repeat; } }
 
 body {
   margin: 0 auto;

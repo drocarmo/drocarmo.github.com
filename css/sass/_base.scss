@@ -1,27 +1,25 @@
 // Base declarations
 
 *,
-*:after,
+*::after,
 *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
 }
 
 ::selection {
-  color: $color-yellow;
+  color: $color-gray;
   text-shadow: none;
 }
 
 html,
 body {
+  background: $color-white;
   height: 100%;
-  background: lighten($color-light-gray, 3%);
 }
 
 body {
   @include flex;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }

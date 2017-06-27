@@ -4,8 +4,6 @@ author: Pedro Carmo - @drocarmo
 
 markdown: kramdown
 
-pygments: true
-
 highlighter: rouge
 
 include:

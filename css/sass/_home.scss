@@ -9,15 +9,21 @@ section {
   .avatar {
     @include screen-large {
       background-image: url('/assets/images/avatar.png');
-      background-size: 400px;
       background-repeat: no-repeat;
-      background-position: fixed;
+      background-size: 400px;
       height: 400px;
+
+      &:hover {
+        background-image: url('/assets/images/avatar-hover.png');
+        background-position: 70px;
+        background-size: 250px;
+      }
     }
   }
+
   a.popup__link {
-    position: relative;
     box-shadow: none;
+    position: relative;
 
     span {
       display: none;

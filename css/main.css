@@ -330,13 +330,16 @@ section {
 @media screen and (min-width: 1200px) {
   .about .avatar {
     background-image: url("/assets/images/avatar.png");
-    background-size: 400px;
     background-repeat: no-repeat;
-    background-position: fixed;
-    height: 400px; } }
+    background-size: 400px;
+    height: 400px; }
+    .about .avatar:hover {
+      background-image: url("/assets/images/avatar-hover.png");
+      background-position: 70px;
+      background-size: 250px; } }
 .about a.popup__link {
-  position: relative;
-  box-shadow: none; }
+  box-shadow: none;
+  position: relative; }
   .about a.popup__link span {
     display: none;
     position: absolute;

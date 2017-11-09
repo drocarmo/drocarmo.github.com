@@ -1,58 +1,59 @@
 ---
-layout: default
+layout: default-home
 title: Product Designer
 ---
 
 
-<section class="container container__home">
-  <section class="about">
-    <div class="avatar"></div>
-    <section class="about__text">
-      <h5>
-        Hello internet friend, my name is Pedro Carmo. I was born in São Paulo, Brasil but I’ve lived most of my life in Orlando, Florida. Currently, I live in Brooklyn, NY working as product designer at Kickstarter. At <a href="https://www.kickstarter.com/">Kickstarter</a>, I work on the Backing feature team and the Design Systems team. My focus on the Backing team is to improve how our backers interact with the project page, rewards selection and checkout page. In Design Systems, I’m helping define and build our pattern and component library with a focus on introducing process to the way we maintain and iterate on the system at large. <a href="https://medium.com/kickstarter-design/were-hiring-product-designers-54ddebb0523e" target="_blank">We're looking</a> for more product designers to join, so hit me up if you are looking!
-      </h5>
-      <h5>
-        Previously, I served as a product designer at an e-commerce startup called <a href="https://www.teespring.com" target="_blank">Teespring</a>. Before that, I was rolling up my sleeves in the consultancy world as a product designer at <a href="http://www.devmynd.com/" target="_blank">DevMynd</a>.
-      </h5>
-      <h5>
-        In my downtime, I mentor Design 101 and Interaction Design students at <a href="http://trydesignlab.com/" target="_blank">Designlab</a>. Elsewhere, you can find me as <i>@drocarmo</i> on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://medium.com/@drocarmo" target="_blank">Medium</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a>, etc. If you're into sending emails though, just remember <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">to be nice</a>.
-      </h5>
-      <h5>
-        This rest of this site is still under construction, so stick around to see more soon.
-      </h5>
-      <div style="clear: both;"></div>
-    </section>
-  </section>
+<div class="avatar"></div>
 
-  <!-- <section class="posts">
-    <h2>—Writing</h2>
+
+<section class="home">
+  <section class="about">
+    <h1 class="left">
+      Hi I’m Pedro Carmo, a product designer from the great state of São Paulo, Brazil.
+    </h1>
+    <h1 class="right">
+      Currently, I’m based in <strike>oƃɐɔᴉɥƆ oɔsᴉɔuɐɹℲ uɐS</strike> Brooklyn, NY.
+    </h1>
+    <hr>
+    <h2>Recent Work</h2>
+    <p>
+      I’m joining the talented product design team at <a href="https://www.simple.com" target="_blank">Simple</a>. They’re based in Portland but I’ll be working from my lovely apartment in East Williamsburg, Brooklyn.
+    </p>
+    <p>
+      Before Simple, I was serving as Product Designer at <a href="https://www.kickstarter.com" target="_blank">Kickstarter</a> in Brooklyn, NY. I lead the Backing feature team there, designing the new checkout, project page and reward selection flow.
+    </p>
+    <p>
+      Prior to moving to Brooklyn, I lived in San Francisco working as Product Designer at <a href="https://www.teespring.com" target="_blank">Teespring</a> in San Francisco, CA. At Teespring, I helped design & build their new homepage, creator storefronts, <a href="https://teespring.com/style-guide" target="_blank">design systems</a> and other product releases.
+    </p>
+    <p>
+      Previous to Teespring, I lived in Chicago, IL. I had the opportunity to roll up my sleeves in client product development shops such as <a href="http://www.devmynd.com/" target="_blank">DevMynd</a> and <a href="http://www.codal.com/" target="_blank">Codal</a> as Product Designer and UI Engineer, perspectively. In Chicago, I also went to a tech school called <a href="https://www.fullstackacademy.com/starter-league" target="_blank">StarterLeague</a> where I graduated in a Visual Design and a Frontend Development program.
+    </p>
+    <p>If you're looking for my portfolio, please get in contact below.</p>
+    <h2>Side projects</h2>
+    <p>
+      As a labor of love, I maintain a library of <a href="http://drocarmo.com/resources/" target="_blank">Product Design Resources</a>. I share a lot of these resources with the students I mentor in the Design 101 and Interaction Design courses at <a href="http://trydesignlab.com/" target="_blank">Designlab</a>. I also built a chrome-extension app called <a href="http://drocarmo.com/elenco/" target="_blank">Elenco</a>.
+    </p>
+    <p>
+      I'm also always available to hire for freelance work, so don't hesitate to reach out.
+    </p>
+    <h2>Writing</h2>
     {% for post in site.posts %}
+    <section class="posts">
       <div class="post">
         <p>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </p>
         <h5 class="date">{{ post.date | date_to_long_string }}</h5>
       </div>
+    </section>
     {% endfor %}
+    <hr>
+    <h2>Contact</h2>
+    <p>
+      You can find me as <b>@drocarmo</b> on <a href="https://twitter.com/drocarmo" target="_blank">Twitter</a>, <a href="https://instagram.com/drocarmo" target="_blank">Instagram</a>, <a href="https://medium.com/@drocarmo" target="_blank">Medium</a>, <a href="https://github.com/drocarmo" target="_blank">Github</a>, etc.
+      If you're into sending emails, just <a href="mailto:pe@drocarmo.com?subject=Hey Pedro&amp;body=I was just on your website and..">remember to be nice</a>.
+    </p>
     <div style="clear: both;"></div>
   </section>
-
-  <section class="projects">
-    <h2>—Projects</h2>
-    {% for projects in site.data.projects %}
-      <div class="featured_project featured_project__{{projects.class}}" style="background-image:url({{ projects.image }})">
-        <a href="{{ projects.url }}">
-          <div class="featured_project__text">
-            <h4>{{ projects.title }}</h4>
-            <h5>{{ projects.info }}.</h5>
-          </div>
-        </a>
-      </div>
-    {% endfor %}
-    <div style="clear: both;"></div>
-  </section> -->
-
-  <!-- <section class="footer">
-    <h5>Thanks for stopping by, follow me on interwebs for more ✌🏽</h5>
-  </section> -->
 </section>

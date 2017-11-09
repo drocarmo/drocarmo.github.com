@@ -3,15 +3,16 @@
 @mixin blog-button {
   a {
     font-size: .9em;
-    color: $color-gray;
+    color: $color-black;
     border-bottom: none;
-    background: lighten($color-light-gray, 3%);
+    background: $color-light-gray;
     padding: 15px;
     box-shadow: none;
 
     &:hover,
     &:active {
-      color: $color-black;
+      color: $color-white;
+      background: $color-black;
     }
   }
 }

@@ -8,18 +8,19 @@
 }
 
 ::selection {
-  color: $color-gray;
+  color: $color-white;
+  background-color: $color-black;
   text-shadow: none;
 }
 
 html,
 body {
   background: $color-white;
-  height: 100%;
 }
 
 body {
   @include flex;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  height: 100%;
 }

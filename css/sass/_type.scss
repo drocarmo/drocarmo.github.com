@@ -111,16 +111,4 @@ hr {
   margin: 0 0 60px auto;
   padding-top: 60px;
   clear: both;
-
-  &:after {
-    display: block;
-    content: "✕";
-    text-align: center;
-    font-size: 30px;
-    color: $color-black;
-
-    @include screen-medium {
-      font-size: 40px;
-    }
-  }
 }

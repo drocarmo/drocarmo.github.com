@@ -29,7 +29,12 @@
   h2 {
     text-transform: uppercase;
     font-size: 14px;
-    margin-top: 160px;
+    margin-top: 60px;
+    padding: 10px 0;
+
+    @include screen-large {
+      margin-top: 160px;
+    }
   }
 
   .about {
@@ -37,19 +42,31 @@
 
     .looking {
       margin-bottom: 60px;
+      padding: 12px 20px;
+      box-shadow: 0 3px 6px 2px rgba(0,0,0,0.10);
+      border-radius: 10px;
+
+      @include screen-medium {
+        box-shadow: none;
+        padding: 0;
+      }
 
       a, #contact {
         color: darken($color-gray,30%);
-        padding: 12px 20px;
-        box-shadow: 0 3px 6px 2px rgba(0,0,0,0.10);
-        border: 1px solid $color-white;
-        border-radius: 10px;
-        &:hover {
-          border: 1px solid $color-light-gray;
-          box-shadow: none;
+        box-shadow: none;
+
+        @include screen-medium {
+          color: darken($color-gray,30%);
+          padding: 12px 20px;
+          box-shadow: 0 3px 6px 2px rgba(0,0,0,0.10);
+          border: 1px solid $color-white;
+          border-radius: 10px;
+          &:hover {
+            border: 1px solid $color-light-gray;
+            box-shadow: none;
+          }
         }
       }
-
     }
 
     @include screen-medium {

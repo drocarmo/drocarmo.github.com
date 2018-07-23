@@ -9,7 +9,7 @@ $type-weight-semi-bold: 600;
 $type-weight-bold: 700;
 $type-style-italic: italic;
 $type-style-normal: normal;
-$line-height-headings: 1.3;
+$line-height-headings: 1.4;
 $line-height: 1.5;
 
 // Document type styles
@@ -27,10 +27,10 @@ h1 {
   font-family: $type-gitan;
   font-weight: $type-weight-bold;
   line-height: $line-height-headings;
-  font-size: 40px;
+  font-size: 30px;
 
   @include screen-medium {
-    font-size: 54px;
+    font-size: 40px;
   }
 }
 

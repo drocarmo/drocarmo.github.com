@@ -1,16 +1,26 @@
 // Home page style
 
 .avatar {
+  background-image: url('/assets/images/avatar-small.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+
+  @include screen-medium {
+    height: 600px;
+    width: 80%;
+    background-position: center;
+  }
+
   @include screen-large {
-    z-index: 2;
-    overflow: hidden;
     position: fixed;
-    top: 20px;
-    left: 20px;
     background-image: url('/assets/images/avatar.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     height: 100%;
     width: 48%;
   }

@@ -31,6 +31,18 @@ figure {
     }
   }
 
+  &.medium {
+    clear: both;
+    width: 80%;
+    padding: 20px 0;
+    margin-left: -20%;
+
+    @include screen-large {
+      width: 60%;
+      margin-left: -20%;
+    }
+  }
+
   &.small-left {
     width: 100%;
 

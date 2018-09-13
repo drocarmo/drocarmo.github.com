@@ -523,6 +523,15 @@ figure.big {
     figure.big {
       width: 120%;
       margin-left: -10%; } }
+figure.medium {
+  clear: both;
+  width: 80%;
+  padding: 20px 0;
+  margin-left: -20%; }
+  @media screen and (min-width: 1200px) {
+    figure.medium {
+      width: 60%;
+      margin-left: -20%; } }
 figure.small-left {
   width: 100%; }
   @media screen and (min-width: 1200px) {

@@ -10,7 +10,7 @@ config = YAML.load_file("_config.yml")
 desc "compile and run the site"
 task :default do
   pids = [
-    spawn("jekyll serve -w"), # put `auto: true` in your _config.yml
+    spawn("bundle exec jekyll serve JEKYLL_ENV=production"), # put `auto: true` in your _config.yml
     spawn("sass --watch css/main.scss:css/main.css"),
   ]
 

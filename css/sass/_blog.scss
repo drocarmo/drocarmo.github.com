@@ -91,12 +91,4 @@
       height: 315px;
     }
   }
-
-  #disqus_thread {
-    margin-top: 100px;
-
-    @include screen-medium {
-      margin-top: 200px;
-    }
-  }
 }

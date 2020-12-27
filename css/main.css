@@ -440,11 +440,6 @@ body {
       .blog .video {
         width: 560px;
         height: 315px; } }
-  .blog #disqus_thread {
-    margin-top: 100px; }
-    @media screen and (min-width: 700px) {
-      .blog #disqus_thread {
-        margin-top: 200px; } }
 
 code {
   font-family: "source-code-pro", sans-serif;

@@ -1,7 +1,7 @@
 // Typography variables
 
-$type-gitan: "gitan-latin",sans-serif;
-$type-garamond: "adobe-garamond-pro",serif;
+$type-avant: "itc-avant-garde-gothic-pro", sans-serif;
+$type-orpheus: "orpheuspro", serif;
 $type-source-code: "source-code-pro", sans-serif;
 $type-weight-light: 300;
 $type-weight-regular: 400;
@@ -15,27 +15,28 @@ $line-height: 1.5;
 // Document type styles
 
 body {
-  font-family: $type-garamond;
+  font-family: $type-orpheus;
   font-weight: $type-weight-regular;
   font-style: $type-style-normal;
-  color: $color-black;
+  color: $color-whitesmoke;
   line-height: $line-height;
   word-wrap: break-word;
 }
 
 h1 {
-  font-family: $type-gitan;
+  font-family: $type-avant;
   font-weight: $type-weight-bold;
   line-height: $line-height-headings;
   font-size: 30px;
 
   @include screen-medium {
-    font-size: 40px;
+    font-size: 100px;
   }
 }
 
 h2 {
-  font-family: $type-gitan;
+
+  font-family: $type-orpheus;
   font-weight: $type-weight-bold;
   line-height: $line-height;
   font-size: 24px;
@@ -46,6 +47,7 @@ h2 {
 }
 
 h3 {
+  font-family: $type-orpheus;
   font-size: 22px;
   line-height: $line-height-headings;
 
@@ -55,7 +57,7 @@ h3 {
 }
 
 h4 {
-  font-family: $type-gitan;
+  font-family: $type-orpheus;
   font-weight: $type-weight-bold;
   line-height: $line-height;
   font-size: 18px;
@@ -87,14 +89,15 @@ strong {
 }
 
 a {
-  box-shadow: inset 0 -1px $color-black;
-  color: $color-black;
+  box-shadow: inset 0 -1px $color-white;
+  color: $color-white;
   text-decoration: none;
   text-transform: none;
   transition: all 400ms;
 
   &:hover {
-    box-shadow: inset 0 25px $color-yellow;
+    color: $color-black;
+    box-shadow: inset 0 30px $color-white;
   }
 
 

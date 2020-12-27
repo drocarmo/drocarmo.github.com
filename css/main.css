@@ -215,24 +215,24 @@ table {
       width: 1024px; } }
 
 body {
-  font-family: "adobe-garamond-pro", serif;
+  font-family: "orpheuspro", serif;
   font-weight: 400;
   font-style: normal;
-  color: #0e0e0e;
+  color: #fcfcfc;
   line-height: 1.5;
   word-wrap: break-word; }
 
 h1 {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-weight: 700;
   line-height: 1.4;
   font-size: 30px; }
   @media screen and (min-width: 700px) {
     h1 {
-      font-size: 40px; } }
+      font-size: 100px; } }
 
 h2 {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "orpheuspro", serif;
   font-weight: 700;
   line-height: 1.5;
   font-size: 24px; }
@@ -241,6 +241,7 @@ h2 {
       font-size: 40px; } }
 
 h3 {
+  font-family: "orpheuspro", serif;
   font-size: 22px;
   line-height: 1.4; }
   @media screen and (min-width: 700px) {
@@ -248,7 +249,7 @@ h3 {
       font-size: 24px; } }
 
 h4 {
-  font-family: "gitan-latin", sans-serif;
+  font-family: "orpheuspro", serif;
   font-weight: 700;
   line-height: 1.5;
   font-size: 18px; }
@@ -272,13 +273,14 @@ strong {
   font-weight: 700; }
 
 a {
-  box-shadow: inset 0 -1px #0e0e0e;
-  color: #0e0e0e;
+  box-shadow: inset 0 -1px #fff;
+  color: #fff;
   text-decoration: none;
   text-transform: none;
   transition: all 400ms; }
   a:hover {
-    box-shadow: inset 0 25px #fae60a; }
+    color: #0e0e0e;
+    box-shadow: inset 0 30px #fff; }
 
 blockquote {
   margin: 50px 0;
@@ -298,13 +300,13 @@ hr {
   position: relative; }
 
 ::selection {
-  color: #fff;
+  color: #9a9898;
   background-color: #0e0e0e;
   text-shadow: none; }
 
 html,
 body {
-  background: #fff; }
+  background: #0e0e0e; }
 
 body {
   margin: 0 auto;
@@ -312,53 +314,46 @@ body {
   text-rendering: optimizeLegibility;
   height: 100%; }
 
-.avatar {
-  background-image: url("/assets/images/avatar-small.png");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: 2;
-  top: 20px;
-  left: 20px;
-  width: 90%;
-  height: 300px;
-  overflow: hidden; }
-  @media screen and (min-width: 700px) {
-    .avatar {
-      height: 600px;
-      width: 80%;
-      background-position: center; } }
-  @media screen and (min-width: 1200px) {
-    .avatar {
-      position: fixed;
-      background-image: url("/assets/images/avatar.png");
-      height: 100%;
-      width: 48%; } }
+@media screen and (min-width: 1200px) {
+  .avatar {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 100px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-image: url("/assets/images/header.png");
+    height: 100%;
+    width: 50%; } }
 
 .home {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  padding: 20px; }
   @media screen and (min-width: 1200px) {
     .home {
       position: relative;
-      width: 50%;
-      left: 50%; } }
-  .home h2 {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 60px;
-    padding: 10px 0; }
-    @media screen and (min-width: 1200px) {
-      .home h2 {
-        margin-top: 160px; } }
-  .home .about {
-    padding: 20px; }
-    @media screen and (min-width: 700px) {
-      .home .about {
-        padding: 40px; } }
-    @media screen and (min-width: 1200px) {
-      .home .about {
-        padding: 80px; } }
+      width: 100%;
+      padding: 60px;
+      z-index: 1000; }
+      .home span.emdash {
+        content: "";
+        display: inline-block;
+        right: 20px;
+        top: -20px;
+        margin-top: -1.5px;
+        width: 300px;
+        height: 15px;
+        background-color: #fff; } }
+  @media screen and (min-width: 700px) {
+    .home .about {
+      width: 49%;
+      padding: 0px; } }
+  @media screen and (min-width: 1200px) {
+    .home .about {
+      padding: 10px; } }
 
 @media screen and (min-width: 1200px) {
   .posts {

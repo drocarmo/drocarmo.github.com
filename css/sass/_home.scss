@@ -1,60 +1,72 @@
 // Home page style
 
 .avatar {
-  background-image: url('/assets/images/avatar-small.png');
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: 2;
-  top: 20px;
-  left: 20px;
-  width: 90%;
-  height: 300px;
-  overflow: hidden;
+  // background-image: url('/assets/images/avatar-small.png');
+  // background-size: cover;
+  // background-position: top center;
+  // background-repeat: no-repeat;
+  // z-index: 2;
+  // top: 200px;
+  // left: 50%;
+  // width: 90%;
+  // height: 300px;
+  // overflow: hidden;
 
-  @include screen-medium {
-    height: 600px;
-    width: 80%;
-    background-position: center;
-  }
+  // @include screen-medium {
+  //   height: 820px;
+  //   width: 874px;
+  //   background-position: center;
+  // }
 
   @include screen-large {
-    position: fixed;
-    background-image: url('/assets/images/avatar.png');
+    //  delete this later
+    // background-image: url('/assets/images/avatar-small.png');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 100px;
+    left: 50%;
+    overflow: hidden;
+
+    position: absolute;
+    background-image: url('/assets/images/header.png');
     height: 100%;
-    width: 48%;
+    width: 50%;
   }
 }
 
 .home {
   height: auto;
   width: 100%;
+  padding: 20px;
 
   @include screen-large {
     position: relative;
-    width: 50%;
-    left: 50%;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 60px;
-    padding: 10px 0;
-
-    @include screen-large {
-      margin-top: 160px;
+    width: 100%;
+    padding: 60px;
+    z-index: 1000;
+    span.emdash {
+      content: "";
+      display: inline-block;
+      right: 20px;
+      top: -20px;
+      margin-top: -1.5px;
+      width: 300px;
+      height: 15px;
+      background-color: #fff;
     }
   }
 
   .about {
-    padding: 20px;
+    // padding: 20px;
 
     @include screen-medium {
-      padding: 40px;
+      width: 49%;
+      padding: 0px;
     }
     @include screen-large {
-      padding: 80px;
+      padding: 10px;
     }
   }
 }

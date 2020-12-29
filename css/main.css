@@ -293,6 +293,11 @@ hr {
   padding-top: 60px;
   clear: both; }
 
+:root {
+  --background: #0e0e0e;
+  --text: #fff;
+  --highlight: #0e0e0e; }
+
 *,
 *::after,
 *::before {
@@ -306,13 +311,57 @@ hr {
 
 html,
 body {
-  background: #0e0e0e; }
+  background: var(--background);
+  color: var --text;
+  transition: all 400ms; }
 
 body {
+  margin: 0 auto;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   height: 100%; }
+
+.theme-switch {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  padding: 20px; }
+  @media screen and (min-width: 1200px) {
+    .theme-switch {
+      padding: 60px; } }
+  .theme-switch .switch {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/images/dro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.5s all ease;
+    z-index: 1;
+    box-sizing: border-box; }
+    .theme-switch .switch:hover {
+      background-image: url("/assets/images/dro.gif"); }
+
+html.light-theme, body.light-theme {
+  --background: #f4f4f4 !important;
+  --text: #0e0e0e;
+  color: var(--text);
+  background: var(--background); }
+  html.light-theme a, body.light-theme a {
+    color: var(--text);
+    box-shadow: inset 0 -1px var(--text);
+    text-decoration: none;
+    text-transform: none;
+    transition: all 400ms; }
+    html.light-theme a:hover, body.light-theme a:hover {
+      color: var(--background);
+      box-shadow: inset 0 30px var(--text); }
+  html.light-theme .emdash, body.light-theme .emdash {
+    background-color: var(--text) !important; }
 
 @media screen and (min-width: 1200px) {
   .header-right {
@@ -349,11 +398,8 @@ body {
         background-color: #fff; } }
   @media screen and (min-width: 700px) {
     .home .about {
-      width: 49%;
+      width: 50%;
       padding: 0px; } }
-  @media screen and (min-width: 1200px) {
-    .home .about {
-      padding: 10px; } }
 
 @media screen and (min-width: 1200px) {
   .posts {

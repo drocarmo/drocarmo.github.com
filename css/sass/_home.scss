@@ -44,14 +44,13 @@
   }
 
   .about {
-    // padding: 20px;
 
     @include screen-medium {
-      width: 49%;
+      width: 50%;
       padding: 0px;
     }
     @include screen-large {
-      padding: 10px;
+
     }
   }
 }

@@ -7,4 +7,13 @@
   <link href="{{ base.url }}/css/main.css" type="text/css" rel="stylesheet">
   <script type="text/javascript" src="//use.typekit.net/vdp7mxz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".theme-switch").click(function(){
+        $("html").toggleClass("light-theme");
+        $("body").toggleClass("light-theme");
+      });
+    });
+  </script>
 </head>

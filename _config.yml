@@ -18,3 +18,4 @@ keep_files:
 - .git
 
 permalink: /:title
+auto: true

@@ -1,37 +1,22 @@
 // Home page style
 
-.avatar {
-  // background-image: url('/assets/images/avatar-small.png');
-  // background-size: cover;
-  // background-position: top center;
-  // background-repeat: no-repeat;
-  // z-index: 2;
-  // top: 200px;
-  // left: 50%;
-  // width: 90%;
-  // height: 300px;
-  // overflow: hidden;
-
-  // @include screen-medium {
-  //   height: 820px;
-  //   width: 874px;
-  //   background-position: center;
-  // }
+.header-right {
+  @include screen-medium {
+    // height: 820px;
+    // width: 874px;
+  }
 
   @include screen-large {
-    //  delete this later
-    // background-image: url('/assets/images/avatar-small.png');
+    background-image: url('/assets/images/index.png');
+    background-position: top right;
     background-size: contain;
-    background-position: top center;
     background-repeat: no-repeat;
     z-index: 2;
-    top: 100px;
+    top: 50px;
     left: 50%;
     overflow: hidden;
-
     position: absolute;
-    background-image: url('/assets/images/header.png');
-    height: 100%;
+    height: 120%;
     width: 50%;
   }
 }

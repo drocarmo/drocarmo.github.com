@@ -89,15 +89,15 @@ strong {
 }
 
 a {
-  box-shadow: inset 0 -1px $color-white;
-  color: $color-white;
+  box-shadow: inset 0 -1px $color-black;
+  color: $color-black;
   text-decoration: none;
   text-transform: none;
   transition: all 400ms;
 
   &:hover {
-    color: $color-black;
-    box-shadow: inset 0 30px $color-white;
+    color: $color-white;
+    box-shadow: inset 0 30px $color-black;
   }
 
 

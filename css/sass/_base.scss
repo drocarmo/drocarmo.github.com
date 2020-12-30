@@ -1,9 +1,9 @@
 // Base declarations
 
 :root {
-  --background: #0e0e0e;
-  --text: #fff;
-  --highlight: #0e0e0e;
+  --background: #f4f4f4;
+  --text: #0e0e0e;
+  --highlight: #f4f4f4;
 }
 
 *,
@@ -22,7 +22,7 @@
 html,
 body {
   background: var(--background);
-  color: var (--text);
+  color: var(--text);
   transition: all 400ms;
 }
 
@@ -64,9 +64,9 @@ body {
   }
 }
 
-html.light-theme, body.light-theme {
-  --background: #f4f4f4 !important;
-  --text: #0e0e0e;
+html.dark-theme, body.dark-theme {
+  --background: #0e0e0e !important;
+  --text: #fff;
   color: var(--text);
   background: var(--background);
 

@@ -273,14 +273,14 @@ strong {
   font-weight: 700; }
 
 a {
-  box-shadow: inset 0 -1px #fff;
-  color: #fff;
+  box-shadow: inset 0 -1px #0e0e0e;
+  color: #0e0e0e;
   text-decoration: none;
   text-transform: none;
   transition: all 400ms; }
   a:hover {
-    color: #0e0e0e;
-    box-shadow: inset 0 30px #fff; }
+    color: #fff;
+    box-shadow: inset 0 30px #0e0e0e; }
 
 blockquote {
   margin: 50px 0;
@@ -294,9 +294,9 @@ hr {
   clear: both; }
 
 :root {
-  --background: #0e0e0e;
-  --text: #fff;
-  --highlight: #0e0e0e; }
+  --background: #f4f4f4;
+  --text: #0e0e0e;
+  --highlight: #f4f4f4; }
 
 *,
 *::after,
@@ -312,7 +312,7 @@ hr {
 html,
 body {
   background: var(--background);
-  color: var --text;
+  color: var(--text);
   transition: all 400ms; }
 
 body {
@@ -346,21 +346,21 @@ body {
     .theme-switch .switch:hover {
       background-image: url("/assets/images/dro.gif"); }
 
-html.light-theme, body.light-theme {
-  --background: #f4f4f4 !important;
-  --text: #0e0e0e;
+html.dark-theme, body.dark-theme {
+  --background: #0e0e0e !important;
+  --text: #fff;
   color: var(--text);
   background: var(--background); }
-  html.light-theme a, body.light-theme a {
+  html.dark-theme a, body.dark-theme a {
     color: var(--text);
     box-shadow: inset 0 -1px var(--text);
     text-decoration: none;
     text-transform: none;
     transition: all 400ms; }
-    html.light-theme a:hover, body.light-theme a:hover {
+    html.dark-theme a:hover, body.dark-theme a:hover {
       color: var(--background);
       box-shadow: inset 0 30px var(--text); }
-  html.light-theme .emdash, body.light-theme .emdash {
+  html.dark-theme .emdash, body.dark-theme .emdash {
     background-color: var(--text) !important; }
 
 @media screen and (min-width: 1200px) {
@@ -395,7 +395,7 @@ html.light-theme, body.light-theme {
         margin-top: -1.5px;
         width: 300px;
         height: 15px;
-        background-color: #fff; } }
+        background-color: #0e0e0e; } }
   @media screen and (min-width: 700px) {
     .home .about {
       width: 50%;

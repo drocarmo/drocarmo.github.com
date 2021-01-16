@@ -46,9 +46,9 @@ body {
   }
 
   .switch {
-    width: 30px;
-    height: 30px;
-    background-image: url('/assets/images/dro.png');
+    width: 40px;
+    height: 40px;
+    background-image: url('/assets/images/circle.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,7 @@ body {
     box-sizing: border-box;
 
     &:hover {
-      background-image: url('/assets/images/dro.gif');
+      background-image: url('/assets/images/circle-hover.png');
     }
   }
 }

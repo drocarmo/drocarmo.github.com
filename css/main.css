@@ -294,7 +294,7 @@ hr {
   clear: both; }
 
 :root {
-  --background: #f4f4f4;
+  --background: #fff;
   --text: #0e0e0e;
   --highlight: #f4f4f4; }
 
@@ -371,11 +371,25 @@ html.dark-theme, body.dark-theme {
     background-repeat: no-repeat;
     z-index: 2;
     top: 50px;
-    left: 50%;
+    left: 60%;
     overflow: hidden;
     position: absolute;
-    height: 120%;
-    width: 50%; } }
+    height: 80%;
+    width: 40%; } }
+
+@media screen and (min-width: 1200px) {
+  .header-left {
+    background-image: url("/assets/images/index-2.png");
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 800px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    height: 80%;
+    width: 40%; } }
 
 .home {
   height: auto;
@@ -385,7 +399,7 @@ html.dark-theme, body.dark-theme {
     .home {
       position: relative;
       width: 100%;
-      padding: 60px;
+      padding: 20px 60px;
       z-index: 1000; }
       .home span.emdash {
         content: "";
@@ -396,10 +410,22 @@ html.dark-theme, body.dark-theme {
         width: 300px;
         height: 15px;
         background-color: #0e0e0e; } }
-  @media screen and (min-width: 700px) {
-    .home .about {
+  @media screen and (min-width: 1200px) {
+    .home .about-left {
       width: 50%;
-      padding: 0px; } }
+      padding: 0px; }
+      .home .about-left h2 {
+        font-size: 60px; } }
+  @media screen and (min-width: 1200px) {
+    .home .about-right {
+      margin-top: 400px;
+      width: 50%;
+      left: 50%; }
+      .home .about-right h3 {
+        font-size: 40px;
+        font-weight: 700; }
+        .home .about-right h3 a:hover {
+          box-shadow: inset 0 70px #0e0e0e; } }
 
 @media screen and (min-width: 1200px) {
   .posts {

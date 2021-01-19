@@ -13,11 +13,32 @@
     background-repeat: no-repeat;
     z-index: 2;
     top: 50px;
-    left: 50%;
+    left: 60%;
     overflow: hidden;
     position: absolute;
-    height: 120%;
-    width: 50%;
+    height: 80%;
+    width: 40%;
+  }
+}
+
+.header-left {
+  @include screen-medium {
+    // height: 820px;
+    // width: 874px;
+  }
+
+  @include screen-large {
+    background-image: url('/assets/images/index-2.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 800px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    height: 80%;
+    width: 40%;
   }
 }
 
@@ -29,7 +50,7 @@
   @include screen-large {
     position: relative;
     width: 100%;
-    padding: 60px;
+    padding: 20px 60px;
     z-index: 1000;
     span.emdash {
       content: "";
@@ -43,14 +64,29 @@
     }
   }
 
-  .about {
-
-    @include screen-medium {
+  .about-left {
+    @include screen-large {
       width: 50%;
       padding: 0px;
-    }
-    @include screen-large {
 
+      h2 {
+      font-size: 60px;
+      }
+    }
+  }
+  .about-right {
+    @include screen-large {
+      margin-top: 400px;
+      width: 50%;
+      left: 50%;
+
+      h3 {
+        font-size: 40px;
+        font-weight: $type-weight-bold;
+        a:hover {
+          box-shadow: inset 0 70px $color-black;
+        }
+      }
     }
   }
 }

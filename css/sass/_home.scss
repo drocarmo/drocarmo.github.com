@@ -89,7 +89,7 @@
     .works {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 30px;
       width: 100%;
 
       .works-item {
@@ -97,24 +97,32 @@
         flex-direction: row;
         flex-basis: 100%;
         flex-wrap: nowrap;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         gap: 16px;
 
         @include screen-medium {
-          align-items: center;
           gap: 24px;
         }
 
         .works-title a {
           display: flex;
-          flex-wrap: wrap;
-          flex-shrink: 1;
           flex-direction: column;
           align-self: flex-start;
+          gap: 12px;
 
-          h4, p {
-            margin-bottom: 0px;
+          h4 {
+            display: none;
+
+            @include screen-medium {
+              margin: 0px;
+              display: flex;
+              align-self: flex-start;
+            }
+          }
+
+          p {
+            margin: 0px;
           }
         }
 
@@ -122,10 +130,10 @@
           display: flex;
           flex-wrap: wrap;
           min-width: 100px;
-          align-self: center;
+          align-self: baseline;
           flex-shrink: 0;
           border-radius: 8px;
-          max-width: 150px;
+          max-width: 120px;
 
           @include screen-medium {
             max-width: 200px;
@@ -166,7 +174,6 @@
     align-items: stretch;
     justify-content: flex-start;
     margin-top: 10px;
-    margin-bottom: 300px;
     gap: 16px;
 
     @include screen-medium {

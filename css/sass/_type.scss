@@ -27,43 +27,55 @@ h1 {
   font-family: $type-avant;
   font-weight: $type-weight-bold;
   line-height: $line-height-headings;
-  font-size: 30px;
+  font-size: 48px;
 
   @include screen-medium {
-    font-size: 100px;
+    font-size: 80px;
+  }
+
+  @include screen-large {
+    font-size: 120px;
   }
 }
 
 h2 {
-
   font-family: $type-orpheus;
   font-weight: $type-weight-bold;
   line-height: $line-height;
-  font-size: 24px;
+  font-size: 30px;
 
   @include screen-medium {
-    font-size: 40px;
+    font-size: 60px;
+  }
+
+  @include screen-large {
+    font-size: 80px;
   }
 }
 
 h3 {
-  font-family: $type-orpheus;
-  font-size: 22px;
+  font-family: $type-avant;
+  font-size: 16px;
   line-height: $line-height-headings;
+  font-weight: $type-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 
   @include screen-medium {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 h4 {
-  font-family: $type-orpheus;
+  font-family: $type-avant;
+  font-size: 14px;
+  line-height: 1;
   font-weight: $type-weight-bold;
-  line-height: $line-height;
-  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 
   @include screen-medium {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
@@ -77,10 +89,14 @@ h5 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 24px;
 
   @include screen-medium {
-    font-size: 20px;
+    font-size: 30px;
+  }
+
+  @include screen-large {
+    font-size: 32px;
   }
 }
 
@@ -89,18 +105,15 @@ strong {
 }
 
 a {
-  box-shadow: inset 0 -1px $color-black;
-  color: $color-black;
+  box-shadow: inset 0 -2px var(--text);
+  color: var(--text);
   text-decoration: none;
   text-transform: none;
   transition: all 400ms;
-
   &:hover {
-    color: $color-white;
-    box-shadow: inset 0 30px $color-black;
+    color: var(--background);
+    box-shadow: inset 0 54px var(--text);
   }
-
-
 }
 
 blockquote {
@@ -110,8 +123,13 @@ blockquote {
 }
 
 hr {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 4px;
+  background-color: rgba(209, 210, 211, 0.13);
   border: 0;
-  margin: 0 0 60px auto;
-  padding-top: 60px;
+  height: 20px;
   clear: both;
 }

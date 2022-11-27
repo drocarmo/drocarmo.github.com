@@ -2,6 +2,7 @@
 require 'rake'
 require 'yaml'
 require 'kramdown'
+require 'sassc'
 
 # Load the configuration file
 config = YAML.load_file("_config.yml")
@@ -10,7 +11,7 @@ config = YAML.load_file("_config.yml")
 desc "compile and run the site"
 task :default do
   pids = [
-    spawn("bundle exec jekyll serve JEKYLL_ENV=production"), # put `auto: true` in your _config.yml
+    spawn("bundle exec jekyll serve --trace JEKYLL_ENV=production"), # put `auto: true` in your _config.yml
     spawn("sass --watch css/main.scss:css/main.css"),
   ]
 

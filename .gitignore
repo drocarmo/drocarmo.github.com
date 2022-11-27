@@ -6,3 +6,4 @@ _site
 .jekyll-cache
 .bundle
 _vendor
+Gemfile.lock

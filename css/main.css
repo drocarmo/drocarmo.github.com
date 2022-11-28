@@ -431,7 +431,7 @@ html.light-theme, body.light-theme {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: 30%;
+    opacity: 50%;
     top: 300px;
     right: -24px;
     overflow: hidden;
@@ -455,9 +455,22 @@ html.light-theme, body.light-theme {
   @media screen and (min-width: 1200px) {
     .home {
       margin: 60px; } }
+  .home .header h1 {
+    display: flex; }
+    .home .header h1 span.emdash {
+      content: "";
+      display: flex;
+      align-self: center;
+      flex-grow: 1;
+      height: 8px;
+      margin-top: 6px;
+      background-color: #fff; }
   .home .header h2 {
     margin-top: -20px; }
   @media screen and (min-width: 700px) {
+    .home .header h1 span.emdash {
+      display: flex;
+      height: 12px; }
     .home .header h2 {
       margin-top: -40px; } }
   @media screen and (min-width: 1200px) {
@@ -466,15 +479,10 @@ html.light-theme, body.light-theme {
       max-width: 1200px;
       position: relative;
       z-index: 1000; }
-      .home .header h1 {
-        display: flex; }
-        .home .header h1 span.emdash {
-          content: "";
-          display: flex;
-          align-self: center;
-          flex-grow: 1;
-          height: 15px;
-          background-color: #fff; }
+      .home .header h1 span.emdash {
+        display: flex;
+        height: 16px;
+        margin-top: 18px; }
       .home .header h2 {
         opacity: 80%;
         margin-top: -80px; } }

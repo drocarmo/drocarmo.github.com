@@ -7,7 +7,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: 30%;
+    opacity: 50%;
     top: 300px;
     right: -24px;
     overflow: hidden;
@@ -42,11 +42,31 @@
   }
 
   .header {
+    h1 {
+      display: flex;
+
+      span.emdash {
+        content: "";
+        display: flex;
+        align-self: center;
+        flex-grow: 1;
+        height: 8px;
+        margin-top:6px;
+        background-color: $color-white;
+      }
+    }
+
     h2 {
       margin-top:-20px;
     }
 
     @include screen-medium {
+      h1 {
+        span.emdash {
+          display: flex;
+          height: 12px;
+        }
+      }
       h2 {
         margin-top:-40px;
       }
@@ -58,22 +78,16 @@
       position: relative;
       z-index: 1000;
       h1 {
-        display: flex;
-
         span.emdash {
-          content: "";
           display: flex;
-          align-self: center;
-          flex-grow: 1;
-          height: 15px;
-          background-color: $color-white;
+          height: 16px;
+          margin-top:18px;
         }
       }
       h2 {
         opacity: 80%;
         margin-top:-80px;
       }
-
     }
   }
 

@@ -340,6 +340,9 @@ body {
   text-rendering: optimizeLegibility;
   height: 100%; }
 
+.hidden {
+  overflow: hidden; }
+
 .theme-switch {
   display: block;
   height: 40px;
@@ -428,8 +431,9 @@ html.light-theme, body.light-theme {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-    top: 500px;
-    left: 850px;
+    opacity: 30%;
+    top: 300px;
+    right: -24px;
     overflow: hidden;
     position: absolute;
     height: 100%;
@@ -492,11 +496,12 @@ html.light-theme, body.light-theme {
         flex-direction: row;
         flex-basis: 100%;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 16px; }
         @media screen and (min-width: 700px) {
           .home .body .works .works-item {
+            align-items: center;
             gap: 24px; } }
         .home .body .works .works-item .works-title a {
           display: flex;
@@ -514,10 +519,6 @@ html.light-theme, body.light-theme {
             margin: 0px; }
         .home .body .works .works-item .works-img img {
           display: flex;
-          flex-wrap: wrap;
-          min-width: 100px;
-          align-self: baseline;
-          flex-shrink: 0;
           border-radius: 8px;
           max-width: 120px; }
           @media screen and (min-width: 700px) {

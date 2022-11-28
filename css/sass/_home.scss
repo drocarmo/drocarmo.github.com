@@ -7,8 +7,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-    top: 500px;
-    left: 850px;
+    opacity: 30%;
+    top: 300px;
+    right: -24px;
     overflow: hidden;
     position: absolute;
     height: 100%;
@@ -97,11 +98,12 @@
         flex-direction: row;
         flex-basis: 100%;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 16px;
 
         @include screen-medium {
+          align-items: center;
           gap: 24px;
         }
 
@@ -128,10 +130,6 @@
 
         .works-img img {
           display: flex;
-          flex-wrap: wrap;
-          min-width: 100px;
-          align-self: baseline;
-          flex-shrink: 0;
           border-radius: 8px;
           max-width: 120px;
 

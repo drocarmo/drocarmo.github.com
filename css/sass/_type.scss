@@ -32,10 +32,6 @@ h1 {
   @include screen-medium {
     font-size: 80px;
   }
-
-  @include screen-large {
-    font-size: 120px;
-  }
 }
 
 h2 {
@@ -47,10 +43,6 @@ h2 {
   @include screen-medium {
     font-size: 60px;
   }
-
-  @include screen-large {
-    font-size: 80px;
-  }
 }
 
 h3 {
@@ -60,10 +52,6 @@ h3 {
   font-weight: $type-weight-bold;
   text-transform: uppercase;
   letter-spacing: .1rem;
-
-  @include screen-medium {
-    font-size: 20px;
-  }
 }
 
 h4 {
@@ -94,10 +82,6 @@ p {
   @include screen-medium {
     font-size: 30px;
   }
-
-  @include screen-large {
-    font-size: 32px;
-  }
 }
 
 strong {
@@ -127,9 +111,8 @@ hr {
   align-self: flex-start;
   width: 100%;
   max-width: 800px;
-  border-radius: 4px;
-  background-color: rgba(209, 210, 211, 0.13);
+  background-color: rgba(209, 210, 211, 0.05);
   border: 0;
-  height: 20px;
+  height: 4px;
   clear: both;
 }

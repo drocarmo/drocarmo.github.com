@@ -46,11 +46,10 @@ body {
 
   @include screen-medium {
     margin: 30px;
-    height: 60px;
+    height: 40px;
   }
   @include screen-large {
     margin: 60px;
-    height: 80px;
   }
 
   .switch {

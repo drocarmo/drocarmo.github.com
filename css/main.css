@@ -624,7 +624,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   flex-shrink: 0;
   min-width: 0;
   max-width: 800px;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 .home .body .works .works-item {
   display: flex;
@@ -662,7 +662,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .home .body .works .works-item .works-img img {
   display: flex;
-  border-radius: 12px;
+  border-radius: 16px;
   max-width: 120px;
 }
 @media screen and (min-width: 700px) {
@@ -676,7 +676,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .home .body .works .works-item span {
   padding: 8px 12px;
-  border-radius: 12px;
+  border-radius: 16px;
   background-color: rgba(209, 210, 211, 0.13);
 }
 .home .body .works .works-item a {

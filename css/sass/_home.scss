@@ -121,7 +121,7 @@
           flex-shrink: 0;
           min-width: 0;
           max-width: 800px;
-          border-radius: 12px;
+          border-radius: 16px;
         }
       }
 
@@ -162,7 +162,7 @@
 
         .works-img img {
           display: flex;
-          border-radius: 12px;
+          border-radius: 16px;
           max-width: 120px;
 
           @include screen-medium {
@@ -179,7 +179,7 @@
 
         span {
           padding: 8px 12px;
-          border-radius: 12px;
+          border-radius: 16px;
           background-color: rgba(209, 210, 211, 0.13);
         }
 

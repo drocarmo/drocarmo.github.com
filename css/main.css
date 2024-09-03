@@ -519,13 +519,12 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-    top: 40px;
     opacity: 70%;
     right: -24px;
     overflow: hidden;
     position: absolute;
     height: 100%;
-    width: 682px;
+    width: 500px;
   }
 }
 

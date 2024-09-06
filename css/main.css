@@ -350,8 +350,7 @@ a {
   transition: all 400ms;
 }
 a:hover {
-  color: var(--background);
-  box-shadow: inset 0 54px var(--text);
+  box-shadow: inset 0 -4px var(--text);
 }
 
 blockquote {
@@ -492,18 +491,17 @@ html.light-theme ::selection, body.light-theme ::selection {
   background-color: var(--background);
   text-shadow: none;
 }
-html.light-theme hr, html.light-theme span, body.light-theme hr, body.light-theme span {
+html.light-theme hr, body.light-theme hr {
   background-color: rgba(29, 28, 29, 0.13) !important;
 }
 html.light-theme a, body.light-theme a {
   color: var(--text);
-  box-shadow: inset 0 -2px var(--text);
+  box-shadow: inset 0 -1px var(--text);
   text-decoration: none;
   text-transform: none;
 }
 html.light-theme a:hover, body.light-theme a:hover {
-  color: var(--background);
-  box-shadow: inset 0 54px var(--text);
+  box-shadow: inset 0 -4px var(--text);
 }
 html.light-theme .emdash, body.light-theme .emdash {
   background-color: var(--text) !important;

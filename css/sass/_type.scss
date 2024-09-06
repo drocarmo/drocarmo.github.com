@@ -95,8 +95,7 @@ a {
   text-transform: none;
   transition: all 400ms;
   &:hover {
-    color: var(--background);
-    box-shadow: inset 0 54px var(--text);
+    box-shadow: inset 0 -4px var(--text);
   }
 }
 

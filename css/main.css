@@ -554,6 +554,10 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 .home .header h1 {
   display: flex;
 }
+.home .header h1 span.rotate:hover {
+  rotate: 360deg;
+  transition: 0.9s all ease-in-out;
+}
 .home .header h1 span.emdash {
   content: "";
   display: flex;
@@ -672,6 +676,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 .home .body .works .works-item:hover .works-img img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: 0.5s all ease-in-out;
 }
 .home .body .works .works-item span {
   padding: 8px 12px;

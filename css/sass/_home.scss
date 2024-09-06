@@ -43,6 +43,13 @@
   .header {
     h1 {
       display: flex;
+      span.rotate {
+
+        &:hover {
+          rotate: 360deg;
+          transition: .9s all ease-in-out;
+        }
+      }
 
       span.emdash {
         content: "";
@@ -173,6 +180,7 @@
           .works-img img {
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
+            transition: .5s all ease-in-out;
           }
         }
 

@@ -491,7 +491,7 @@ html.light-theme ::selection, body.light-theme ::selection {
   background-color: var(--background);
   text-shadow: none;
 }
-html.light-theme hr, body.light-theme hr {
+html.light-theme hr, html.light-theme span.label, body.light-theme hr, body.light-theme span.label {
   background-color: rgba(29, 28, 29, 0.13) !important;
 }
 html.light-theme a, body.light-theme a {
@@ -676,7 +676,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   filter: grayscale(100%);
   transition: 0.5s all ease-in-out;
 }
-.home .body .works .works-item span {
+.home .body .works .works-item span.label {
   padding: 8px 10px;
   border-radius: 9px;
   background-color: rgba(209, 210, 211, 0.13);

@@ -308,7 +308,7 @@ h3 {
 
 h4 {
   font-family: "itc-avant-garde-gothic-pro", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
@@ -316,7 +316,7 @@ h4 {
 }
 @media screen and (min-width: 700px) {
   h4 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -677,8 +677,8 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   transition: 0.5s all ease-in-out;
 }
 .home .body .works .works-item span {
-  padding: 8px 12px;
-  border-radius: 16px;
+  padding: 8px 10px;
+  border-radius: 9px;
   background-color: rgba(209, 210, 211, 0.13);
 }
 .home .body .works .works-item a {

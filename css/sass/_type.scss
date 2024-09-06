@@ -56,14 +56,14 @@ h3 {
 
 h4 {
   font-family: $type-avant;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   font-weight: $type-weight-bold;
   text-transform: uppercase;
   letter-spacing: .1rem;
 
   @include screen-medium {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 

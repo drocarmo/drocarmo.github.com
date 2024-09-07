@@ -1,18 +1,29 @@
 // Home page style
 
-.header-right {
+.header-image {
+  background-image: url('/assets/images/index-mobile.png');
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 70%;
+  top: 8px;
+  right: -24px;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 360px;
+
+ @include screen-medium {
+    background-image: url('/assets/images/index-tablet.png');
+    width: 600px;
+ }
+
  @include screen-large {
     background-image: url('/assets/images/index.png');
-    background-position: top right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
+    width: 45%;
+    max-width: 580px;
     opacity: 70%;
-    right: -24px;
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    width: 500px;
   } 
 }
 
@@ -29,14 +40,17 @@
   flex-direction: column;
   flex-basis: 100%;
   margin: 20px;
+  padding-top: 150px;
   overflow: hidden;
 
 
   @include screen-medium {
+    padding-top: 200px;
     margin: 30px;
   }
 
   @include screen-large {
+    padding-top: 0px;
     margin: 60px;
   }
 

@@ -39,14 +39,13 @@ body {
 
 .theme-switch {
   display: block;
-  height: 40px;
+  height: 10px;
   width: 300px;
   margin: 20px;
   cursor: pointer;
 
   @include screen-medium {
     margin: 30px;
-    height: 40px;
   }
   @include screen-large {
     margin: 60px;

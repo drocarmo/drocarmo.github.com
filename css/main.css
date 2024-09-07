@@ -409,7 +409,7 @@ body {
 
 .theme-switch {
   display: block;
-  height: 40px;
+  height: 10px;
   width: 300px;
   margin: 20px;
   cursor: pointer;
@@ -417,7 +417,6 @@ body {
 @media screen and (min-width: 700px) {
   .theme-switch {
     margin: 30px;
-    height: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -510,19 +509,32 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   background-image: url("/assets/images/cursor-dark.png");
 }
 
+.header-image {
+  background-image: url("/assets/images/index-mobile.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 70%;
+  top: 8px;
+  right: -24px;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 360px;
+}
+@media screen and (min-width: 700px) {
+  .header-image {
+    background-image: url("/assets/images/index-tablet.png");
+    width: 600px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .header-right {
+  .header-image {
     background-image: url("/assets/images/index.png");
-    background-position: top right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 0;
+    width: 45%;
+    max-width: 580px;
     opacity: 70%;
-    right: -24px;
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    width: 500px;
   }
 }
 
@@ -531,6 +543,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   flex-direction: column;
   flex-basis: 100%;
   margin: 20px;
+  padding-top: 150px;
   overflow: hidden;
 }
 .home h2, .home h3, .home p {
@@ -541,11 +554,13 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 @media screen and (min-width: 700px) {
   .home {
+    padding-top: 200px;
     margin: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .home {
+    padding-top: 0px;
     margin: 60px;
   }
 }

@@ -581,7 +581,12 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   background-color: #fff;
 }
 .home .header h2 {
-  margin-top: -20px;
+  margin-top: -36px;
+}
+@media screen and (min-width: 700px) {
+  .home .header h2 {
+    margin-top: -20px;
+  }
 }
 @media screen and (min-width: 700px) {
   .home .header h1 span.emdash {

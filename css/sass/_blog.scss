@@ -63,11 +63,11 @@
 
   h5 {
 
+    margin-bottom: 50px;
+
     &.date {
       color: $color-gray;
     }
-
-    margin-bottom: 50px;
 
     @include screen-medium {
       margin-bottom: 100px;

@@ -371,7 +371,7 @@ hr {
 }
 
 :root {
-  --background: #101010;
+  --background: #16191a;
   --text: #fff;
   --highlight: #f4f4f4;
 }
@@ -385,7 +385,7 @@ hr {
 
 ::selection {
   color: #fae60a;
-  background-color: #101010;
+  background-color: #16191a;
   text-shadow: none;
 }
 
@@ -739,7 +739,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .back a {
   font-size: 0.9em;
-  color: #101010;
+  color: #16191a;
   border-bottom: none;
   background: #f4f4f4;
   padding: 15px;
@@ -747,7 +747,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .back a:hover, .back a:active {
   color: #fff;
-  background: #101010;
+  background: #16191a;
 }
 
 .next {
@@ -764,7 +764,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .next a {
   font-size: 0.9em;
-  color: #101010;
+  color: #16191a;
   border-bottom: none;
   background: #f4f4f4;
   padding: 15px;
@@ -772,7 +772,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .next a:hover, .next a:active {
   color: #fff;
-  background: #101010;
+  background: #16191a;
 }
 
 .blog {
@@ -958,7 +958,7 @@ ul li {
 ul li:before {
   content: "→";
   margin-right: 10px;
-  color: #101010;
+  color: #16191a;
 }
 
 .error {

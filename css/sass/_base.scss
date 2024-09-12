@@ -61,10 +61,17 @@ body {
     background-position: center;
     box-sizing: border-box;
     transition: .5s all ease-in-out;
+    
     @include screen-medium {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include screen-large {
       width: 80px;
       height: 80px;
     }
+
   }
 
   .clickme {

@@ -437,6 +437,12 @@ body {
 }
 @media screen and (min-width: 700px) {
   .theme-switch .switch {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .theme-switch .switch {
     width: 80px;
     height: 80px;
   }

@@ -24,6 +24,7 @@
     width: 45%;
     max-width: 580px;
     opacity: 70%;
+    top: 0px;
   } 
 }
 
@@ -176,7 +177,7 @@
 
         .works-img img {
           display: flex;
-          border-radius: 12px;
+          border-radius: 16px;
           max-width: 120px;
 
           @include screen-medium {

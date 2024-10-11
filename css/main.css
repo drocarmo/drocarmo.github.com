@@ -541,6 +541,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     width: 45%;
     max-width: 580px;
     opacity: 70%;
+    top: 0px;
   }
 }
 
@@ -682,7 +683,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .home .body .works .works-item .works-img img {
   display: flex;
-  border-radius: 12px;
+  border-radius: 16px;
   max-width: 120px;
 }
 @media screen and (min-width: 700px) {

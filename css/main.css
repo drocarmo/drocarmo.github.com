@@ -552,12 +552,6 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   padding-top: 150px;
   overflow: hidden;
 }
-.home h2, .home h3, .home p {
-  opacity: 80%;
-}
-.home h4 {
-  opacity: 60%;
-}
 @media screen and (min-width: 700px) {
   .home {
     padding-top: 200px;
@@ -616,7 +610,6 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     margin-top: 18px;
   }
   .home .header h2 {
-    opacity: 80%;
     margin-top: -80px;
   }
 }
@@ -689,7 +682,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .home .body .works .works-item .works-img img {
   display: flex;
-  border-radius: 16px;
+  border-radius: 12px;
   max-width: 120px;
 }
 @media screen and (min-width: 700px) {

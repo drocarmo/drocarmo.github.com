@@ -36,14 +36,6 @@
   padding-top: 150px;
   overflow: hidden;
 
-  h2,h3,p {
-    opacity: 80%;
-  }
-
-  h4 {
-    opacity: 60%;
-  }
-
   @include screen-medium {
     padding-top: 200px;
     margin: 30px;
@@ -108,7 +100,6 @@
         }
       }
       h2 {
-        opacity: 80%;
         margin-top:-80px;
       }
     }
@@ -185,7 +176,7 @@
 
         .works-img img {
           display: flex;
-          border-radius: 16px;
+          border-radius: 12px;
           max-width: 120px;
 
           @include screen-medium {

@@ -585,17 +585,12 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   margin-top: -36px;
 }
 @media screen and (min-width: 700px) {
-  .home .header h2 {
-    margin-top: -20px;
-  }
-}
-@media screen and (min-width: 700px) {
   .home .header h1 span.emdash {
     display: flex;
     height: 12px;
   }
   .home .header h2 {
-    margin-top: -40px;
+    margin-top: -60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -611,7 +606,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     margin-top: 18px;
   }
   .home .header h2 {
-    margin-top: -80px;
+    margin-top: -60px;
   }
 }
 .home .body {
@@ -641,13 +636,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   max-width: 0;
   opacity: 0;
 }
-.home .body .works {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  width: 100%;
-}
-.home .body .works .speaking {
+.home .body .writing .speaking {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -655,13 +644,19 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   margin-top: 10px;
   gap: 16px;
 }
-.home .body .works .speaking img {
+.home .body .writing .speaking img {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
   min-width: 0;
   max-width: 800px;
   border-radius: 16px;
+}
+.home .body .works {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
 }
 .home .body .works .works-item {
   display: flex;

@@ -70,10 +70,6 @@
 
     h2 {
       margin-top:-36px;
-
-      @include screen-medium {
-        margin-top:-20px;
-      }
     }
 
     @include screen-medium {
@@ -84,7 +80,7 @@
         }
       }
       h2 {
-        margin-top:-40px;
+        margin-top:-60px;
       }
     }
 
@@ -101,7 +97,7 @@
         }
       }
       h2 {
-        margin-top:-80px;
+        margin-top:-60px;
       }
     }
   }
@@ -133,14 +129,7 @@
           opacity: .0;
         }
       }
-    }
-
-    .works {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      width: 100%;
-
+      
       .speaking {
         display: flex;
         flex-direction: column;
@@ -158,6 +147,14 @@
           border-radius: 16px;
         }
       }
+    }
+
+    .works {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+
 
       .works-item {
         display: flex;

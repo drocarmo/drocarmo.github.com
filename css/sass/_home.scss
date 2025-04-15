@@ -116,6 +116,14 @@
       max-width: 700px;
     }
 
+    h3 {
+      text-align: center;
+
+      @include screen-medium {
+        text-align: left;
+      }
+    }
+
     .writing {
       b {
         display: flex;

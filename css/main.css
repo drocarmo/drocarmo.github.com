@@ -625,6 +625,14 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     max-width: 700px;
   }
 }
+.home .body h3 {
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .home .body h3 {
+    text-align: left;
+  }
+}
 .home .body .writing b {
   display: flex;
 }

@@ -121,6 +121,10 @@
     }
 
     .writing {
+      .writing-item {
+        margin-top: 40px;
+      }
+
       b {
         display: flex;
         span.emdash {

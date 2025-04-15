@@ -628,6 +628,9 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     text-align: left;
   }
 }
+.home .body .writing .writing-item {
+  margin-top: 40px;
+}
 .home .body .writing b {
   display: flex;
 }

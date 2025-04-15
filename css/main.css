@@ -625,6 +625,14 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     max-width: 700px;
   }
 }
+.home .body .writing b {
+  display: flex;
+}
+.home .body .writing b span.emdash {
+  content: "";
+  max-width: 0;
+  opacity: 0;
+}
 .home .body .works {
   display: flex;
   flex-direction: column;

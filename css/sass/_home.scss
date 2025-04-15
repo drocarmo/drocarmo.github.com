@@ -116,6 +116,17 @@
       max-width: 700px;
     }
 
+    .writing {
+      b {
+        display: flex;
+        span.emdash {
+          content: "";
+          max-width: 0;
+          opacity: .0;
+        }
+      }
+    }
+
     .works {
       display: flex;
       flex-direction: column;

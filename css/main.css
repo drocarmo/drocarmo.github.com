@@ -521,7 +521,6 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
-  opacity: 70%;
   top: 8px;
   right: -24px;
   overflow: hidden;
@@ -676,6 +675,11 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     gap: 24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .home .body .works .works-item {
+    gap: 32px;
+  }
+}
 .home .body .works .works-item .works-title a {
   display: flex;
   flex-direction: column;
@@ -702,7 +706,12 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 @media screen and (min-width: 700px) {
   .home .body .works .works-item .works-img img {
-    max-width: 200px;
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home .body .works .works-item .works-img img {
+    max-width: 300px;
   }
 }
 .home .body .works .works-item:hover .works-img img {

@@ -6,7 +6,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 0;
-  opacity: 70%;
   top: 8px;
   right: -24px;
   overflow: hidden;
@@ -174,6 +173,10 @@
           gap: 24px;
         }
 
+        @include screen-large {
+          gap: 32px;
+        }
+
         .works-title a {
           display: flex;
           flex-direction: column;
@@ -201,7 +204,11 @@
           max-width: 120px;
 
           @include screen-medium {
-            max-width: 200px;
+            max-width: 240px;
+          }
+
+          @include screen-large {
+            max-width: 300px;
           }
         }
 

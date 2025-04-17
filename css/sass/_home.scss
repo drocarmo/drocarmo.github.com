@@ -164,12 +164,11 @@
         flex-direction: row;
         flex-basis: 100%;
         flex-wrap: nowrap;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
         gap: 16px;
 
         @include screen-medium {
-          align-items: center;
+          justify-content: flex-start;
           gap: 24px;
         }
 
@@ -201,14 +200,10 @@
         .works-img img {
           display: flex;
           border-radius: 16px;
-          max-width: 120px;
+          max-width: 200px;
 
           @include screen-medium {
-            max-width: 240px;
-          }
-
-          @include screen-large {
-            max-width: 300px;
+            max-width: 280px;
           }
         }
 

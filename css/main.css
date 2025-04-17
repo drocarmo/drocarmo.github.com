@@ -665,13 +665,12 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   flex-direction: row;
   flex-basis: 100%;
   flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
   gap: 16px;
 }
 @media screen and (min-width: 700px) {
   .home .body .works .works-item {
-    align-items: center;
+    justify-content: flex-start;
     gap: 24px;
   }
 }
@@ -702,16 +701,11 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 .home .body .works .works-item .works-img img {
   display: flex;
   border-radius: 16px;
-  max-width: 120px;
+  max-width: 200px;
 }
 @media screen and (min-width: 700px) {
   .home .body .works .works-item .works-img img {
-    max-width: 240px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .home .body .works .works-item .works-img img {
-    max-width: 300px;
+    max-width: 280px;
   }
 }
 .home .body .works .works-item:hover .works-img img {

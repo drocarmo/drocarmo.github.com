@@ -23,7 +23,7 @@
     width: 45%;
     max-width: 580px;
     opacity: 70%;
-    top: 300px;
+    top: 350px;
   } 
 }
 
@@ -158,6 +158,10 @@
       gap: 32px;
       width: 100%;
 
+      @include screen-medium {
+        gap: 40px;
+      }
+
 
       .works-item {
         display: flex;
@@ -165,14 +169,10 @@
         flex-basis: 100%;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 16px;
+        gap: 24px;
 
         @include screen-medium {
           justify-content: flex-start;
-          gap: 24px;
-        }
-
-        @include screen-large {
           gap: 32px;
         }
 
@@ -203,7 +203,7 @@
           max-width: 140px;
 
           @include screen-medium {
-            max-width: 320px;
+            max-width: 350px;
           }
         }
 

@@ -582,6 +582,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 }
 .home .header h2 {
   margin-top: -36px;
+  max-width: 800px;
 }
 @media screen and (min-width: 700px) {
   .home .header h1 span.emdash {

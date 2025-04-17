@@ -701,11 +701,11 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
 .home .body .works .works-item .works-img img {
   display: flex;
   border-radius: 16px;
-  max-width: 200px;
+  max-width: 140px;
 }
 @media screen and (min-width: 700px) {
   .home .body .works .works-item .works-img img {
-    max-width: 280px;
+    max-width: 320px;
   }
 }
 .home .body .works .works-item:hover .works-img img {

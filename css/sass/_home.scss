@@ -200,10 +200,10 @@
         .works-img img {
           display: flex;
           border-radius: 16px;
-          max-width: 200px;
+          max-width: 140px;
 
           @include screen-medium {
-            max-width: 280px;
+            max-width: 320px;
           }
         }
 

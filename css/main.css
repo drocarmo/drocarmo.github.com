@@ -540,7 +540,7 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
     width: 45%;
     max-width: 580px;
     opacity: 70%;
-    top: 0px;
+    top: 300px;
   }
 }
 

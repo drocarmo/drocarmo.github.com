@@ -112,14 +112,6 @@
       max-width: 700px;
     }
 
-    h3 {
-      text-align: center;
-
-      @include screen-medium {
-        text-align: left;
-      }
-    }
-
     .writing {
       .writing-item {
         margin-top: 40px;

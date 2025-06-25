@@ -21,6 +21,20 @@ body {
   color: $color-light-gray;
   line-height: $line-height;
   word-wrap: break-word;
+  opacity: 0;
+  transform: translateY(2px);
+  animation: fadeInUp .8s ease-out forwards;
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
 }
 
 h1 {
@@ -56,14 +70,14 @@ h3 {
 
 h4 {
   font-family: $type-avant;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1;
   font-weight: $type-weight-bold;
   text-transform: uppercase;
   letter-spacing: .1rem;
 
   @include screen-medium {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -89,14 +103,13 @@ strong {
 }
 
 a {
-  box-shadow: inset 0 -2px var(--text);
+  box-shadow: inset 0 -1px var(--text);
   color: var(--text);
   text-decoration: none;
   text-transform: none;
   transition: all 400ms;
   &:hover {
-    color: var(--background);
-    box-shadow: inset 0 54px var(--text);
+    box-shadow: inset 0 -4px var(--text);
   }
 }
 

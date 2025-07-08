@@ -1,3 +1,12 @@
+// Importing all styles
+
+@use "sass:color";
+@use "colors";
+@use "reset";
+@use "grid";
+@use "type";
+@use "base";
+
 // Home page style
 
 .header-image {
@@ -13,12 +22,12 @@
   height: 100%;
   width: 360px;
 
- @include screen-medium {
+ @include grid.screen-medium {
     background-image: url('/assets/images/index-tablet.png');
     width: 600px;
  }
 
- @include screen-large {
+ @include grid.screen-large {
     background-image: url('/assets/images/index.png');
     width: 45%;
     max-width: 580px;
@@ -37,12 +46,12 @@
   padding-top: 150px;
   overflow: hidden;
 
-  @include screen-medium {
+  @include grid.screen-medium {
     padding-top: 200px;
     margin: 30px;
   }
 
-  @include screen-large {
+  @include grid.screen-large {
     padding-top: 0px;
     margin: 60px;
   }
@@ -64,7 +73,7 @@
         flex-grow: 1;
         height: 8px;
         margin-top:6px;
-        background-color: $color-white;
+        background-color: colors.$color-white;
       }
     }
 
@@ -73,7 +82,7 @@
       max-width: 800px;
     }
 
-    @include screen-medium {
+    @include grid.screen-medium {
       h1 {
         span.emdash {
           display: flex;
@@ -85,7 +94,7 @@
       }
     }
 
-    @include screen-large {
+    @include grid.screen-large {
       width: 70%;
       max-width: 1200px;
       position: relative;
@@ -108,7 +117,7 @@
     flex-direction: column;
     gap: 32px;
 
-    @include screen-medium {
+    @include grid.screen-medium {
       gap: 100px;
       max-width: 700px;
     }
@@ -152,7 +161,7 @@
       gap: 32px;
       width: 100%;
 
-      @include screen-medium {
+      @include grid.screen-medium {
         gap: 40px;
       }
 
@@ -165,7 +174,7 @@
         align-items: center;
         gap: 24px;
 
-        @include screen-medium {
+        @include grid.screen-medium {
           justify-content: flex-start;
           gap: 32px;
         }
@@ -179,7 +188,7 @@
           h4 {
             display: none;
 
-            @include screen-medium {
+            @include grid.screen-medium {
               margin: 0px;
               display: flex;
               align-self: flex-start;
@@ -196,7 +205,7 @@
           border-radius: 16px;
           max-width: 140px;
 
-          @include screen-medium {
+          @include grid.screen-medium {
             max-width: 350px;
           }
         }
@@ -238,7 +247,7 @@
     margin-top: 40px;
     gap: 16px;
 
-    @include screen-medium {
+    @include grid.screen-medium {
       gap: 32px;
     }
   }

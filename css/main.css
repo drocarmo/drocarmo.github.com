@@ -850,7 +850,7 @@ code {
   display: inline;
   word-wrap: break-word;
   font-size: 13px;
-  background-color: #fed2d6;
+  background-color: #fc6c78;
   padding: 2px 4px;
   border-radius: 4px;
 }
@@ -864,7 +864,7 @@ pre {
   font-family: "source-code-pro", sans-serif;
   font-size: 12px;
   color: #fa0a1e;
-  border: 1px solid white;
+  border: 1px solid rgb(244.55, 244.55, 244.55);
   border-radius: 5px;
   padding: 10px;
   overflow-x: auto;
@@ -884,7 +884,7 @@ figure img {
 }
 figure figcaption {
   font-size: 12px;
-  color: #a8a8a8;
+  color: rgb(170.8, 170.8, 170.8);
 }
 figure figcaption a {
   color: inherit;

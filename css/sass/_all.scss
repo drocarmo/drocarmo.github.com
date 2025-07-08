@@ -1,13 +1,14 @@
 // Importing all styles
 
-@import "reset";
-@import "colors";
-@import "grid";
-@import "type";
-@import "base";
-@import "home";
-@import "blog";
-@import "code";
-@import "imagery";
-@import "lists";
-@import "error";
+@use "sass:color";
+@use "colors";
+@use "reset";
+@use "grid";
+@use "type";
+@use "base";
+@use "home";
+@use "blog";
+@use "code";
+@use "imagery";
+@use "lists";
+@use "error";

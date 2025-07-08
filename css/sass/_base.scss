@@ -1,3 +1,10 @@
+// Importing all styles
+
+@use "colors";
+@use "reset";
+@use "grid";
+@use "type";
+
 // Base declarations
 
 :root {
@@ -14,8 +21,8 @@
 }
 
 ::selection {
-  color: $color-yellow;
-  background-color: $color-black;
+  color: colors.$color-yellow;
+  background-color: colors.$color-black;
   text-shadow: none;
 }
 
@@ -27,7 +34,7 @@ body {
 }
 
 body {
-  @include flex;
+  @include grid.flex;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   height: 100%;
@@ -46,10 +53,10 @@ body {
   margin: 20px;
   cursor: pointer;
 
-  @include screen-medium {
+  @include grid.screen-medium {
     margin: 30px;
   }
-  @include screen-large {
+  @include grid.screen-large {
     margin: 60px;
   }
 
@@ -64,12 +71,12 @@ body {
     box-sizing: border-box;
     transition: .5s all ease-in-out;
     
-    @include screen-medium {
+    @include grid.screen-medium {
       width: 60px;
       height: 60px;
     }
 
-    @include screen-large {
+    @include grid.screen-large {
       width: 80px;
       height: 80px;
     }
@@ -79,16 +86,16 @@ body {
   .clickme {
     display: none;
     font-size: 24px;
-    font-weight: $type-weight-semi-bold;
+    font-weight: type.$type-weight-semi-bold;
 
-    @include screen-medium {
+    @include grid.screen-medium {
       vertical-align: top;
       width: 200px;
       margin-top: -20px;
       padding-left: 10px;
     }
     .clickme-arrow {
-      @include screen-medium {
+      @include grid.screen-medium {
         height:18px;
         width:18px;
         margin-bottom: 8px;
@@ -102,7 +109,7 @@ body {
   }
 
   &:hover {
-    @include screen-medium {
+    @include grid.screen-medium {
       .switch {
         background-image: url('/assets/images/circle-hover.png');
       }
@@ -124,7 +131,7 @@ html.light-theme, body.light-theme {
   background: var(--background);
 
   ::selection {
-    color: $color-green;
+    color: colors.$color-green;
     background-color: var(--background);
     text-shadow: none;
   }

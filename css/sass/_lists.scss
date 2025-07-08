@@ -1,20 +1,33 @@
+// Importing all styles
+
+@use "sass:color";
+@use "colors";
+@use "reset";
+@use "grid";
+@use "type";
+@use "base";
+@use "home";
+@use "blog";
+@use "code";
+@use "imagery";
+
 ul {
   list-style: none;
 
   li {
     text-indent: -28px;
     font-size: 16px;
-    font-weight: $type-weight-light;
+    font-weight: type.$type-weight-light;
     word-wrap: break-word;
 
-    @include screen-medium {
+    @include grid.screen-medium {
       font-size: 18px;
     }
 
     &:before {
       content: "→";
       margin-right: 10px;
-      color: $color-black;
+      color: colors.$color-black;
     }
   }
 }

@@ -1,3 +1,17 @@
+// Importing all styles
+
+@use "sass:color";
+@use "colors";
+@use "reset";
+@use "grid";
+@use "type";
+@use "base";
+@use "home";
+@use "blog";
+@use "code";
+@use "imagery";
+@use "lists";
+
 .error {
   height: 100%;
   background: url("https://raw.github.com/drocarmo/gifs/master/upset/wwe.gif") no-repeat center;
@@ -5,7 +19,7 @@
 
   body {
     background: none;
-    color: $color-white;
+    color: colors.$color-white;
   }
 
   .error__text {

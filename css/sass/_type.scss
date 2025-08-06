@@ -10,8 +10,10 @@
 $type-avant: "itc-avant-garde-gothic-pro", sans-serif;
 $type-orpheus: "orpheuspro", serif;
 $type-source-code: "source-code-pro", sans-serif;
+$type-olicana: "olicana-smooth", sans-serif;
 $type-weight-light: 300;
 $type-weight-regular: 400;
+$type-weight-medium: 500;
 $type-weight-semi-bold: 600;
 $type-weight-bold: 700;
 $type-style-italic: italic;
@@ -48,10 +50,13 @@ h1 {
   font-family: $type-avant;
   font-weight: $type-weight-bold;
   line-height: $line-height-headings;
-  font-size: 48px;
+  font-size: 32px;
 
   @include grid.screen-medium {
-    font-size: 80px;
+    font-size: 40px;
+  }
+  @include grid.screen-large {
+    font-size: 60px;
   }
 }
 
@@ -62,17 +67,20 @@ h2 {
   font-size: 30px;
 
   @include grid.screen-medium {
-    font-size: 60px;
+    font-size: 32px;
   }
 }
 
 h3 {
   font-family: $type-avant;
-  font-size: 16px;
+  font-size: 14px;
   line-height: $line-height-headings;
   font-weight: $type-weight-bold;
   text-transform: uppercase;
   letter-spacing: .1rem;
+  @include grid.screen-medium {  
+    font-size: 16px;
+  }
 }
 
 h4 {
@@ -98,10 +106,16 @@ h5 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 500;
 
   @include grid.screen-medium {
-    font-size: 30px;
+    font-size: 24px;
+  }
+
+  &.cursive {
+    font-family: $type-olicana;
+    font-size: 40px;
   }
 }
 
@@ -110,7 +124,7 @@ strong {
 }
 
 a {
-  box-shadow: inset 0 -1px var(--text);
+  box-shadow: inset 0 -.5px var(--text);
   color: var(--text);
   text-decoration: none;
   text-transform: none;

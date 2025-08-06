@@ -1,5 +1,6 @@
 // Importing all styles
 
+@use "sass:color";  // Add this line
 @use "colors";
 @use "reset";
 @use "grid";
@@ -8,8 +9,8 @@
 // Base declarations
 
 :root {
-  --background: #16191a;
-  --text: #fff;
+  --background:#16191a;
+  --text: #f4f4f4;
   --highlight: #f4f4f4;
 }
 
@@ -40,24 +41,24 @@ body {
   height: 100%;
 }
 
-.hidden {
-  overflow: hidden;
-  max-width: 1650px;
-  margin: 0 auto;
-}
-
 .theme-switch {
   display: block;
+  position: sticky;
+  top: 30px;
+  left: 30px;
+  z-index: 100;
   height: 10px;
   width: 300px;
-  margin: 20px;
   cursor: pointer;
 
   @include grid.screen-medium {
-    margin: 30px;
+    top: 40px;
+    left: 40px;
   }
+
   @include grid.screen-large {
-    margin: 60px;
+    top: 60px;
+    left: 60px;
   }
 
   .switch {
@@ -72,21 +73,24 @@ body {
     transition: .5s all ease-in-out;
     
     @include grid.screen-medium {
-      width: 60px;
-      height: 60px;
+      width: 44px;
+      height: 44px;
     }
 
     @include grid.screen-large {
-      width: 80px;
-      height: 80px;
+      width: 48px;
+      height: 48px;
     }
 
   }
 
   .clickme {
-    display: none;
+    display: inline-block;
+    opacity: 0;
     font-size: 24px;
     font-weight: type.$type-weight-semi-bold;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(16px) (-15deg);
 
     @include grid.screen-medium {
       vertical-align: top;
@@ -103,22 +107,21 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         box-sizing: border-box;
+        transform: rotate(5deg);
         background-image: url('/assets/images/cursor.png');
       }
     }
   }
 
   &:hover {
+    transition: .5s all ease-in-out;
     @include grid.screen-medium {
       .switch {
         background-image: url('/assets/images/circle-hover.png');
       }
       .clickme {
-        display: inline-block;
-        transform: rotate(-15deg);
-        .clickme-arrow {
-          transform: rotate(5deg);
-        }
+        opacity: 1;
+        transform: translateY(28px);
       }
     }
   }
@@ -126,13 +129,13 @@ body {
 
 html.light-theme, body.light-theme {
   --background: #EDE1D1 !important;
-  --text: #101010 !important;
+  --text: #16191a !important;
   color: var(--text);
   background: var(--background);
 
   ::selection {
-    color: colors.$color-green;
-    background-color: var(--background);
+    color: colors.$color-black;
+    background-color: color.scale(colors.$color-yellow, $alpha: -95%) !important;
     text-shadow: none;
   }
 
@@ -152,6 +155,10 @@ html.light-theme, body.light-theme {
 
   .emdash {
     background-color: var(--text) !important;
+  }
+
+  .works-item:hover {
+    background-color: color.scale(colors.$color-black, $alpha: -95%) !important;
   }
 
   .theme-switch {

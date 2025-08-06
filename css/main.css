@@ -28,14 +28,14 @@ audio:not([controls]) {
   display: none;
 }
 
-html, [data-theme="2"], [data-theme="6"], [data-theme="7"] {
+html, [data-theme="5"], [data-theme="6"], [data-theme="7"] {
   background: #fff;
   color: #454545;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-html, [data-theme="2"], [data-theme="6"], [data-theme="7"],
+html, [data-theme="5"], [data-theme="6"], [data-theme="7"],
 button,
 input,
 select,
@@ -198,7 +198,7 @@ select {
 
 button,
 html input[type=button],
-[data-theme="2"] input[type=button],
+[data-theme="5"] input[type=button],
 [data-theme="6"] input[type=button],
 [data-theme="7"] input[type=button],
 input[type=reset],
@@ -413,23 +413,23 @@ hr {
 }
 
 [data-theme="2"] {
-  --background: #EDE1D1;
-  --text: #16191a;
+  --background: #00154d;
+  --text: #f1f9ff;
 }
 
 [data-theme="3"] {
-  --background: #001c66;
+  --background: #004d38;
   --text: #f1f9ff;
 }
 
 [data-theme="4"] {
-  --background: #00664a;
+  --background: #4d0015;
   --text: #f1f9ff;
 }
 
 [data-theme="5"] {
-  --background: #66001c;
-  --text: #f1f9ff;
+  --background: #EDE1D1;
+  --text: #16191a;
 }
 
 [data-theme="6"] {
@@ -451,11 +451,10 @@ hr {
 
 ::selection {
   color: #fae60a;
-  background-color: rgba(255, 255, 255, 0.05) !important;
   text-shadow: none;
 }
 
-html, [data-theme="2"], [data-theme="6"], [data-theme="7"],
+html, [data-theme="5"], [data-theme="6"], [data-theme="7"],
 body {
   background: var(--background);
   color: var(--text);
@@ -470,6 +469,7 @@ body {
 }
 
 .theme-switch {
+  background: none;
   display: block;
   position: sticky;
   top: 30px;
@@ -556,34 +556,36 @@ body {
   }
 }
 
-html.light-theme, [data-theme="2"], [data-theme="6"], [data-theme="7"], body.light-theme {
+html.light-theme, [data-theme="5"], [data-theme="6"], [data-theme="7"], body.light-theme {
   color: var(--text);
   background: var(--background);
 }
-html.light-theme ::selection, [data-theme="2"] ::selection, [data-theme="6"] ::selection, [data-theme="7"] ::selection, body.light-theme ::selection {
-  color: #00664a;
-  background-color: rgba(22, 25, 26, 0.05) !important;
+html.light-theme ::selection, [data-theme="5"] ::selection, [data-theme="6"] ::selection, [data-theme="7"] ::selection, body.light-theme ::selection {
+  color: #004d38;
   text-shadow: none;
 }
-html.light-theme hr, [data-theme="2"] hr, [data-theme="6"] hr, [data-theme="7"] hr, html.light-theme span.label, [data-theme="2"] span.label, [data-theme="6"] span.label, [data-theme="7"] span.label, body.light-theme hr, body.light-theme span.label {
+html.light-theme hr, [data-theme="5"] hr, [data-theme="6"] hr, [data-theme="7"] hr, html.light-theme span.label, [data-theme="5"] span.label, [data-theme="6"] span.label, [data-theme="7"] span.label, body.light-theme hr, body.light-theme span.label {
   background-color: rgba(29, 28, 29, 0.13) !important;
 }
-html.light-theme a, [data-theme="2"] a, [data-theme="6"] a, [data-theme="7"] a, body.light-theme a {
+html.light-theme a, [data-theme="5"] a, [data-theme="6"] a, [data-theme="7"] a, body.light-theme a {
   color: var(--text);
   box-shadow: inset 0 -1px var(--text);
   text-decoration: none;
   text-transform: none;
 }
-html.light-theme a:hover, [data-theme="2"] a:hover, [data-theme="6"] a:hover, [data-theme="7"] a:hover, body.light-theme a:hover {
+html.light-theme a:hover, [data-theme="5"] a:hover, [data-theme="6"] a:hover, [data-theme="7"] a:hover, body.light-theme a:hover {
   box-shadow: inset 0 -4px var(--text);
 }
-html.light-theme .emdash, [data-theme="2"] .emdash, [data-theme="6"] .emdash, [data-theme="7"] .emdash, body.light-theme .emdash {
+html.light-theme .emdash, [data-theme="5"] .emdash, [data-theme="6"] .emdash, [data-theme="7"] .emdash, body.light-theme .emdash {
   background-color: var(--text) !important;
 }
-html.light-theme .works-item:hover, [data-theme="2"] .works-item:hover, [data-theme="6"] .works-item:hover, [data-theme="7"] .works-item:hover, body.light-theme .works-item:hover {
+html.light-theme .works-item:hover, [data-theme="5"] .works-item:hover, [data-theme="6"] .works-item:hover, [data-theme="7"] .works-item:hover, body.light-theme .works-item:hover {
   background-color: rgba(22, 25, 26, 0.05) !important;
 }
-html.light-theme .theme-switch:hover .clickme-arrow, [data-theme="2"] .theme-switch:hover .clickme-arrow, [data-theme="6"] .theme-switch:hover .clickme-arrow, [data-theme="7"] .theme-switch:hover .clickme-arrow, body.light-theme .theme-switch:hover .clickme-arrow {
+html.light-theme .theme-switch, [data-theme="5"] .theme-switch, [data-theme="6"] .theme-switch, [data-theme="7"] .theme-switch, body.light-theme .theme-switch {
+  background: none;
+}
+html.light-theme .theme-switch:hover .clickme-arrow, [data-theme="5"] .theme-switch:hover .clickme-arrow, [data-theme="6"] .theme-switch:hover .clickme-arrow, [data-theme="7"] .theme-switch:hover .clickme-arrow, body.light-theme .theme-switch:hover .clickme-arrow {
   font-family: "orpheuspro", serif;
   background-image: url("/assets/images/cursor-dark.png");
 }

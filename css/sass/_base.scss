@@ -20,29 +20,29 @@
   --text: #f1f9ff;
 }
 
-// Theme 2 - Primary Light
+// Theme 2 - Dark Blue
 [data-theme="2"] {
+  --background: #00154d;
+  --text: #f1f9ff;
+}
+
+// Theme 3 - Dark Green
+[data-theme="3"] {
+  --background: #004d38;
+  --text: #f1f9ff;
+}
+
+// Theme 4 - Dark Red
+[data-theme="4"] {
+  --background: #4d0015;
+  --text: #f1f9ff;
+}
+
+// Theme 5 - Primary Light
+[data-theme="5"] {
   --background: #EDE1D1;
   --text: #16191a;
   @extend html, .light-theme;
-}
-
-// Theme 3 - Dark Blue
-[data-theme="3"] {
-  --background: #001c66;
-  --text: #f1f9ff;
-}
-
-// Theme 4 - Dark Green
-[data-theme="4"] {
-  --background: #00664a;
-  --text: #f1f9ff;
-}
-
-// Theme 5 - Dark Red
-[data-theme="5"] {
-  --background: #66001c;
-  --text: #f1f9ff;
 }
 
 // Theme 6 - Light Blue
@@ -68,7 +68,6 @@
 
 ::selection {
   color: colors.$color-yellow;
-    background-color: color.scale(colors.$color-white, $alpha: -95%) !important;
   text-shadow: none;
 }
 
@@ -87,6 +86,7 @@ body {
 }
 
 .theme-switch {
+  background: none;
   display: block;
   position: sticky;
   top: 30px;
@@ -178,7 +178,6 @@ html.light-theme, body.light-theme {
 
   ::selection {
     color: colors.$color-dark-green;
-    background-color: color.scale(colors.$color-black, $alpha: -95%) !important;
     text-shadow: none;
   }
 
@@ -205,6 +204,8 @@ html.light-theme, body.light-theme {
   }
 
   .theme-switch {
+    background: none;
+    
     &:hover {
       .clickme-arrow {
         font-family: type.$type-orpheus;

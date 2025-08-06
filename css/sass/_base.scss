@@ -10,8 +10,53 @@
 
 :root {
   --background:#16191a;
-  --text: #f4f4f4;
+  --text: #f1f9ff;
   --highlight: #f4f4f4;
+}
+
+// Theme 1 - Primary Dark
+[data-theme="1"] {
+  --background: #16191a;
+  --text: #f1f9ff;
+}
+
+// Theme 2 - Primary Light
+[data-theme="2"] {
+  --background: #EDE1D1;
+  --text: #16191a;
+  @extend html, .light-theme;
+}
+
+// Theme 3 - Dark Blue
+[data-theme="3"] {
+  --background: #001c66;
+  --text: #f1f9ff;
+}
+
+// Theme 4 - Dark Green
+[data-theme="4"] {
+  --background: #00664a;
+  --text: #f1f9ff;
+}
+
+// Theme 5 - Dark Red
+[data-theme="5"] {
+  --background: #66001c;
+  --text: #f1f9ff;
+}
+
+// Theme 6 - Light Blue
+[data-theme="6"] {
+  --background: #f1f9ff;
+  --text: #16191a;
+  @extend html, .light-theme;
+}
+
+// Theme 7 - Light Red
+[data-theme="7"] {
+  --background: #fff1f2;
+  --text: #16191a;
+  @extend html, .light-theme;
 }
 
 *,
@@ -23,7 +68,7 @@
 
 ::selection {
   color: colors.$color-yellow;
-  background-color: colors.$color-black;
+    background-color: color.scale(colors.$color-white, $alpha: -95%) !important;
   text-shadow: none;
 }
 
@@ -88,9 +133,9 @@ body {
     display: inline-block;
     opacity: 0;
     font-size: 24px;
+    font-family: type.$type-orpheus;
     font-weight: type.$type-weight-semi-bold;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(16px) (-15deg);
 
     @include grid.screen-medium {
       vertical-align: top;
@@ -128,14 +173,12 @@ body {
 }
 
 html.light-theme, body.light-theme {
-  --background: #EDE1D1 !important;
-  --text: #16191a !important;
   color: var(--text);
   background: var(--background);
 
   ::selection {
-    color: colors.$color-black;
-    background-color: color.scale(colors.$color-yellow, $alpha: -95%) !important;
+    color: colors.$color-dark-green;
+    background-color: color.scale(colors.$color-black, $alpha: -95%) !important;
     text-shadow: none;
   }
 
@@ -164,6 +207,7 @@ html.light-theme, body.light-theme {
   .theme-switch {
     &:hover {
       .clickme-arrow {
+        font-family: type.$type-orpheus;
         background-image: url('/assets/images/cursor-dark.png');
       }
     }

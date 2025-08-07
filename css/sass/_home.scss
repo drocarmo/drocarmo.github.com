@@ -23,7 +23,7 @@
   }
 
   @include grid.screen-large {
-    padding-top: 0px;
+    padding-top: 40px;
     margin: 60px auto;
   }
 
@@ -225,7 +225,7 @@
           border-radius: 16px;
 
           .works-img {
-            border-radius: 16px;
+            border-radius: 12px;
             .align-bottom {
               object-position: bottom !important;
             }
@@ -261,6 +261,11 @@
               object-fit: cover;
               border-radius: 16px;
               transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+              &:hover {
+                border-radius: 12px;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              }
             }
           }
 
@@ -285,9 +290,16 @@
     .talks {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 24px;
+      padding: 16px;
       width: 100%;
-      
+      margin-bottom: 200px;
+      overflow: hidden;
+
+      @include grid.screen-large {
+        overflow: visible;
+      }
+
       h3 {
         text-align: center;
 
@@ -309,12 +321,45 @@
       }
 
       .talks-item {
+        position: relative;
+        width: 100%;
+        
         a {
           box-shadow: none;
           transition: all 0.3s ease;
-          
-          &:hover {
-            color: colors.$color-gray;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 16px;
+          border-radius: 8px;
+          p {
+            font-weight: 400;
+          }
+
+          .preview-image {
+            position: absolute;
+            left: 640px;
+            top: -20px;
+            width: 460px;
+            height: 300px;
+            border-radius: 24px;
+            background-color: color.scale(colors.$color-white, $alpha: -95%);
+            object-fit: cover;
+            opacity: 0;
+            transform: translateY(16px);
+            pointer-events: none;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+                        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+
+          @include grid.screen-large {
+            &:hover {
+              .preview-image {
+                opacity: 1;
+                transform: translateY(-8px);
+                pointer-events: auto;
+              }
+            }
           }
         }
       }

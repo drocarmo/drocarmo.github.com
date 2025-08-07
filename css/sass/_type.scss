@@ -115,7 +115,7 @@ p {
 
   &.cursive {
     font-family: $type-olicana;
-    font-size: 40px;
+    font-size: 52px;
   }
 }
 
@@ -130,7 +130,7 @@ a {
   text-transform: none;
   transition: all 400ms;
   &:hover {
-    box-shadow: inset 0 -4px var(--text);
+    box-shadow: inset 0 -2px var(--text);
   }
 }
 

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const themeSwitch = document.querySelector('.theme-switch');
-  const maxThemes = 7;
+  const maxThemes = 11;
   let currentTheme = parseInt(localStorage.getItem('theme')) || 1;
 
   // Function to cycle themes in order

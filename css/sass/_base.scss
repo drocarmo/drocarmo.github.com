@@ -37,27 +37,54 @@
   --background: #4d0015;
   --text: #f1f9ff;
 }
-
-// Theme 5 - Primary Light
+// Theme 5 - Purple
 [data-theme="5"] {
+  --background: #38004d;
+  --text: #f1f9ff;
+}
+
+// Theme 6 - Primary Light
+[data-theme="6"] {
   --background: #EDE1D1;
   --text: #16191a;
   @extend html, .light-theme;
 }
 
-// Theme 6 - Light Blue
-[data-theme="6"] {
+// Theme 7 - Light Blue
+[data-theme="7"] {
   --background: #f1f9ff;
   --text: #16191a;
   @extend html, .light-theme;
 }
 
-// Theme 7 - Light Red
-[data-theme="7"] {
+// Theme 8 - Light Green
+[data-theme="8"] {
+  --background: #f2fff1;
+  --text: #16191a;
+  @extend html, .light-theme;
+}
+
+// Theme 9 - Light Red
+[data-theme="9"] {
   --background: #fff1f2;
   --text: #16191a;
   @extend html, .light-theme;
 }
+
+// Theme 10 - Light Red
+[data-theme="10"] {
+  --background: #fff1f2;
+  --text: #16191a;
+  @extend html, .light-theme;
+}
+
+// Theme 11 - Light Purple
+[data-theme="11"] {
+  --background: #fef1ff;
+  --text: #16191a;
+  @extend html, .light-theme;
+}
+
 
 *,
 *::after,
@@ -127,6 +154,9 @@ body {
       height: 48px;
     }
 
+    &.tap-animation {
+      animation: borderPulse 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   .clickme {
@@ -169,6 +199,18 @@ body {
         transform: translateY(28px);
       }
     }
+  }
+}
+
+@keyframes borderPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 

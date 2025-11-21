@@ -49,16 +49,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Append overlay image to container
     introImageContainer.appendChild(hoverImageOverlay);
     
+    // Track state for mobile tap cycling
+    let isShowingHover = false;
+    
+    // Detect if device supports touch
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    // Mobile tap functionality - cycle between images
+    if (isTouchDevice) {
+      introImageContainer.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Toggle between base and hover image
+        isShowingHover = !isShowingHover;
+        
+        if (isShowingHover) {
+          hoverImageOverlay.classList.remove('fading-out');
+          hoverImageOverlay.style.opacity = '1';
+        } else {
+          hoverImageOverlay.classList.add('fading-out');
+          hoverImageOverlay.style.opacity = '0';
+        }
+      });
+    }
+    
+    // Desktop hover functionality
     // Crossfade to hover image on mouseenter (faster, smooth ease-out)
     introImageContainer.addEventListener('mouseenter', () => {
-      hoverImageOverlay.classList.remove('fading-out');
-      hoverImageOverlay.style.opacity = '1';
+      if (!isTouchDevice) {
+        hoverImageOverlay.classList.remove('fading-out');
+        hoverImageOverlay.style.opacity = '1';
+      }
     });
     
     // Crossfade back to original image on mouseleave (slower, gentler ease-in)
     introImageContainer.addEventListener('mouseleave', () => {
-      hoverImageOverlay.classList.add('fading-out');
-      hoverImageOverlay.style.opacity = '0';
+      if (!isTouchDevice) {
+        hoverImageOverlay.classList.add('fading-out');
+        hoverImageOverlay.style.opacity = '0';
+      }
     });
   }
 });

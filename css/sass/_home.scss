@@ -67,7 +67,7 @@
       }
     }
 
-    @include grid.screen-large {;
+    @include grid.screen-large {
       h1 {
         margin-bottom: 24px;
         span.emdash {
@@ -114,21 +114,37 @@
 
       .intro-image {
         width: 100%;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 16px;
+        overflow: hidden;
         
         img {
           width: 100%;
           border-radius: 16px;
           height: auto;
+          display: block;
+          mix-blend-mode: luminosity;
         }
-
-        &:hover {
-          transform: translateY(-1.5px) translateX(-1.5px) rotate(-2deg);
-
-          img {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        
+        .intro-image-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+          border-radius: 16px;
+          opacity: 0;
+          pointer-events: none;
+          display: block;
+          mix-blend-mode: luminosity;
+          transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          
+          &.fading-out {
+            transition: opacity 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
           }
         }
+        
         
         @include grid.screen-large {
           width: 35%;

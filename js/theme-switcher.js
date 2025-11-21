@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const themeSwitch = document.querySelector('.theme-switch');
-  const maxThemes = 11;
+  const maxThemes = 6;
   let currentTheme = parseInt(localStorage.getItem('theme')) || 1;
 
   // Function to cycle themes in order
@@ -27,4 +27,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize theme on page load
   updateTheme(currentTheme);
+
+  // Image hover swap functionality with smooth crossfade transition
+  const introImageContainer = document.querySelector('.intro-image');
+  const introImage = introImageContainer?.querySelector('img');
+  
+  if (introImage && introImageContainer) {
+    const originalSrc = introImage.src;
+    const hoverSrc = originalSrc.replace('self.jpg', 'self-hover.jpg').replace('self.JPG', 'self-hover.jpg');
+    
+    // Preload the hover image
+    const hoverImagePreload = new Image();
+    hoverImagePreload.src = hoverSrc;
+    
+    // Create overlay image element for crossfade effect
+    const hoverImageOverlay = document.createElement('img');
+    hoverImageOverlay.src = hoverSrc;
+    hoverImageOverlay.alt = introImage.alt;
+    hoverImageOverlay.className = 'intro-image-overlay';
+    
+    // Append overlay image to container
+    introImageContainer.appendChild(hoverImageOverlay);
+    
+    // Crossfade to hover image on mouseenter (faster, smooth ease-out)
+    introImageContainer.addEventListener('mouseenter', () => {
+      hoverImageOverlay.classList.remove('fading-out');
+      hoverImageOverlay.style.opacity = '1';
+    });
+    
+    // Crossfade back to original image on mouseleave (slower, gentler ease-in)
+    introImageContainer.addEventListener('mouseleave', () => {
+      hoverImageOverlay.classList.add('fading-out');
+      hoverImageOverlay.style.opacity = '0';
+    });
+  }
 });

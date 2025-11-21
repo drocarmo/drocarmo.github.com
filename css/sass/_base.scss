@@ -9,14 +9,14 @@
 // Base declarations
 
 :root {
-  --background:#16191a;
+  --background:#0b0d0e;
   --text: #f1f9ff;
   --highlight: #f4f4f4;
 }
 
 // Theme 1 - Primary Dark
 [data-theme="1"] {
-  --background: #16191a;
+  --background: #0b0d0e;
   --text: #f1f9ff;
 }
 
@@ -37,52 +37,17 @@
   --background: #4d0015;
   --text: #f1f9ff;
 }
-// Theme 5 - Purple
+
+// Theme 5 - Dark Purple
 [data-theme="5"] {
   --background: #38004d;
   --text: #f1f9ff;
 }
 
-// Theme 6 - Primary Light
+// Theme 6 - Dark Yellow
 [data-theme="6"] {
-  --background: #EDE1D1;
-  --text: #16191a;
-  @extend html, .light-theme;
-}
-
-// Theme 7 - Light Blue
-[data-theme="7"] {
-  --background: #f1f9ff;
-  --text: #16191a;
-  @extend html, .light-theme;
-}
-
-// Theme 8 - Light Green
-[data-theme="8"] {
-  --background: #f2fff1;
-  --text: #16191a;
-  @extend html, .light-theme;
-}
-
-// Theme 9 - Light Red
-[data-theme="9"] {
-  --background: #fff1f2;
-  --text: #16191a;
-  @extend html, .light-theme;
-}
-
-// Theme 10 - Light Red
-[data-theme="10"] {
-  --background: #fff1f2;
-  --text: #16191a;
-  @extend html, .light-theme;
-}
-
-// Theme 11 - Light Purple
-[data-theme="11"] {
-  --background: #fef1ff;
-  --text: #16191a;
-  @extend html, .light-theme;
+  --background: #3e2b07;
+  --text: #f1f9ff;
 }
 
 

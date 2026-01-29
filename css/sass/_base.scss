@@ -87,13 +87,14 @@ body {
   z-index: 100;
   height: auto;
   width: auto;
-  padding: 12px 16px;
+  padding: 12px 0;
   border-radius: 24px;
   cursor: pointer;
 
   @include grid.screen-medium {
     top: 44px;
     left: 44px;
+    padding: 12px 16px;
   }
 
   @include grid.screen-large {
@@ -158,16 +159,18 @@ body {
     }
   }
 
-  &:hover {
-    transition: .5s all ease-in-out;
-    background-color: color.scale(colors.$color-white, $alpha: -95%);
-    @include grid.screen-medium {
-      .switch {
-        background-image: url('/assets/images/circle-hover.png');
-        transform: scale(0.85);
-      }
-      .clickme {
-        opacity: 1;
+  @media (hover: hover) {
+    &:hover {
+      transition: .5s all ease-in-out;
+      background-color: color.scale(colors.$color-white, $alpha: -95%);
+      @include grid.screen-medium {
+        .switch {
+          background-image: url('/assets/images/circle-hover.png');
+          transform: scale(0.85);
+        }
+        .clickme {
+          opacity: 1;
+        }
       }
     }
   }

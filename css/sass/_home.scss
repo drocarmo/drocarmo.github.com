@@ -119,11 +119,73 @@
         border-radius: 16px;
         overflow: hidden;
         
-        img {
+        > img {
           width: 100%;
           border-radius: 16px;
           height: auto;
           display: block;
+        }
+
+        .intro-image__overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 14px;
+          pointer-events: none;
+          opacity: 0;
+          transform: translateY(8px);
+          transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                      transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .intro-image__overlay-inner {
+          display: inline-flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 80px;
+          transform: translateX(-20px);
+        }
+
+        .intro-image__text {
+          display: inline-block;
+          padding: 8px 12px;
+          border-radius: 999px;
+          background: var(--background);
+          color: var(--text);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+          line-height: 1;
+          font-family: type.$type-avant;
+          font-weight: type.$type-weight-bold;
+          font-size: 14px;
+          line-height: type.$line-height-headings;
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+          opacity: 0;
+          transform: translateY(12px);
+          transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &:hover,
+        &:focus {
+          .intro-image__overlay {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          .intro-image__text {
+            opacity: 1;
+            transform: translateY(28px);
+          }
+        }
+
+        &:focus {
+          outline: 2px solid rgba(255, 255, 255, 0.35);
+          outline-offset: 3px;
         }
         
         @include grid.screen-large {

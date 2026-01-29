@@ -399,13 +399,13 @@ hr {
 }
 
 :root {
-  --background:#0b0d0e;
+  --background:#090b0b;
   --text: #f1f9ff;
   --highlight: #f4f4f4;
 }
 
 [data-theme="1"] {
-  --background: #0b0d0e;
+  --background: #090b0b;
   --text: #f1f9ff;
 }
 
@@ -711,23 +711,6 @@ html.light-theme .theme-switch:hover .clickme-arrow, body.light-theme .theme-swi
   border-radius: 16px;
   height: auto;
   display: block;
-  mix-blend-mode: luminosity;
-}
-.home .body .intro .intro-image .intro-image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  opacity: 0;
-  pointer-events: none;
-  display: block;
-  mix-blend-mode: luminosity;
-  transition: opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.home .body .intro .intro-image .intro-image-overlay.fading-out {
-  transition: opacity 0.2s cubic-bezier(0.55, 0.06, 0.68, 0.19);
 }
 @media screen and (min-width: 1200px) {
   .home .body .intro .intro-image {

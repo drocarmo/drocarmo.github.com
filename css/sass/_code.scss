@@ -34,7 +34,7 @@ pre {
   overflow-x: auto;
   white-space: pre;
   word-wrap: normal;
-  max-width: auto;
+  max-width: none;
 
   @include grid.screen-medium {
     font-size: 14px;

@@ -9,7 +9,7 @@ highlighter: rouge
 include:
 - .htaccess
 
-exlude:
+exclude:
 - assets
 - README.md
 - Rakefile

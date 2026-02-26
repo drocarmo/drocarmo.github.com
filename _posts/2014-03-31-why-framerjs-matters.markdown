@@ -7,7 +7,7 @@ date: 2014-03-31
 This past week I’ve been [playing around](https://github.com/drocarmo/framer) with a Javascript-based prototyping tool called [Framer](http://www.framerjs.com/). It’s really easy to get it running if you read through the documentation. It’s also pretty easy if you’re already pretty familiar with Javascript.
 
 <video autoplay="autoplay" loop="loop" controls="controls" tabindex="0">
-  <source src="/assets/video/framer.mov" type="video/mp4">
+  <source src="/assets/video/framer.mov" type="video/quicktime">
   Your browser does not support the video tag.
 </video>
 

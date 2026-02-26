@@ -112,6 +112,7 @@
         flex-direction: row;
         align-items: center;
         gap: 20px;
+        perspective: 800px;
       }
       
       @include grid.screen-large {
@@ -124,9 +125,11 @@
       .intro-image {
         width: 100%;
         position: relative;
-        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.15s ease-out;
         border-radius: 16px;
         overflow: hidden;
+        transform-style: preserve-3d;
+        will-change: transform;
         
         > img {
           width: 100%;
@@ -162,10 +165,12 @@
           display: inline-block;
           padding: 8px 12px;
           border-radius: 999px;
-          background: rgba(18, 22, 22, 0.9);
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
           color: var(--text);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2), inset 0 0 0 0.5px rgba(255, 255, 255, 0.08);
           line-height: 1;
           font-family: type.$type-avant;
           font-weight: type.$type-weight-bold;
@@ -175,8 +180,8 @@
           letter-spacing: .1rem;
           opacity: 0;
           transform: translateY(12px);
-          transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                      transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+                      transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         &:hover,
@@ -189,6 +194,8 @@
           .intro-image__text {
             opacity: 1;
             transform: translateY(28px);
+            transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.4s,
+                        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
           }
         }
 

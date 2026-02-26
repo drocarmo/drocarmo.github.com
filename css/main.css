@@ -471,7 +471,7 @@ body {
   z-index: 100;
   height: auto;
   width: auto;
-  padding: 12px 0;
+  padding: 12px 16px;
   border-radius: 24px;
   cursor: pointer;
 }
@@ -479,7 +479,6 @@ body {
   .theme-switch {
     top: 44px;
     left: 44px;
-    padding: 12px 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -498,7 +497,6 @@ body {
   background-position: center;
   box-sizing: border-box;
   transition: 0.5s all ease-in-out;
-  transform: scale(1);
 }
 @media screen and (min-width: 700px) {
   .theme-switch .switch {
@@ -544,16 +542,13 @@ body {
   transform: rotate(5deg);
   background-image: none;
 }
-@media (hover: hover) {
-  .theme-switch:hover {
-    transition: 0.5s all ease-in-out;
-    background-color: rgba(255, 255, 255, 0.05);
-  }
+.theme-switch:hover {
+  transition: 0.5s all ease-in-out;
+  background-color: rgba(255, 255, 255, 0.05);
 }
-@media screen and (hover: hover) and (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .theme-switch:hover .switch {
     background-image: url("/assets/images/circle-hover.png");
-    transform: scale(0.85);
   }
   .theme-switch:hover .clickme {
     opacity: 1;

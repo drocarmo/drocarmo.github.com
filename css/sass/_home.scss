@@ -296,6 +296,11 @@
 
         p {
           margin: 0;
+
+          // a touch smaller beside the photos, so the text has room above and below it
+          @include grid.screen-large {
+            &:not(.cursive) { font-size: 21px; }
+          }
           
           &:last-child {
             margin-top: 8px;

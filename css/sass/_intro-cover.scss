@@ -2,7 +2,7 @@
 
 :root {
   --intro-portrait: min(72vmin, 440px);
-  --intro-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --intro-sans: Figtree, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 // The body's fadeInUp leaves a transform behind, which would pin the fixed cover to
@@ -71,6 +71,7 @@ body.intro-covered { overflow: hidden; }
   letter-spacing: .02em;
   color: rgba(255, 255, 255, .45);
   white-space: nowrap;
+  user-select: none;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
@@ -111,6 +112,7 @@ body.intro-covered { overflow: hidden; }
   font: 500 12px/1 var(--intro-sans);
   letter-spacing: .02em;
   color: rgba(255, 255, 255, .55);
+  user-select: none;
   cursor: pointer;
   transition: color .2s, background-color .2s, opacity .2s;
 

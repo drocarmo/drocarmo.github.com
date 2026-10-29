@@ -8,9 +8,9 @@
 // Typography variables
 
 $type-avant: "itc-avant-garde-gothic-pro", sans-serif;
-$type-orpheus: "orpheuspro", serif;
+$type-shippori: "Shippori Mincho B1", serif;
 $type-source-code: "source-code-pro", sans-serif;
-$type-olicana: "olicana-smooth", sans-serif;
+$type-de-haviland: "Mr De Haviland", cursive;
 $type-weight-light: 300;
 $type-weight-regular: 400;
 $type-weight-medium: 500;
@@ -20,11 +20,13 @@ $type-style-italic: italic;
 $type-style-normal: normal;
 $line-height-headings: 1.4;
 $line-height: 1.5;
+$tracking-serif: -.03em;  // Shippori sets a little loose, so pull its letters together (set on each
+                          // text size, since an em of letter-spacing is fixed where it's declared)
 
 // Document type styles
 
 body {
-  font-family: $type-orpheus;
+  font-family: $type-shippori;
   font-weight: $type-weight-regular;
   font-style: $type-style-normal;
   color: colors.$color-light-gray;
@@ -61,7 +63,8 @@ h1 {
 }
 
 h2 {
-  font-family: $type-orpheus;
+  font-family: $type-shippori;
+  letter-spacing: $tracking-serif;
   font-weight: $type-weight-bold;
   line-height: $line-height;
   font-size: 30px;
@@ -98,6 +101,7 @@ h4 {
 
 
 h5 {
+  letter-spacing: $tracking-serif;
   font-size: 16px;
 
   @include grid.screen-medium {
@@ -108,15 +112,24 @@ h5 {
 p {
   font-size: 20px;
   font-weight: 500;
+  letter-spacing: $tracking-serif;
 
   @include grid.screen-medium {
     font-size: 24px;
   }
 
   &.cursive {
-    font-family: $type-olicana;
+    font-family: $type-de-haviland;
+    font-weight: $type-weight-regular;  // it only comes in one weight
+    letter-spacing: normal;
     font-size: 52px;
   }
+}
+
+// Shippori's em dash sits up at cap height; this brings it down to the middle of the lowercase
+.dash {
+  position: relative;
+  top: .13em;
 }
 
 strong {

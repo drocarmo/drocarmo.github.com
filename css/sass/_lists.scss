@@ -18,6 +18,7 @@ ul {
     text-indent: -28px;
     font-size: 16px;
     font-weight: type.$type-weight-light;
+    letter-spacing: type.$tracking-serif;
     word-wrap: break-word;
 
     @include grid.screen-medium {

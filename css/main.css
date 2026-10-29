@@ -1094,7 +1094,7 @@ body.intro-covered {
   }
 }
 .sound-toggle {
-  position: fixed;
+  position: absolute;
   z-index: 1001;
   top: calc(16px + env(safe-area-inset-top, 0px));
   left: 50%;

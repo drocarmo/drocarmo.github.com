@@ -87,16 +87,27 @@
     play(pop, .3, .9 + Math.random() * .3);
   }));
 
-  // ...and on each photo the carousel brings to the front as it's swiped (the carousel marks the
-  // front card .is-active; watching for that keeps the two scripts apart)
-  const frontCardPop = new MutationObserver(records => {
-    if (!body.classList.contains('intro-open') || muted || !pop || !audio || audio.state !== 'running') return;
-    if (records.some(r => r.target.classList.contains('is-active') && !(r.oldValue || '').includes('is-active'))) {
-      play(pop, .28, .9 + Math.random() * .3);
-    }
+  // ...and for each photo the carousel brings to the front as it's swiped. A quick flick can
+  // pass several photos in one frame, so count how many it moved and patter one pop for each,
+  // spaced like a quick sweep over the dots (the carousel marks the front card .is-active;
+  // watching for that keeps the two scripts apart)
+  const cards = [...document.querySelectorAll('.intro-carousel__card')];
+  let front = cards.findIndex(c => c.classList.contains('is-active')), owed = 0, popping = 0;
+  const popNext = () => {
+    if (owed > 0 && !muted && pop && audio && audio.state === 'running') { owed--; play(pop, .28, .9 + Math.random() * .3); }
+    else owed = 0;
+    popping = owed > 0 ? setTimeout(popNext, POP_GAP + 15) : 0;
+  };
+  const frontCardPop = new MutationObserver(() => {
+    const now = cards.findIndex(c => c.classList.contains('is-active'));
+    if (now === -1 || now === front) return;
+    const n = cards.length, steps = Math.min((now - front + n) % n, (front - now + n) % n);
+    front = now;
+    if (!body.classList.contains('intro-open')) return;
+    owed = Math.min(owed + steps, 6);
+    if (!popping) popNext();
   });
-  document.querySelectorAll('.intro-carousel__card').forEach(card =>
-    frontCardPop.observe(card, { attributes: true, attributeFilter: ['class'], attributeOldValue: true }));
+  cards.forEach(card => frontCardPop.observe(card, { attributes: true, attributeFilter: ['class'] }));
 
   function patter(t, touched, touch) {
     if (!touched || t - lastPop < POP_GAP) return;

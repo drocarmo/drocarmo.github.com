@@ -4,6 +4,10 @@
 (() => {
   const cover = document.querySelector('.intro-cover');
   if (!cover) return;
+  // The cover always starts a visit from the top, so don't let a reload restore an old scroll
+  // position behind it (the photos would come in off screen)
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  scrollTo(0, 0);
   const canvas = cover.querySelector('.intro-cover__canvas');
   const btn = cover.querySelector('.intro-cover__btn');
   const ctx = canvas.getContext('2d');
@@ -31,12 +35,12 @@
   // A soft bubble click for each dot the pointer brushes, with a haptic tick on touch devices
   // that support it. Browsers keep a page silent until the visitor clicks, taps or presses a key
   // (hovering doesn't count), and a tap on the portrait opens the page, so the sound button is the
-  // way to hear the pops. Sound is on unless the visitor turns it off there.
+  // way to hear the pops before going in.
   const TOUCH = 18;       // px from the pointer that counts as touching a dot
   const POP_GAP = 45;     // ms between pops, so a sweep patters instead of buzzing
   const BUZZ_GAP = 70;    // ms between vibration ticks on phones that support them (Android)
   const audio = window.AudioContext && new AudioContext();
-  const soundBtn = cover.querySelector('.intro-cover__sound');
+  const soundBtn = document.querySelector('.sound-toggle');
   let pop = null, chime = null, lastPop = 0, lastBuzz = 0, muted = false;
   const load = url => fetch(url).then(r => r.arrayBuffer()).then(b => audio.decodeAudioData(b));
   const play = (buf, volume, rate = 1) => {
@@ -49,22 +53,28 @@
     load('/assets/audio/dot-pop.mp3').then(buf => { pop = buf; }).catch(() => {});
     load('/assets/audio/open-sound.mp3').then(buf => { chime = buf; }).catch(() => {});
     const unlock = () => { if (!muted && audio.state === 'suspended') audio.resume(); };
-    ['pointerdown', 'keydown', 'touchend'].forEach(type => addEventListener(type, unlock, { passive: true }));
+    // iPhones only let audio start from a tap or click (not a finger landing or a drag), so try
+    // on every kind of gesture, and again whenever it has been suspended since
+    ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(type => addEventListener(type, unlock, { passive: true }));
+    // The label always tells the truth: "Sound on" only while sound can actually play. Until a
+    // first tap the browser holds it back, so it starts as "Sound off" and flips on by itself
+    // when a tap anywhere wakes the audio (unless the visitor muted it here)
+    const isOn = () => !muted && audio.state === 'running';
     const label = () => {
-      soundBtn.setAttribute('aria-pressed', !muted);
-      soundBtn.textContent = muted ? 'Sound off' : 'Sound on';
+      soundBtn.setAttribute('aria-pressed', isOn());
+      soundBtn.textContent = isOn() ? 'Sound on' : 'Sound off';
     };
-    // Sound is on by default, but until a first click the browser keeps it silent. If the audio
-    // wasn't running when this tap began, the tap just wakes it; after that it mutes and unmutes.
-    // (Checked as the tap starts, because the page-wide unlock above wakes the audio on the
-    // same pointerdown, before the click arrives.)
-    let wasRunning = false;
-    const noteState = () => { wasRunning = audio.state === 'running'; };
+    audio.addEventListener('statechange', label);
+    label();
+    // Read the state as the tap starts: the page-wide wake-up above runs on the same gesture,
+    // before this click arrives, and would otherwise make an "off" tap look like an "on" one
+    let wasOn = false;
+    const noteState = () => { wasOn = isOn(); };
     soundBtn.addEventListener('pointerdown', noteState);
     soundBtn.addEventListener('keydown', noteState);
-    soundBtn.addEventListener('click', e => {
-      if (!muted && !wasRunning) audio.resume();
-      else { muted = !muted; if (!muted) audio.resume(); }
+    soundBtn.addEventListener('click', () => {
+      muted = wasOn;
+      if (!muted) audio.resume();
       label();
     });
   } else {
@@ -280,8 +290,10 @@
     if (state !== 'sealed' && state !== 'intro') return;
     for (const d of dots) { d.r = d.size; }
     cover.classList.add('scatter');
-    // the click itself lets the page make sound, so the opening sound plays unless muted
-    if (audio && chime && !muted) { audio.resume(); play(chime, .3); }
+    // the click itself lets the page make sound: wake the audio here even if the opening sound
+    // hasn't finished downloading, so the pops after it (links, swipes) can play
+    if (audio && !muted) { audio.resume(); if (chime) play(chime, .3); }
+    scrollTo(0, 0);
     // Side by side (desktop), the intro streams in centred on the screen and then slides over to
     // its place on the right, making room for the photos to slide in last. Stacked (phones), the
     // photos sit above the text and arrive with its first paragraph.
@@ -340,9 +352,10 @@
 
     // The photos follow one by one, front card first, then the nearest neighbours (the cards
     // stacked highest), and finally the dots under them. Side by side they wait for the text to
-    // finish and slide across, then slide in from the left behind it; stacked, they come with the
-    // first paragraph so the top of the screen isn't left empty while the text streams in below
-    let textDone = FLY_FOR * .85;
+    // finish and slide across, then slide in from the left behind it. Stacked, they start the
+    // moment the first paragraph's dots set off, so the top of the screen isn't left empty
+    // while the text streams in below.
+    let textDone = 100, photoGap = PHOTO_GAP * .7;
     if (!stacked) {
       const textClear = (paras.length - 1) * PARA_GAP + FLY_FOR * .85 + 650;
       setTimeout(() => {
@@ -350,18 +363,19 @@
         textBox.style.translate = '0px 0';
       }, textClear);
       textDone = textClear + SCOOT_FOR * .7;  // once the text has mostly cleared the left side
+      photoGap = PHOTO_GAP;
     }
     const cards = [...document.querySelectorAll('.intro-carousel__card')]
       .sort((a, b) => (+b.style.zIndex || 0) - (+a.style.zIndex || 0));
     cards.forEach((card, ci) => {
-      const at = textDone + Math.min(ci, 2) * PHOTO_GAP, tilt = card.querySelector('.intro-carousel__tilt');
+      const at = textDone + Math.min(ci, 2) * photoGap, tilt = card.querySelector('.intro-carousel__tilt');
       if (tilt) tilt.style.transitionDelay = `${at}ms`;
       // the card's shadow and depth shading wait too, then fade in alongside the photo
       setTimeout(() => { card.classList.add('is-revealing'); card.classList.remove('is-waiting'); }, at);
       setTimeout(() => card.classList.remove('is-revealing'), at + 700);
     });
     const carouselDots = document.querySelector('.intro-carousel__dots');
-    if (carouselDots) carouselDots.style.transitionDelay = `${textDone + 3 * PHOTO_GAP + 150}ms`;
+    if (carouselDots) carouselDots.style.transitionDelay = `${textDone + 3 * photoGap + 150}ms`;
     flowStart = performance.now();
     wake();
     reveal();

@@ -83,10 +83,24 @@ body.intro-covered { overflow: hidden; }
   .intro-cover.scatter & { animation: none; opacity: 0; pointer-events: none; transition: opacity .2s; }
 }
 
+// On phones the photos sit at the very top, so leave the sound button its own strip above them
+@media screen and (max-width: 699px) {
+  body.has-intro-cover .home { padding-top: calc(60px + env(safe-area-inset-top, 0px)); }
+}
+
+// On desktop the page is centred in the window; a top margin the height of the sound button's
+// strip centres it in the space below the button instead, so the gap from the button down to
+// the text matches the gap from the text down to the bottom of the window
+@media screen and (min-width: 1200px) {
+  body.has-intro-cover .home { margin-top: calc(44px + env(safe-area-inset-top, 0px)); }
+}
+
 // Browsers keep a page silent until a click or key press, so this is how visitors hear the
-// dots pop as they hover before going in
-.intro-cover__sound {
-  position: absolute;
+// dots pop as they hover before going in. It stays pinned to the top of the screen after the
+// page opens, as the way to mute or unmute the pops.
+.sound-toggle {
+  position: fixed;
+  z-index: 1001;
   top: calc(16px + env(safe-area-inset-top, 0px));
   left: 50%;
   transform: translateX(-50%);
@@ -100,10 +114,14 @@ body.intro-covered { overflow: hidden; }
   cursor: pointer;
   transition: color .2s, background-color .2s, opacity .2s;
 
+  // half there until reached for, so it doesn't compete with the page
+  opacity: .5;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover, &:active, &:focus-visible { opacity: 1; }
   &:hover { color: rgba(255, 255, 255, .85); background: rgba(255, 255, 255, .08); }
   &[aria-pressed="true"] { color: rgba(255, 255, 255, .9); background: rgba(255, 255, 255, .1); }
   &:focus-visible { outline: 2px solid rgba(255, 255, 255, .6); outline-offset: 2px; }
-  .intro-cover.scatter & { opacity: 0; pointer-events: none; }
 }
 
 @keyframes intro-hint-in { to { opacity: 1; } }
@@ -133,7 +151,16 @@ body.has-intro-cover {
   }
 }
 
-// Until its photo arrives, a card shows neither its drop shadow nor its depth shading
+// Until its photo arrives, a card shows neither its drop shadow nor its depth shading. While
+// the cover is up that holds for every card (body.intro-covered is set before the page draws,
+// so empty frames never show during a slow load); after it, js/intro-cover.js keeps each card
+// .is-waiting until its photo's turn
+body.intro-covered .home .body .intro .intro-carousel__card {
+  box-shadow: none;
+
+  &::after { opacity: 0; }
+}
+
 body.has-intro-cover .home .body .intro .intro-carousel__card {
   transition: box-shadow 650ms ease-out;
 

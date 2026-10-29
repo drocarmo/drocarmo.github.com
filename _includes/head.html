@@ -5,13 +5,8 @@
   <meta name="Copyright" content="Copyright Pedro Carmo 2015. All Rights Reserved.">
   <link rel="shortcut icon" href="{{ base.url }}/assets/images/favicon.ico" type="image/x-icon"/>
   {% if page.url == "/" %}
-  <link
-    rel="preload"
-    as="image"
-    href="/assets/images/carousel-niche-900.webp"
-    imagesrcset="/assets/images/carousel-niche-480.webp 480w, /assets/images/carousel-niche-900.webp 900w"
-    imagesizes="(min-width: 1200px) 30vw, 80vw"
-    fetchpriority="high">
+  <!-- the particle portrait is the first thing on screen, so its source photo comes first -->
+  <link rel="preload" as="image" href="/assets/images/avatar-particles.jpg" fetchpriority="high">
   {% endif %}
   <link href="{{ base.url }}/css/main.css?v={{ site.time | date: "%s" }}" type="text/css" rel="stylesheet">
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>

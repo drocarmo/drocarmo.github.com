@@ -1083,8 +1083,19 @@ body.intro-covered {
   transition: opacity 0.2s;
 }
 
-.intro-cover__sound {
-  position: absolute;
+@media screen and (max-width: 699px) {
+  body.has-intro-cover .home {
+    padding-top: calc(60px + env(safe-area-inset-top, 0px));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.has-intro-cover .home {
+    margin-top: calc(44px + env(safe-area-inset-top, 0px));
+  }
+}
+.sound-toggle {
+  position: fixed;
+  z-index: 1001;
   top: calc(16px + env(safe-area-inset-top, 0px));
   left: 50%;
   transform: translateX(-50%);
@@ -1097,22 +1108,23 @@ body.intro-covered {
   color: rgba(255, 255, 255, 0.55);
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s, opacity 0.2s;
+  opacity: 0.5;
+  -webkit-tap-highlight-color: transparent;
 }
-.intro-cover__sound:hover {
+.sound-toggle:hover, .sound-toggle:active, .sound-toggle:focus-visible {
+  opacity: 1;
+}
+.sound-toggle:hover {
   color: rgba(255, 255, 255, 0.85);
   background: rgba(255, 255, 255, 0.08);
 }
-.intro-cover__sound[aria-pressed=true] {
+.sound-toggle[aria-pressed=true] {
   color: rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.1);
 }
-.intro-cover__sound:focus-visible {
+.sound-toggle:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.6);
   outline-offset: 2px;
-}
-.intro-cover.scatter .intro-cover__sound {
-  opacity: 0;
-  pointer-events: none;
 }
 
 @keyframes intro-hint-in {
@@ -1132,6 +1144,13 @@ body.has-intro-cover .intro-carousel__tilt {
   filter: none;
   translate: var(--enter-x, 0px) var(--enter-y, 12px);
   transition: opacity 650ms ease-out, translate 800ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+body.intro-covered .home .body .intro .intro-carousel__card {
+  box-shadow: none;
+}
+body.intro-covered .home .body .intro .intro-carousel__card::after {
+  opacity: 0;
 }
 
 body.has-intro-cover .home .body .intro .intro-carousel__card {

@@ -2,7 +2,8 @@
 <div class="intro-cover">
   <canvas class="intro-cover__canvas" aria-hidden="true"></canvas>
   <button class="intro-cover__btn" type="button" aria-label="Open the page"></button>
-  <button class="intro-cover__sound" type="button" aria-pressed="true">Sound on</button>
   <button class="intro-cover__hint" type="button">Tap to enter</button>
 </div>
+<!-- outside the cover so it stays on screen after the page opens; js/intro-cover.js keeps the label truthful -->
+<button class="sound-toggle" type="button" aria-pressed="false">Sound off</button>
 <script>document.body.classList.add('has-intro-cover', 'intro-covered');</script>

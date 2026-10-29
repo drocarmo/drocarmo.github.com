@@ -15,10 +15,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;700&display=swap">
+  {% unless page.url == "/" %}
+  <!-- headings and code on the posts and the 404 page -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@700&family=Source+Code+Pro&display=swap">
+  {% endunless %}
   <link href="{{ base.url }}/css/main.css?v={{ site.time | date: "%s" }}" type="text/css" rel="stylesheet">
-  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-  <link rel="preconnect" href="https://p.typekit.net" crossorigin>
-  <link rel="stylesheet" href="https://use.typekit.net/vdp7mxz.css">
 </head>
 
 <!-- Google tag (gtag.js) -->

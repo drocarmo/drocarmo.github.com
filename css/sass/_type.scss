@@ -7,9 +7,9 @@
 
 // Typography variables
 
-$type-avant: "itc-avant-garde-gothic-pro", sans-serif;
+$type-figtree: Figtree, sans-serif;
 $type-shippori: "Shippori Mincho B1", serif;
-$type-source-code: "source-code-pro", sans-serif;
+$type-source-code: "Source Code Pro", monospace;
 $type-de-haviland: "Mr De Haviland", cursive;
 $type-weight-light: 300;
 $type-weight-regular: 400;
@@ -49,7 +49,7 @@ body {
 }
 
 h1 {
-  font-family: $type-avant;
+  font-family: $type-figtree;
   font-weight: $type-weight-bold;
   line-height: $line-height-headings;
   font-size: 32px;
@@ -75,7 +75,7 @@ h2 {
 }
 
 h3 {
-  font-family: $type-avant;
+  font-family: $type-figtree;
   font-size: 14px;
   line-height: $line-height-headings;
   font-weight: $type-weight-bold;
@@ -87,7 +87,7 @@ h3 {
 }
 
 h4 {
-  font-family: $type-avant;
+  font-family: $type-figtree;
   font-size: 12px;
   line-height: 1;
   font-weight: $type-weight-bold;

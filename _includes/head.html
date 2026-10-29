@@ -10,10 +10,10 @@
     as="image"
     href="/assets/images/self-1200.jpeg"
     imagesrcset="/assets/images/self-600.jpeg 600w, /assets/images/self-1200.jpeg 1200w, /assets/images/self-1800.jpeg 1800w"
-    imagesizes="(min-width: 1024px) 35vw, 100vw"
+    imagesizes="(min-width: 1200px) 30vw, 80vw"
     fetchpriority="high">
   {% endif %}
-  <link href="{{ base.url }}/css/main.css" type="text/css" rel="stylesheet">
+  <link href="{{ base.url }}/css/main.css?v={{ site.time | date: "%s" }}" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/vdp7mxz.css">
   <script type="text/javascript" src="//use.typekit.net/vdp7mxz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

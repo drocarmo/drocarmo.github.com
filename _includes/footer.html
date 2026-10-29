@@ -9,25 +9,3 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
-<script>
-  (function() {
-    var el = document.querySelector('section.intro-image');
-    if (!el) return;
-
-    var maxTilt = 3;
-
-    el.addEventListener('mousemove', function(e) {
-      var rect = el.getBoundingClientRect();
-      var x = (e.clientX - rect.left) / rect.width;
-      var y = (e.clientY - rect.top) / rect.height;
-      var rotateY = (x - 0.5) * maxTilt * 2;
-      var rotateX = (0.5 - y) * maxTilt * 2;
-      el.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
-    });
-
-    el.addEventListener('mouseleave', function() {
-      el.style.transform = '';
-    });
-  })();
-</script>

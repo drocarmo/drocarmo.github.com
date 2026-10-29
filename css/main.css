@@ -420,6 +420,7 @@ body {
   background-size: cover;
   color: var(--text);
   min-height: 100vh;
+  overflow-x: clip;
 }
 @media screen and (min-width: 1200px) {
   html,
@@ -447,8 +448,8 @@ body {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  margin: 20px 20px;
-  padding-top: 40px;
+  margin: 0 20px 20px;
+  padding-top: 8px;
   max-width: 1200px;
   min-height: 100vh;
   justify-content: center;
@@ -465,7 +466,6 @@ body {
     margin: 0;
     min-height: auto;
     max-height: 100vh;
-    overflow: hidden;
     justify-content: center;
     align-self: center;
   }
@@ -544,97 +544,158 @@ body {
   .home .body .intro {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
-    perspective: 800px;
+    gap: 64px;
   }
 }
 @media screen and (min-width: 1200px) {
   .home .body .intro {
-    gap: 60px;
+    gap: 120px;
     flex: 1;
     min-height: 0;
-    overflow: hidden;
   }
 }
-.home .body .intro .intro-image {
+.home .body .intro .intro-carousel {
   width: 100%;
-  position: relative;
-  transition: transform 0.15s ease-out;
-  border-radius: 16px;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-.home .body .intro .intro-image > img {
-  width: 100%;
-  border-radius: 16px;
-  height: auto;
-  display: block;
-}
-.home .body .intro .intro-image .intro-image__overlay {
-  position: absolute;
-  inset: 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 14px;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.home .body .intro .intro-image .intro-image__overlay-inner {
-  display: inline-flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
-  margin-bottom: 80px;
-  transform: translateX(-20px);
+  gap: 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
-.home .body .intro .intro-image .intro-image__text {
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2), inset 0 0 0 0.5px rgba(255, 255, 255, 0.08);
-  line-height: 1;
-  font-family: "itc-avant-garde-gothic-pro", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 700px) {
+  .home .body .intro .intro-carousel {
+    width: 42%;
+    flex-shrink: 0;
+  }
 }
-.home .body .intro .intro-image:hover .intro-image__overlay, .home .body .intro .intro-image:focus .intro-image__overlay {
-  opacity: 1;
-  transform: translateY(0);
+@media screen and (min-width: 1200px) {
+  .home .body .intro .intro-carousel {
+    width: 44%;
+  }
 }
-.home .body .intro .intro-image:hover .intro-image__text, .home .body .intro .intro-image:focus .intro-image__text {
-  opacity: 1;
-  transform: translateY(28px);
-  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.4s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+.home .body .intro .intro-carousel.is-dragging .intro-carousel__stage {
+  cursor: grabbing;
 }
-.home .body .intro .intro-image:focus {
+.home .body .intro .intro-carousel__stage {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  perspective: 1000px;
+  --spread: 0.52;
+  --spread-far: 0.6;
+  --stagger: 12px;
+  --visible: 2.5;
+  cursor: grab;
+  touch-action: pan-y;
+  outline: none;
+}
+@media screen and (min-width: 700px) {
+  .home .body .intro .intro-carousel__stage {
+    --spread: 0.22;
+    --spread-far: 0.11;
+    --visible: 1.5;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home .body .intro .intro-carousel__stage {
+    --spread: 0.38;
+    --spread-far: 0.19;
+  }
+}
+.home .body .intro .intro-carousel__stage:focus-visible .intro-carousel__card.is-active .intro-carousel__tilt {
   outline: 2px solid rgba(255, 255, 255, 0.35);
   outline-offset: 3px;
 }
-@media screen and (min-width: 1200px) {
-  .home .body .intro .intro-image {
-    width: 35%;
-    flex-shrink: 0;
-    max-height: 60vh;
+.home .body .intro .intro-carousel__card {
+  grid-area: 1/1;
+  position: relative;
+  width: 54%;
+  aspect-ratio: 3/4;
+  margin: 0;
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  will-change: transform, opacity;
+}
+@media screen and (min-width: 700px) {
+  .home .body .intro .intro-carousel__card {
+    width: min(74%, 46.5vh);
   }
-  .home .body .intro .intro-image > img {
-    max-height: 60vh;
-    object-fit: contain;
-  }
+}
+.home .body .intro .intro-carousel__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #000;
+  opacity: var(--shade, 0);
+  pointer-events: none;
+}
+.home .body .intro .intro-carousel__tilt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  will-change: transform;
+}
+.home .body .intro .intro-carousel__tilt > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.home .body .intro .intro-carousel__glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0) 60%);
+  opacity: var(--glare, 0);
+  transition: opacity 0.3s ease-out;
+}
+.home .body .intro .intro-carousel__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.home .body .intro .intro-carousel__dot {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 4px 2.5px;
+  cursor: pointer;
+  transition: width 0.25s ease, padding 0.25s ease;
+}
+.home .body .intro .intro-carousel__dot::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(var(--dot-scale, 1));
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.home .body .intro .intro-carousel__dot.is-active::after {
+  background: #fff;
+}
+.home .body .intro .intro-carousel__dot.is-hidden {
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.home .body .intro .intro-carousel__dot:focus-visible {
+  outline: none;
+}
+.home .body .intro .intro-carousel__dot:focus-visible::after {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 .home .body .intro .intro-text {
   display: flex;

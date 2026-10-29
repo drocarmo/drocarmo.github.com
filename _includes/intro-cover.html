@@ -1,0 +1,8 @@
+{% comment %} Home page cover: a particle portrait. Dots scatter (and softly pop) from the pointer and spring home; clicking it streams them into the intro text. {% endcomment %}
+<div class="intro-cover">
+  <canvas class="intro-cover__canvas" aria-hidden="true"></canvas>
+  <button class="intro-cover__btn" type="button" aria-label="Open the page"></button>
+  <button class="intro-cover__sound" type="button" aria-pressed="true">Sound on</button>
+  <button class="intro-cover__hint" type="button">Tap to enter</button>
+</div>
+<script>document.body.classList.add('has-intro-cover', 'intro-covered');</script>

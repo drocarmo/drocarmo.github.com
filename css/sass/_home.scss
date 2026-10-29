@@ -154,15 +154,17 @@
         // --spread for the first neighbour, --spread-far for each card after it.
         // --visible is how many cards each side stay in view. On phones it's a
         // fan of five that runs off both edges, so the screen crops the outer cards.
-        --spread: 0.52;
-        --spread-far: 0.6;
+        --spread: 0.38;
+        --spread-far: 0.46;
         --stagger: 12px;
         --visible: 2.5;
+        --shrink: 0.12; // extra scale-down per step, so the front card dominates
 
         @include grid.screen-medium {
           --spread: 0.22;
           --spread-far: 0.11;
           --visible: 1.5;
+          --shrink: 0;
         }
 
         @include grid.screen-large {
@@ -182,7 +184,7 @@
       .intro-carousel__card {
         grid-area: 1 / 1;
         position: relative;
-        width: 54%;
+        width: 68%;
 
         @include grid.screen-medium {
           width: min(74%, calc(62vh * 0.75));
@@ -219,6 +221,9 @@
           height: 100%;
           object-fit: cover;
           pointer-events: none;
+          // Per-photo framing, set inline: --zoom scales in, --pan-x/--pan-y shift
+          // the subject toward centre (keep |pan| <= 50% * (1 - 1/zoom) to avoid gaps)
+          transform: scale(var(--zoom, 1)) translate(var(--pan-x, 0), var(--pan-y, 0));
         }
       }
 

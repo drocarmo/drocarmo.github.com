@@ -15,6 +15,7 @@
   var SPREAD_FAR;       // extra shift for each card beyond the first neighbour (--spread-far)
   var STAGGER;          // px each step left rises and each step right drops (--stagger in CSS)
   var VISIBLE;          // how many steps out cards stay visible (--visible)
+  var SHRINK;           // extra scale-down per step behind the front card (--shrink)
   var DEPTH = 120;       // px each step pushes a card back
   var TURN = 5;          // deg each step turns a card away
   // Each card keeps its own slight resting tilt, like loose prints in a stack
@@ -41,6 +42,7 @@
     SPREAD_FAR = parseFloat(css.getPropertyValue('--spread-far')) || SPREAD * 0.5;
     STAGGER = parseFloat(css.getPropertyValue('--stagger')) || 0;
     VISIBLE = parseFloat(css.getPropertyValue('--visible')) || 1.5;
+    SHRINK = parseFloat(css.getPropertyValue('--shrink')) || 0;
   }
   measure();
 
@@ -82,7 +84,7 @@
       var lean = s * Math.min(a, 1.5);
       var tip = Math.max(-MAX_LEAN, Math.min(MAX_LEAN, -speed * 70));
       card.style.transform =
-        'translate3d(' + x + 'px,' + y + 'px,' + (-a * DEPTH) + 'px) rotateY(' + (-lean * TURN + tip * 0.8) + 'deg) rotateZ(' + (JITTER[i % JITTER.length] + tip) + 'deg)';
+        'translate3d(' + x + 'px,' + y + 'px,' + (-a * DEPTH) + 'px) rotateY(' + (-lean * TURN + tip * 0.8) + 'deg) rotateZ(' + (JITTER[i % JITTER.length] + tip) + 'deg) scale(' + (1 - Math.min(a, VISIBLE) * SHRINK) + ')';
       card.style.zIndex = String(100 - Math.round(a * 10));
       card.style.opacity = String(Math.max(0, Math.min(1, 1 - (a - VISIBLE) * 2.5)));
       card.style.setProperty('--shade', String(Math.min(a, 2) * 0.28));

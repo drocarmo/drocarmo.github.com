@@ -1,0 +1,169 @@
+// Particle-portrait cover on the home page (markup in _includes/intro-cover.html, behavior in js/intro-cover.js)
+
+:root {
+  --intro-portrait: min(72vmin, 440px);
+  --intro-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+// The body's fadeInUp leaves a transform behind, which would pin the fixed cover to
+// the body instead of the viewport, so fade without moving on this page
+body.has-intro-cover {
+  transform: none;
+  animation: intro-fade-in .8s ease-out forwards;
+}
+
+@keyframes intro-fade-in { to { opacity: 1; } }
+
+body.intro-covered { overflow: hidden; }
+
+// No backdrop of its own: the page's background shows through, and everything on the page
+// stays hidden until it animates in, so the portrait sits on the same backdrop as the content.
+// Tapping the portrait opens the page.
+.intro-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  // let a finger drag across the dots instead of the browser treating it as a scroll
+  touch-action: none;
+
+  &.scatter { pointer-events: none; }
+  &.gone { visibility: hidden; }
+}
+
+.intro-cover__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Sits over the portrait so the whole picture is the button
+.intro-cover__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--intro-portrait);
+  height: var(--intro-portrait);
+  transform: translate(-50%, -50%);
+  border: 0;
+  padding: 0;
+  border-radius: 18%;
+  background: transparent;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus-visible { outline: 2px solid rgba(255, 255, 255, .6); outline-offset: 10px; }
+  .intro-cover.scatter & { pointer-events: none; }
+}
+
+// Also a way in: tapping the words works the same as tapping the portrait
+.intro-cover__hint {
+  position: absolute;
+  left: 50%;
+  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 8px 14px;  // a comfortable tap target around the words
+  border: 0;
+  background: none;
+  font: 500 13px/1 var(--intro-sans);
+  letter-spacing: .02em;
+  color: rgba(255, 255, 255, .45);
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  animation: intro-hint-in .6s ease 1.2s forwards;
+  transition: color .2s ease;
+
+  &:hover { color: #fff; }
+  &:focus-visible { color: #fff; outline: 2px solid rgba(255, 255, 255, .6); outline-offset: 2px; border-radius: 999px; }
+  .intro-cover.scatter & { animation: none; opacity: 0; pointer-events: none; transition: opacity .2s; }
+}
+
+// Browsers keep a page silent until a click or key press, so this is how visitors hear the
+// dots pop as they hover before going in
+.intro-cover__sound {
+  position: absolute;
+  top: calc(16px + env(safe-area-inset-top, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .04);
+  font: 500 12px/1 var(--intro-sans);
+  letter-spacing: .02em;
+  color: rgba(255, 255, 255, .55);
+  cursor: pointer;
+  transition: color .2s, background-color .2s, opacity .2s;
+
+  &:hover { color: rgba(255, 255, 255, .85); background: rgba(255, 255, 255, .08); }
+  &[aria-pressed="true"] { color: rgba(255, 255, 255, .9); background: rgba(255, 255, 255, .1); }
+  &:focus-visible { outline: 2px solid rgba(255, 255, 255, .6); outline-offset: 2px; }
+  .intro-cover.scatter & { opacity: 0; pointer-events: none; }
+}
+
+@keyframes intro-hint-in { to { opacity: 1; } }
+
+// Once the dots stream out the page animates in: first the intro, a paragraph at a time as its
+// dots land, then the carousel's photos one by one, then the dots under them. js/intro-cover.js
+// sets each piece's delay to match the particles; the delays here are the fallback.
+// The photos animate their inner tilt layer with `translate` (not `transform`), because the
+// carousel script owns the cards' transforms.
+body.has-intro-cover {
+  .intro-text > p,
+  .intro-carousel__tilt,
+  .intro-carousel__dots {
+    opacity: 0;
+    filter: blur(4px);
+    translate: 0 4px;
+    transition: opacity 550ms ease-out, filter 550ms ease-out, translate 550ms cubic-bezier(.2, .8, .2, 1);
+  }
+
+  // Photos just fade and lift, without blur: a filter on a layer inside the carousel's
+  // 3D-transformed, clipped cards is redrawn every frame and flickers
+  .intro-carousel__tilt {
+    filter: none;
+    translate: 0 12px;
+    transition: opacity 650ms ease-out, translate 650ms cubic-bezier(.2, .8, .2, 1);
+  }
+}
+
+// Until its photo arrives, a card shows neither its drop shadow nor its depth shading
+body.has-intro-cover .home .body .intro .intro-carousel__card {
+  transition: box-shadow 650ms ease-out;
+
+  &.is-waiting { box-shadow: none; }
+  &.is-waiting::after { opacity: 0; }
+  // the shading eases in with the photo rather than snapping on (only while revealing, so it
+  // doesn't lag behind the carousel when it's dragged)
+  &.is-revealing::after { transition: opacity 650ms ease-out; }
+}
+
+@for $i from 1 through 8 {
+  body.has-intro-cover .intro-text > p:nth-child(#{$i}) { transition-delay: #{550 + ($i - 1) * 180}ms; }
+}
+
+body.has-intro-cover .intro-carousel__tilt { transition-delay: 2200ms; }
+body.has-intro-cover .intro-carousel__dots { transition-delay: 2900ms; }
+
+body.intro-open {
+  .intro-text > p,
+  .intro-carousel__tilt,
+  .intro-carousel__dots {
+    opacity: 1;
+    filter: none;
+    translate: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.has-intro-cover {
+    .intro-text > p,
+    .intro-carousel__tilt,
+    .intro-carousel__dots { filter: none; translate: none; transition: opacity 300ms ease-out; }
+  }
+}

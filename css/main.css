@@ -585,10 +585,11 @@ body {
   justify-items: center;
   align-items: center;
   perspective: 1000px;
-  --spread: 0.52;
-  --spread-far: 0.6;
+  --spread: 0.38;
+  --spread-far: 0.46;
   --stagger: 12px;
   --visible: 2.5;
+  --shrink: 0.12;
   cursor: grab;
   touch-action: pan-y;
   outline: none;
@@ -598,6 +599,7 @@ body {
     --spread: 0.22;
     --spread-far: 0.11;
     --visible: 1.5;
+    --shrink: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -613,7 +615,7 @@ body {
 .home .body .intro .intro-carousel__card {
   grid-area: 1/1;
   position: relative;
-  width: 54%;
+  width: 68%;
   aspect-ratio: 3/4;
   margin: 0;
   border-radius: 16px;
@@ -648,6 +650,7 @@ body {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
+  transform: scale(var(--zoom, 1)) translate(var(--pan-x, 0), var(--pan-y, 0));
 }
 .home .body .intro .intro-carousel__glare {
   position: absolute;
@@ -980,6 +983,226 @@ ul li:before {
 .error .error__text p .small {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+:root {
+  --intro-portrait: min(72vmin, 440px);
+  --intro-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body.has-intro-cover {
+  transform: none;
+  animation: intro-fade-in 0.8s ease-out forwards;
+}
+
+@keyframes intro-fade-in {
+  to {
+    opacity: 1;
+  }
+}
+body.intro-covered {
+  overflow: hidden;
+}
+
+.intro-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  touch-action: none;
+}
+.intro-cover.scatter {
+  pointer-events: none;
+}
+.intro-cover.gone {
+  visibility: hidden;
+}
+
+.intro-cover__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-cover__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--intro-portrait);
+  height: var(--intro-portrait);
+  transform: translate(-50%, -50%);
+  border: 0;
+  padding: 0;
+  border-radius: 18%;
+  background: transparent;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.intro-cover__btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 10px;
+}
+.intro-cover.scatter .intro-cover__btn {
+  pointer-events: none;
+}
+
+.intro-cover__hint {
+  position: absolute;
+  left: 50%;
+  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 8px 14px;
+  border: 0;
+  background: none;
+  font: 500 13px/1 var(--intro-sans);
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  animation: intro-hint-in 0.6s ease 1.2s forwards;
+  transition: color 0.2s ease;
+}
+.intro-cover__hint:hover {
+  color: #fff;
+}
+.intro-cover__hint:focus-visible {
+  color: #fff;
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+.intro-cover.scatter .intro-cover__hint {
+  animation: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.intro-cover__sound {
+  position: absolute;
+  top: calc(16px + env(safe-area-inset-top, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  font: 500 12px/1 var(--intro-sans);
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s, opacity 0.2s;
+}
+.intro-cover__sound:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.08);
+}
+.intro-cover__sound[aria-pressed=true] {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+}
+.intro-cover__sound:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+.intro-cover.scatter .intro-cover__sound {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes intro-hint-in {
+  to {
+    opacity: 1;
+  }
+}
+body.has-intro-cover .intro-text > p,
+body.has-intro-cover .intro-carousel__tilt,
+body.has-intro-cover .intro-carousel__dots {
+  opacity: 0;
+  filter: blur(4px);
+  translate: 0 4px;
+  transition: opacity 550ms ease-out, filter 550ms ease-out, translate 550ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+body.has-intro-cover .intro-carousel__tilt {
+  filter: none;
+  translate: 0 12px;
+  transition: opacity 650ms ease-out, translate 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+body.has-intro-cover .home .body .intro .intro-carousel__card {
+  transition: box-shadow 650ms ease-out;
+}
+body.has-intro-cover .home .body .intro .intro-carousel__card.is-waiting {
+  box-shadow: none;
+}
+body.has-intro-cover .home .body .intro .intro-carousel__card.is-waiting::after {
+  opacity: 0;
+}
+body.has-intro-cover .home .body .intro .intro-carousel__card.is-revealing::after {
+  transition: opacity 650ms ease-out;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(1) {
+  transition-delay: 550ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(2) {
+  transition-delay: 730ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(3) {
+  transition-delay: 910ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(4) {
+  transition-delay: 1090ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(5) {
+  transition-delay: 1270ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(6) {
+  transition-delay: 1450ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(7) {
+  transition-delay: 1630ms;
+}
+
+body.has-intro-cover .intro-text > p:nth-child(8) {
+  transition-delay: 1810ms;
+}
+
+body.has-intro-cover .intro-carousel__tilt {
+  transition-delay: 2200ms;
+}
+
+body.has-intro-cover .intro-carousel__dots {
+  transition-delay: 2900ms;
+}
+
+body.intro-open .intro-text > p,
+body.intro-open .intro-carousel__tilt,
+body.intro-open .intro-carousel__dots {
+  opacity: 1;
+  filter: none;
+  translate: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.has-intro-cover .intro-text > p,
+  body.has-intro-cover .intro-carousel__tilt,
+  body.has-intro-cover .intro-carousel__dots {
+    filter: none;
+    translate: none;
+    transition: opacity 300ms ease-out;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

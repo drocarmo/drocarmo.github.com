@@ -1,0 +1,47 @@
+// Company links in the intro: hovering one pops that company's app icon up from behind the
+// word, overshooting a little before it settles, and sinking back when the pointer leaves
+
+.app-link {
+  position: relative;
+}
+
+// A window above the word that clips the icon, so it seems to rise out from behind the text
+.app-link__icon {
+  position: absolute;
+  left: 50%;
+  bottom: 70%;
+  width: 72px;
+  height: 84px;
+  margin-left: -36px;
+  overflow: hidden;
+  pointer-events: none;
+
+  img {
+    position: absolute;
+    left: 14px;
+    bottom: 16px;  // room under the icon for its shadow inside the clipping window
+    width: 44px;
+    height: 44px;
+    border-radius: 23%;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .35);
+    transform: translateY(160%) rotate(var(--tilt, -8deg)) scale(.7);  // fully below the window
+    transition: transform 220ms cubic-bezier(.4, 0, 1, 1);
+  }
+
+  .app-link:hover &,
+  .app-link:focus-visible & {
+    img {
+      transform: translateY(0) rotate(calc(var(--tilt, -8deg) / 2)) scale(1);
+      transition: transform 520ms cubic-bezier(.34, 1.6, .5, 1);
+    }
+  }
+}
+
+// a little variety in how each one leans
+.app-link:nth-of-type(2n) { --tilt: 8deg; }
+
+@media (prefers-reduced-motion: reduce) {
+  .app-link__icon img { transition: opacity 200ms ease; transform: none; opacity: 0; }
+  .app-link:hover .app-link__icon img,
+  .app-link:focus-visible .app-link__icon img { transform: none; opacity: 1; transition: opacity 200ms ease; }
+}

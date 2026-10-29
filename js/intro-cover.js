@@ -21,6 +21,7 @@
   const LAUNCH_SPREAD = 160; // ms over which one paragraph's dots set off, so each stream stays together
   const MELT_FOR = 380;     // ms a dot takes to fade out once it lands, as its text fades in
   const PHOTO_GAP = 280;    // ms between the carousel's photos appearing, after the text
+  const SCOOT_FOR = 900;    // ms the centred text takes to slide over to its place (desktop)
   const TRAVELLERS = .35;   // share of the dots that fly to the text; the rest dissolve in place
   const DISSOLVE_FOR = 420; // ms the staying dots take to fade out
 
@@ -69,6 +70,24 @@
   } else {
     soundBtn.hidden = true;
   }
+  // The same pop greets the pointer on each link in the intro (the companies, Connect, email),
+  // so the page keeps the feel of the dots once it's open
+  document.querySelectorAll('.intro-text a').forEach(link => link.addEventListener('pointerenter', e => {
+    if (e.pointerType !== 'mouse' || muted || !pop || !audio || audio.state !== 'running') return;
+    play(pop, .3, .9 + Math.random() * .3);
+  }));
+
+  // ...and on each photo the carousel brings to the front as it's swiped (the carousel marks the
+  // front card .is-active; watching for that keeps the two scripts apart)
+  const frontCardPop = new MutationObserver(records => {
+    if (!body.classList.contains('intro-open') || muted || !pop || !audio || audio.state !== 'running') return;
+    if (records.some(r => r.target.classList.contains('is-active') && !(r.oldValue || '').includes('is-active'))) {
+      play(pop, .28, .9 + Math.random() * .3);
+    }
+  });
+  document.querySelectorAll('.intro-carousel__card').forEach(card =>
+    frontCardPop.observe(card, { attributes: true, attributeFilter: ['class'], attributeOldValue: true }));
+
   function patter(t, touched, touch) {
     if (!touched || t - lastPop < POP_GAP) return;
     lastPop = t;
@@ -263,6 +282,19 @@
     cover.classList.add('scatter');
     // the click itself lets the page make sound, so the opening sound plays unless muted
     if (audio && chime && !muted) { audio.resume(); play(chime, .3); }
+    // Side by side (desktop), the intro streams in centred on the screen and then slides over to
+    // its place on the right, making room for the photos to slide in last. Stacked (phones), the
+    // photos sit above the text and arrive with its first paragraph.
+    const carousel = document.querySelector('.intro-carousel'), textBox = document.querySelector('.intro-text');
+    const stacked = !carousel || !textBox || carousel.getBoundingClientRect().bottom <= textBox.getBoundingClientRect().top;
+    if (!stacked && !reduce.matches) {
+      const r = textBox.getBoundingClientRect();
+      textBox.style.transition = 'none';
+      textBox.style.translate = `${Math.round(innerWidth / 2 - (r.left + r.width / 2))}px 0`;
+      textBox.getBoundingClientRect();  // apply it before the lines are measured below
+      carousel.style.setProperty('--enter-x', '-120px');
+      carousel.style.setProperty('--enter-y', '0px');
+    }
     const paras = textLines();
     const reveal = () => { body.classList.add('intro-open'); body.classList.remove('intro-covered'); };
     if (reduce.matches || !paras.some(para => para.rects.length)) {
@@ -306,9 +338,19 @@
     // the text starts to resolve as the paragraph's first dots land, and is clear as the last ones fade
     paras.forEach((para, pi) => { para.p.style.transitionDelay = `${pi * PARA_GAP + FLY_FOR * .85}ms`; });
 
-    // Once the text is in, the carousel's photos follow one by one, front card first, then the
-    // nearest neighbours (the cards stacked highest), and finally the dots under them
-    const textDone = (paras.length - 1) * PARA_GAP + FLY_FOR * .85 + 400;
+    // The photos follow one by one, front card first, then the nearest neighbours (the cards
+    // stacked highest), and finally the dots under them. Side by side they wait for the text to
+    // finish and slide across, then slide in from the left behind it; stacked, they come with the
+    // first paragraph so the top of the screen isn't left empty while the text streams in below
+    let textDone = FLY_FOR * .85;
+    if (!stacked) {
+      const textClear = (paras.length - 1) * PARA_GAP + FLY_FOR * .85 + 650;
+      setTimeout(() => {
+        textBox.style.transition = `translate ${SCOOT_FOR}ms cubic-bezier(.65, 0, .35, 1)`;
+        textBox.style.translate = '0px 0';
+      }, textClear);
+      textDone = textClear + SCOOT_FOR * .7;  // once the text has mostly cleared the left side
+    }
     const cards = [...document.querySelectorAll('.intro-carousel__card')]
       .sort((a, b) => (+b.style.zIndex || 0) - (+a.style.zIndex || 0));
     cards.forEach((card, ci) => {
